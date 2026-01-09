@@ -1,0 +1,5 @@
+{
+  "name": "Word Link: Phrase Chain",
+  "description": "A clever mobile word game where you guess the second half of a phrase. Each correct guess becomes the start of the next link in an 8-word chain.",
+  "requestFramePermissions": []
+}
