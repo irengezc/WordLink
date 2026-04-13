@@ -1,0 +1,424 @@
+{
+  "easy": [
+    {
+      "chain": ["COLD", "WATER", "FALL", "BACK", "YARD", "WORK", "SHOP", "PING", "PONG"],
+      "explanations": [
+        "COLD WATER: Water at a low temperature, often used for drinking or cooling.",
+        "WATER FALL: A cascade of water falling from a height.",
+        "FALL BACK: To retreat or revert to a previous position.",
+        "BACK YARD: The outdoor area behind a house.",
+        "YARD WORK: Tasks done to maintain a garden or lawn.",
+        "WORK SHOP: A room or building where crafts or repairs are done.",
+        "SHOP PING: The act of visiting stores to buy goods.",
+        "PING PONG: A table tennis game played with small paddles and a lightweight ball."
+      ]
+    },
+    {
+      "chain": ["SUN", "FLOWER", "POT", "LUCK", "KEY", "BOARD", "GAME", "PLAN", "NET"],
+      "explanations": [
+        "SUN FLOWER: A tall plant with a large yellow bloom that turns toward the sun.",
+        "FLOWER POT: A container used for growing plants.",
+        "POT LUCK: A meal where each guest brings a dish to share.",
+        "LUCK KEY: Something that brings good fortune.",
+        "KEY BOARD: A set of keys on a computer or piano.",
+        "BOARD GAME: A game played on a flat surface with pieces or cards.",
+        "GAME PLAN: A strategy devised before a competition or task.",
+        "PLAN NET: A system of organized routes or connections."
+      ]
+    },
+    {
+      "chain": ["APPLE", "JUICE", "BOX", "OFFICE", "WORK", "OUT", "DOOR", "STEP", "DAD"],
+      "explanations": [
+        "APPLE JUICE: A drink made from pressed apples.",
+        "JUICE BOX: A small container of juice with a straw.",
+        "BOX OFFICE: The place where tickets are sold at a theater.",
+        "OFFICE WORK: Tasks carried out in a professional workplace.",
+        "WORK OUT: Physical exercise or a training session.",
+        "OUT DOOR: Outside, relating to the open air.",
+        "DOOR STEP: The step at the entrance of a building.",
+        "STEP DAD: A stepfather; a man married to one's mother."
+      ]
+    },
+    {
+      "chain": ["FIRE", "PLACE", "MAT", "BOARD", "WALK", "WAY", "SIDE", "WALK", "IN"],
+      "explanations": [
+        "FIRE PLACE: A structure in a room for holding a fire.",
+        "PLACE MAT: A flat mat set on a table for a plate.",
+        "MAT BOARD: A thick cardboard used in picture framing.",
+        "BOARD WALK: A wooden path along a beach or waterfront.",
+        "WALK WAY: A path or passage for walking.",
+        "WAY SIDE: The edge of a road or path.",
+        "SIDE WALK: A paved path beside a street.",
+        "WALK IN: A room large enough to walk into, like a walk-in closet."
+      ]
+    },
+    {
+      "chain": ["RAIN", "COAT", "RACK", "UP", "TOWN", "SHIP", "YARD", "SALE", "TAX"],
+      "explanations": [
+        "RAIN COAT: A waterproof coat worn in wet weather.",
+        "COAT RACK: A stand or fixture for hanging coats.",
+        "RACK UP: To accumulate a score or total.",
+        "UP TOWN: The upper or residential part of a city.",
+        "TOWN SHIP: A small administrative division of a county.",
+        "SHIP YARD: A place where ships are built and repaired.",
+        "YARD SALE: An outdoor sale of used household goods.",
+        "SALE TAX: A tax imposed on retail transactions."
+      ]
+    },
+    {
+      "chain": ["BOOK", "SHELF", "LIFE", "TIME", "OUT", "SIDE", "SHOW", "ROOM", "MATE"],
+      "explanations": [
+        "BOOK SHELF: A shelf used to hold books.",
+        "SHELF LIFE: The length of time a product remains usable.",
+        "LIFE TIME: The duration of a person's existence.",
+        "TIME OUT: A brief pause or break in activity.",
+        "OUT SIDE: The external area beyond a boundary.",
+        "SIDE SHOW: A minor attraction at a circus or fair.",
+        "SHOW ROOM: A room used to display goods for sale.",
+        "ROOM MATE: A person who shares a room or apartment."
+      ]
+    },
+    {
+      "chain": ["PLAY", "GROUND", "WORK", "FORCE", "FEED", "BACK", "PACK", "AGE", "OLD"],
+      "explanations": [
+        "PLAY GROUND: An outdoor area designed for children to play.",
+        "GROUND WORK: Preparatory work that forms a foundation.",
+        "WORK FORCE: The people engaged in or available for work.",
+        "FORCE FEED: To make someone eat or accept something unwillingly.",
+        "FEED BACK: Information about reactions to a product or action.",
+        "BACK PACK: A bag carried on the back with shoulder straps.",
+        "PACK AGE: A wrapped or boxed set of items.",
+        "AGE OLD: Having existed for a very long time."
+      ]
+    },
+    {
+      "chain": ["BIRD", "HOUSE", "WORK", "SHOP", "LIFT", "OFF", "BEAT", "BOX", "CAR"],
+      "explanations": [
+        "BIRD HOUSE: A small structure built for birds to nest in.",
+        "HOUSE WORK: Cleaning and other tasks done in the home.",
+        "WORK SHOP: A place where things are made or repaired.",
+        "SHOP LIFT: To steal goods from a store.",
+        "LIFT OFF: The moment a rocket or aircraft leaves the ground.",
+        "OFF BEAT: Unconventional or unusual.",
+        "BEAT BOX: To produce drum sounds with one's mouth.",
+        "BOX CAR: A railroad freight car with a box-like structure."
+      ]
+    },
+    {
+      "chain": ["STAR", "FISH", "POND", "WATER", "PROOF", "READ", "OUT", "RUN", "WAY"],
+      "explanations": [
+        "STAR FISH: A marine animal shaped like a star.",
+        "FISH POND: A small body of water stocked with fish.",
+        "POND WATER: Water from a natural or artificial pond.",
+        "WATER PROOF: Resistant to penetration by water.",
+        "PROOF READ: To check a text for errors.",
+        "READ OUT: To read something aloud.",
+        "OUT RUN: To run faster or further than someone else.",
+        "RUN WAY: A strip of land for aircraft takeoff and landing."
+      ]
+    },
+    {
+      "chain": ["PAPER", "BACK", "FIRE", "WORKS", "SHOP", "KEEPER", "NET", "WORK", "DAY"],
+      "explanations": [
+        "PAPER BACK: A book with a flexible paper cover.",
+        "BACK FIRE: When a plan produces the opposite result intended.",
+        "FIRE WORKS: Explosive devices used for entertainment displays.",
+        "WORKS SHOP: A workplace where goods are manufactured.",
+        "SHOP KEEPER: A person who owns or manages a small shop.",
+        "KEEPER NET: A net used to hold fish while fishing.",
+        "NET WORK: A system of interconnected things or people.",
+        "WORK DAY: A day on which work is done."
+      ]
+    }
+  ],
+  "medium": [
+    {
+      "chain": ["HIGH", "SCHOOL", "BUS", "STOP", "SIGN", "LANGUAGE", "BARRIER", "REEF", "KNOT"],
+      "explanations": [
+        "HIGH SCHOOL: A secondary school for students aged roughly 14–18.",
+        "SCHOOL BUS: A vehicle that transports students to and from school.",
+        "BUS STOP: A designated place where passengers board or exit a bus.",
+        "STOP SIGN: A red octagonal road sign requiring vehicles to halt.",
+        "SIGN LANGUAGE: A visual language using hand shapes and movements.",
+        "LANGUAGE BARRIER: Difficulty communicating due to different languages.",
+        "BARRIER REEF: A coral reef running parallel to a coastline.",
+        "REEF KNOT: A simple, symmetrical knot used to bind two ropes together."
+      ]
+    },
+    {
+      "chain": ["SOCIAL", "MEDIA", "COVERAGE", "AREA", "CODE", "SWITCH", "BOARD", "ROOM", "SERVICE"],
+      "explanations": [
+        "SOCIAL MEDIA: Online platforms for sharing content and connecting with others.",
+        "MEDIA COVERAGE: The reporting of news events by the press.",
+        "COVERAGE AREA: The geographic region served by a network or service.",
+        "AREA CODE: A three-digit number identifying a phone region.",
+        "CODE SWITCH: To alternate between languages or dialects in conversation.",
+        "SWITCH BOARD: A device for manually connecting telephone lines.",
+        "BOARD ROOM: A room where a board of directors meets.",
+        "ROOM SERVICE: Delivery of food and drinks to hotel guest rooms."
+      ]
+    },
+    {
+      "chain": ["FIELD", "TRIP", "WIRE", "LESS", "ON", "LINE", "DANCE", "FLOOR", "PLAN"],
+      "explanations": [
+        "FIELD TRIP: An educational excursion outside the classroom.",
+        "TRIP WIRE: A wire stretched close to the ground that triggers an alarm.",
+        "WIRE LESS: Using radio waves rather than wires to transmit signals.",
+        "LESS ON: A period of learning or instruction.",
+        "ON LINE: Connected to or available through a computer network.",
+        "LINE DANCE: A dance in which people stand in lines and perform the same steps.",
+        "DANCE FLOOR: An area designated for dancing.",
+        "FLOOR PLAN: A diagram of a room or building as seen from above."
+      ]
+    },
+    {
+      "chain": ["PRIME", "TIME", "ZONE", "OUT", "BREAK", "DOWN", "TOWN", "HALL", "MARK"],
+      "explanations": [
+        "PRIME TIME: The hours when the largest number of people watch TV.",
+        "TIME ZONE: A region that observes a uniform standard time.",
+        "ZONE OUT: To lose concentration and stop paying attention.",
+        "OUT BREAK: A sudden occurrence of something unwelcome.",
+        "BREAK DOWN: A failure in a vehicle or machine, or an emotional collapse.",
+        "DOWN TOWN: The central part of a city.",
+        "TOWN HALL: A building where local government offices are held.",
+        "HALL MARK: A mark denoting quality or excellence."
+      ]
+    },
+    {
+      "chain": ["SHORT", "CUT", "THROAT", "CLEARING", "HOUSE", "HOLD", "UP", "BEAT", "DOWN"],
+      "explanations": [
+        "SHORT CUT: A quicker route or method.",
+        "CUT THROAT: Ruthlessly competitive.",
+        "THROAT CLEARING: The action of clearing one's throat before speaking.",
+        "CLEARING HOUSE: A central agency that coordinates transactions.",
+        "HOUSE HOLD: A family living together in a single dwelling.",
+        "HOLD UP: A robbery at gunpoint, or a delay.",
+        "UP BEAT: Optimistic or cheerful.",
+        "BEAT DOWN: Intense sunlight or heat pressing down."
+      ]
+    },
+    {
+      "chain": ["DEAD", "LINE", "BACKER", "BOARD", "GAME", "CHANGER", "OVER", "NIGHT", "SHIFT"],
+      "explanations": [
+        "DEAD LINE: The latest time by which something must be done.",
+        "LINE BACKER: A defensive player in American football.",
+        "BACKER BOARD: A rigid panel used as a base in tiling.",
+        "BOARD GAME: A game played on a flat board with pieces.",
+        "GAME CHANGER: Something that fundamentally alters a situation.",
+        "CHANGER OVER: A transition from one system to another.",
+        "OVER NIGHT: During or throughout the night.",
+        "NIGHT SHIFT: A period of work scheduled for the night hours."
+      ]
+    },
+    {
+      "chain": ["MASTER", "MIND", "SET", "BACK", "STAGE", "COACH", "WORK", "LOAD", "STONE"],
+      "explanations": [
+        "MASTER MIND: The person who plans and directs a complex scheme.",
+        "MIND SET: A person's established attitudes and outlook.",
+        "SET BACK: A reversal or check to progress.",
+        "BACK STAGE: The area behind the stage in a theater.",
+        "STAGE COACH: A horse-drawn carriage used to carry passengers.",
+        "COACH WORK: The bodywork of a vehicle.",
+        "WORK LOAD: The amount of work to be done by someone.",
+        "LOAD STONE: A piece of magnetite that attracts iron."
+      ]
+    },
+    {
+      "chain": ["DOUBLE", "CROSS", "WORD", "PLAY", "GROUND", "BREAKING", "NEWS", "FLASH", "MOB"],
+      "explanations": [
+        "DOUBLE CROSS: To betray someone who trusted you.",
+        "CROSS WORD: A puzzle in which words are filled into a grid.",
+        "WORD PLAY: The witty use of words, especially puns.",
+        "PLAY GROUND: An outdoor area equipped for children to play.",
+        "GROUND BREAKING: Innovative or pioneering.",
+        "BREAKING NEWS: Newly received information about an ongoing event.",
+        "NEWS FLASH: A brief item of important news broadcast urgently.",
+        "FLASH MOB: A group that assembles suddenly in a public place."
+      ]
+    },
+    {
+      "chain": ["SILVER", "LINING", "UP", "STREAM", "LINE", "DANCE", "MOVE", "MENT", "WIDE"],
+      "explanations": [
+        "SILVER LINING: A positive aspect of a bad situation.",
+        "LINING UP: Arranging in a line.",
+        "UP STREAM: Moving in the direction against the flow of a stream.",
+        "STREAM LINE: To make something more efficient or simpler.",
+        "LINE DANCE: A choreographed dance in which everyone performs the same steps.",
+        "DANCE MOVE: A specific step or action performed while dancing.",
+        "MOVE MENT: The action of moving or the activity of a group toward a goal.",
+        "MENT WIDE: A broad scope covering an entire area."
+      ]
+    },
+    {
+      "chain": ["BRAIN", "STORM", "CHASER", "SCENE", "SETTING", "SUN", "RISE", "ABOVE", "BOARD"],
+      "explanations": [
+        "BRAIN STORM: A group discussion to produce ideas.",
+        "STORM CHASER: A person who pursues severe weather events.",
+        "CHASER SCENE: A sequence in a film involving a pursuit.",
+        "SCENE SETTING: Establishing the context or background of a story.",
+        "SETTING SUN: The sun as it disappears below the horizon.",
+        "SUN RISE: The time in the morning when the sun appears.",
+        "RISE ABOVE: To overcome a difficult situation.",
+        "ABOVE BOARD: Legitimate and without deception."
+      ]
+    },
+    {
+      "chain": ["OPEN", "MINDED", "SET", "POINT", "GUARD", "RAIL", "ROAD", "BLOCK", "CHAIN"],
+      "explanations": [
+        "OPEN MINDED: Willing to consider new ideas.",
+        "MINDED SET: A fixed mental attitude or disposition.",
+        "SET POINT: The score at which a player can win the set in tennis.",
+        "POINT GUARD: A basketball player who directs the team's offense.",
+        "GUARD RAIL: A rail fixed along the edge of a road or stairway.",
+        "RAIL ROAD: A track made of rails for trains to travel on.",
+        "ROAD BLOCK: An obstruction placed across a road by police.",
+        "BLOCK CHAIN: A system for recording digital transactions."
+      ]
+    },
+    {
+      "chain": ["MARKET", "PLACE", "HOLDER", "ON", "CALL", "CENTER", "PIECE", "MEAL", "TIME"],
+      "explanations": [
+        "MARKET PLACE: A place where goods are bought and sold.",
+        "PLACE HOLDER: Something that marks a position to be filled later.",
+        "HOLDER ON: A person who holds on or waits.",
+        "ON CALL: Available to work if required at short notice.",
+        "CALL CENTER: An office where calls are handled.",
+        "CENTER PIECE: The most important or attractive feature.",
+        "PIECE MEAL: Done unsystematically, one piece at a time.",
+        "MEAL TIME: The time at which a meal is eaten."
+      ]
+    }
+  ],
+  "hard": [
+    {
+      "chain": ["COLD", "FEET", "FIRST", "HAND", "SHAKE", "DOWN", "FALL", "OUT", "CAST"],
+      "explanations": [
+        "COLD FEET: Reluctance or nervousness before an important event.",
+        "FEET FIRST: Entering a situation without caution.",
+        "FIRST HAND: Directly from the original source.",
+        "HAND SHAKE: Grasping and shaking someone's hand as a greeting.",
+        "SHAKE DOWN: An extortion scheme or a thorough search.",
+        "DOWN FALL: A sudden loss of power or status.",
+        "FALL OUT: A quarrel or dispute, or radioactive debris.",
+        "OUT CAST: A person rejected by their social group."
+      ]
+    },
+    {
+      "chain": ["NIGHT", "OWL", "EYED", "WITNESS", "STAND", "OFF", "HAND", "PICKED", "UP"],
+      "explanations": [
+        "NIGHT OWL: A person who habitually stays up late.",
+        "OWL EYED: Having large, wide-open eyes like an owl.",
+        "EYED WITNESS: A person who has personally seen something.",
+        "WITNESS STAND: The enclosure in a courtroom where a witness sits.",
+        "STAND OFF: A deadlock between opposing parties.",
+        "OFF HAND: Without prior thought or preparation.",
+        "HAND PICKED: Carefully chosen for a specific purpose.",
+        "PICKED UP: To collect something or to learn informally."
+      ]
+    },
+    {
+      "chain": ["IRON", "CLAD", "SECRET", "KEEPER", "SAKE", "BOMB", "SHELL", "SHOCKED", "AWE"],
+      "explanations": [
+        "IRON CLAD: Covered with iron, or impossible to contradict.",
+        "CLAD SECRET: A hidden truth kept tightly covered.",
+        "SECRET KEEPER: A person trusted with confidential information.",
+        "KEEPER SAKE: Something kept as a memento.",
+        "SAKE BOMB: A cocktail made by dropping sake into beer.",
+        "BOMB SHELL: An overwhelming surprise or a very attractive person.",
+        "SHELL SHOCKED: Suffering psychological trauma from combat.",
+        "SHOCKED AWE: Stunned astonishment."
+      ]
+    },
+    {
+      "chain": ["DOUBLE", "EDGED", "OUT", "FOXED", "HOLE", "CARD", "SHARP", "SHOOTER", "GAME"],
+      "explanations": [
+        "DOUBLE EDGED: Having two sharp sides, or having both advantages and disadvantages.",
+        "EDGED OUT: Defeated by a very narrow margin.",
+        "OUT FOXED: Outwitted by someone cunning.",
+        "FOXED HOLE: A small pit dug for cover in battle.",
+        "HOLE CARD: A card kept secret until the decisive moment.",
+        "CARD SHARP: A person who cheats at card games.",
+        "SHARP SHOOTER: A skilled marksman.",
+        "SHOOTER GAME: A video game genre focused on ranged combat."
+      ]
+    },
+    {
+      "chain": ["SMOKE", "SCREEN", "PLAY", "MAKER", "SHIFT", "WORK", "AROUND", "CLOCK", "WISE"],
+      "explanations": [
+        "SMOKE SCREEN: Something designed to conceal or mislead.",
+        "SCREEN PLAY: The script of a film including dialogue and directions.",
+        "PLAY MAKER: A player who creates opportunities for teammates.",
+        "MAKER SHIFT: Temporary and makeshift.",
+        "SHIFT WORK: Employment where hours are arranged in shifts.",
+        "WORK AROUND: A method for overcoming a problem.",
+        "AROUND CLOCK: Continuously, at all hours.",
+        "CLOCK WISE: In the same direction as clock hands move."
+      ]
+    },
+    {
+      "chain": ["RAZOR", "SHARP", "SHOOTER", "PROOF", "READ", "BETWEEN", "LINES", "MAN", "HUNT"],
+      "explanations": [
+        "RAZOR SHARP: Extremely sharp or quick-witted.",
+        "SHARP SHOOTER: An expert marksman.",
+        "SHOOTER PROOF: Resistant to gunfire.",
+        "PROOF READ: To examine a text and correct errors.",
+        "READ BETWEEN: To find hidden meaning in something.",
+        "BETWEEN LINES: Implied meaning not directly stated.",
+        "LINES MAN: An official who watches for boundary violations.",
+        "MAN HUNT: An organized search for a person, especially a criminal."
+      ]
+    },
+    {
+      "chain": ["WILD", "CARD", "BOARD", "GAME", "FACE", "LIFT", "OFF", "BEAT", "NICK"],
+      "explanations": [
+        "WILD CARD: An unpredictable person or an extra selection in a tournament.",
+        "CARD BOARD: Stiff pasteboard used for packaging.",
+        "BOARD GAME: A game played on a flat surface with pieces.",
+        "GAME FACE: A determined expression adopted before a competition.",
+        "FACE LIFT: A cosmetic surgery or a renovation that improves appearance.",
+        "LIFT OFF: The vertical takeoff of a rocket.",
+        "OFF BEAT: Unconventional; not following the standard rhythm.",
+        "BEAT NICK: One who belongs to the Beat Generation subculture."
+      ]
+    },
+    {
+      "chain": ["GLASS", "CEILING", "FAN", "BASE", "CAMP", "FIRE", "SIDE", "TRACK", "RECORD"],
+      "explanations": [
+        "GLASS CEILING: An unacknowledged barrier to advancement for minorities.",
+        "CEILING FAN: A mechanical fan mounted on the ceiling of a room.",
+        "FAN BASE: A group of enthusiastic supporters of someone or something.",
+        "BASE CAMP: A camp from which expeditions set off.",
+        "CAMP FIRE: An outdoor fire in a camp setting.",
+        "FIRE SIDE: The area around a fireplace.",
+        "SIDE TRACK: To divert from the main course or topic.",
+        "TRACK RECORD: The past achievements of a person or organization."
+      ]
+    },
+    {
+      "chain": ["SPIN", "DOCTOR", "OFFICE", "HOLDER", "BACK", "FIRE", "STORM", "DRAIN", "PIPE"],
+      "explanations": [
+        "SPIN DOCTOR: A spokesperson who presents information favorably.",
+        "DOCTOR OFFICE: A place where a physician sees patients.",
+        "OFFICE HOLDER: A person who holds public office.",
+        "HOLDER BACK: Someone who restrains or suppresses something.",
+        "BACK FIRE: To have the opposite effect of what was intended.",
+        "FIRE STORM: An intense and often destructive controversy.",
+        "STORM DRAIN: A drain that carries away rainwater.",
+        "DRAIN PIPE: A pipe that carries away waste water."
+      ]
+    },
+    {
+      "chain": ["BLIND", "SPOT", "CHECK", "MATE", "SHIP", "SHAPE", "SHIFT", "ER", "BOARD"],
+      "explanations": [
+        "BLIND SPOT: An area where vision is absent or a gap in awareness.",
+        "SPOT CHECK: A random inspection made without warning.",
+        "CHECK MATE: The winning move in chess.",
+        "MATE SHIP: The relationship between friends or companions.",
+        "SHIP SHAPE: In good order; neat and tidy.",
+        "SHAPE SHIFT: To change one's form or appearance.",
+        "SHIFT ER: A device that changes gears.",
+        "ER BOARD: A scoreboard showing emergency room information."
+      ]
+    }
+  ]
+}

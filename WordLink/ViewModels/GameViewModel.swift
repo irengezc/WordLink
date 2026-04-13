@@ -36,17 +36,24 @@ final class GameViewModel: ObservableObject {
 
     // MARK: - Pool Management
     private func prefillPools() async {
-        await withTaskGroup(of: Void.self) { group in
-            // 3 medium, 1 easy, 1 hard
-            for _ in 0..<3 { group.addTask { await self.refillPool(.medium) } }
-            group.addTask { await self.refillPool(.easy) }
-            group.addTask { await self.refillPool(.hard) }
+        // Fill pool from reservoir (instant, no network)
+        for diff in Difficulty.allCases {
+            for _ in 0..<GameConstants.poolSize {
+                if let data = ReservoirService.shared.next(for: diff) {
+                    pool[diff, default: []].append(data)
+                }
+            }
         }
     }
 
     private func refillPool(_ diff: Difficulty) async {
-        let data = await GeminiService.generateWordChain(difficulty: diff)
-        pool[diff, default: []].append(data)
+        if let data = ReservoirService.shared.next(for: diff) {
+            pool[diff, default: []].append(data)
+        } else {
+            // Reservoir exhausted — fall back to AI generation
+            let data = await GeminiService.generateWordChain(difficulty: diff)
+            pool[diff, default: []].append(data)
+        }
     }
 
     // MARK: - Start Game
@@ -56,7 +63,12 @@ final class GameViewModel: ObservableObject {
             pool[difficulty]?.removeFirst()
             Task { await refillPool(difficulty) }
             setupGame(chainData: chainData)
+        } else if let chainData = ReservoirService.shared.next(for: difficulty) {
+            // Reservoir available but pool was empty
+            Task { await refillPool(difficulty) }
+            setupGame(chainData: chainData)
         } else {
+            // Both pool and reservoir exhausted — generate via AI
             gameStatus = .loading
             Task {
                 let chainData = await GeminiService.generateWordChain(difficulty: difficulty)
