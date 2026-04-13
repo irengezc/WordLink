@@ -10,11 +10,14 @@ final class GameViewModel: ObservableObject {
     // MARK: - Session
     private var sessionId: String? = nil
 
+    // MARK: - Chain (loaded once at game start)
+    private var chain: [String] = []
+    private var explanations: [String] = []
+
     // MARK: - Game State
-    @Published var currentWord: String = ""       // the "link" word shown to user
-    @Published var targetWordDisplay: String = "" // revealed letters + "?" placeholders
+    @Published var currentWord: String = ""
+    @Published var targetWordDisplay: String = ""  // revealed letters + "?" placeholders
     @Published var wordLength: Int = 0
-    private var currentTargetWord: String = ""    // full target word stored locally for instant hints
     @Published var currentIndex: Int = 0
     @Published var hintsUsed: Int = 0
     @Published var revealedLetters: Int = 1
@@ -25,7 +28,6 @@ final class GameViewModel: ObservableObject {
     @Published var feedback: FeedbackState = .none
     @Published var completedPhrases: [PhraseInfo] = []
     @Published var difficulty: Difficulty = .medium
-    @Published var isChecking: Bool = false
 
     // MARK: - History
     @Published var history: [HistoryItem] = []
@@ -41,6 +43,7 @@ final class GameViewModel: ObservableObject {
     var revealedPrefix: String { String(targetWordDisplay.prefix(revealedLetters)) }
     var maxInputLength: Int { max(0, wordLength - revealedLetters) }
     var totalWords: Int { GameConstants.maxWords }
+    private var currentTargetWord: String { chain.indices.contains(currentIndex + 1) ? chain[currentIndex + 1] : "" }
 
     // MARK: - Start Game
     func startGame(difficulty: Difficulty) {
@@ -48,21 +51,24 @@ final class GameViewModel: ObservableObject {
         gameStatus = .loading
         Task {
             if let result = await SupabaseGameService.startGame(difficulty: difficulty) {
-                setupGame(from: result)
+                sessionId = result.sessionId
+                setupGame(chain: result.chain, explanations: result.explanations)
             } else {
-                // Server unreachable — fall back to local AI generation
+                // Fallback: AI generation
                 let chainData = await GeminiService.generateWordChain(difficulty: difficulty)
-                setupGameFromChain(chainData)
+                sessionId = nil
+                setupGame(chain: chainData.chain, explanations: chainData.explanations)
             }
         }
     }
 
-    private func setupGame(from result: StartGameResult) {
-        sessionId = result.sessionId
-        currentWord = result.firstWord
-        currentTargetWord = result.nextWord
-        wordLength = result.nextWord.count
-        targetWordDisplay = String(result.nextWord.prefix(1)) + String(repeating: "?", count: wordLength - 1)
+    private func setupGame(chain: [String], explanations: [String]) {
+        self.chain = chain
+        self.explanations = explanations
+        currentWord = chain.first ?? ""
+        let next = chain.count > 1 ? chain[1] : ""
+        wordLength = next.count
+        targetWordDisplay = String(next.prefix(1)) + String(repeating: "?", count: max(0, next.count - 1))
         currentIndex = 0
         hintsUsed = 0
         revealedLetters = 1
@@ -74,36 +80,10 @@ final class GameViewModel: ObservableObject {
         completedPhrases = []
         gameStatus = .playing
     }
-
-    // Fallback: set up from a locally-generated chain (AI or reservoir)
-    private func setupGameFromChain(_ chainData: ChainData) {
-        sessionId = nil
-        currentWord = chainData.chain.first ?? ""
-        let nextWord = chainData.chain.count > 1 ? chainData.chain[1] : ""
-        currentTargetWord = nextWord
-        wordLength = nextWord.count
-        targetWordDisplay = String(nextWord.prefix(1)) + String(repeating: "?", count: wordLength - 1)
-        fallbackChain = chainData.chain
-        fallbackExplanations = chainData.explanations
-        currentIndex = 0
-        hintsUsed = 0
-        revealedLetters = 1
-        score = difficulty.startingScore
-        isGameOver = false
-        isGameWon = false
-        userInput = ""
-        feedback = .none
-        completedPhrases = []
-        gameStatus = .playing
-    }
-
-    // Fallback chain (used only when Supabase is unreachable)
-    private var fallbackChain: [String] = []
-    private var fallbackExplanations: [String] = []
 
     // MARK: - Input Handling
     func appendCharacter(_ char: Character) {
-        guard gameStatus == .playing, !isGameOver, !isChecking else { return }
+        guard gameStatus == .playing, !isGameOver else { return }
         let upperChar = char.uppercased().first ?? char
         guard upperChar.isLetter else { return }
         let newInput = userInput + String(upperChar)
@@ -117,82 +97,53 @@ final class GameViewModel: ObservableObject {
     }
 
     func deleteCharacter() {
-        guard !userInput.isEmpty, !isChecking else { return }
+        guard !userInput.isEmpty else { return }
         userInput.removeLast()
     }
 
     func handleGuess() {
-        guard !isChecking else { return }
         let guess = (revealedPrefix + userInput).uppercased()
-
-        if let sid = sessionId {
-            // Server-side validation
-            isChecking = true
-            Task {
-                let result = await SupabaseGameService.checkGuess(sessionId: sid, index: currentIndex, guess: guess)
-                isChecking = false
-                if let result {
-                    if result.correct {
-                        processCorrectGuess(result: result)
-                    } else {
-                        processWrongGuess()
-                    }
-                } else {
-                    // Network error — let user try again without penalty
-                    userInput = ""
-                }
-            }
+        let target = currentTargetWord.uppercased()
+        if guess == target {
+            processCorrectGuess()
         } else {
-            // Fallback: local validation
-            let target = fallbackChain.indices.contains(currentIndex + 1) ? fallbackChain[currentIndex + 1] : ""
-            if guess == target.uppercased() {
-                let explanation = fallbackExplanations.indices.contains(currentIndex) ? fallbackExplanations[currentIndex] : ""
-                let isFinal = currentIndex + 1 >= GameConstants.maxWords
-                let nextWord = !isFinal && fallbackChain.indices.contains(currentIndex + 2) ? fallbackChain[currentIndex + 2] : ""
-                let result = CheckGuessResult(
-                    correct: true, word: target, explanation: explanation,
-                    isFinal: isFinal,
-                    nextWord: nextWord.isEmpty ? nil : nextWord
-                )
-                processCorrectGuess(result: result)
-            } else {
-                processWrongGuess()
-            }
+            processWrongGuess()
         }
     }
 
-    private func processCorrectGuess(result: CheckGuessResult) {
+    private func processCorrectGuess() {
+        let target = currentTargetWord
+        let explanation = explanations.indices.contains(currentIndex) ? explanations[currentIndex] : ""
         let points = max(10, 50 - (revealedLetters - 1) * 10)
         score += points
 
-        let phrase = PhraseInfo(
-            word1: currentWord,
-            word2: result.word ?? "",
-            explanation: result.explanation ?? ""
-        )
+        let phrase = PhraseInfo(word1: currentWord, word2: target, explanation: explanation)
         completedPhrases.append(phrase)
 
         AudioService.shared.playCorrect()
         HapticsService.shared.success()
-        SpeechService.shared.speak(result.word ?? "")
-
+        SpeechService.shared.speak(target)
         feedback = .correct
+
+        // Confirm with server in background (non-blocking)
+        if let sid = sessionId {
+            SupabaseGameService.confirmGuess(sessionId: sid, index: currentIndex, guess: target)
+        }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) { [weak self] in
             guard let self else { return }
             self.feedback = .none
             self.userInput = ""
-            self.currentWord = result.word ?? ""
+            self.currentWord = target
             self.currentIndex += 1
+            self.revealedLetters = 1
 
-            if result.isFinal {
+            if self.currentIndex >= GameConstants.maxWords {
                 self.finishGame(won: true)
             } else {
-                let next = result.nextWord ?? ""
-                self.currentTargetWord = next
+                let next = self.currentTargetWord
                 self.wordLength = next.count
                 self.targetWordDisplay = String(next.prefix(1)) + String(repeating: "?", count: max(0, next.count - 1))
-                self.revealedLetters = 1
             }
         }
     }
@@ -201,14 +152,13 @@ final class GameViewModel: ObservableObject {
         AudioService.shared.playWrong()
         HapticsService.shared.error()
         feedback = .wrong
-
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
             self?.feedback = .none
             self?.userInput = ""
         }
     }
 
-    // MARK: - Hint (fully local — target word is preloaded)
+    // MARK: - Hint (fully local)
     func useHint() {
         guard wordLength > 0, revealedLetters < wordLength else { return }
         guard score >= difficulty.hintCost else { return }
@@ -218,7 +168,8 @@ final class GameViewModel: ObservableObject {
         HapticsService.shared.medium()
 
         revealedLetters += 1
-        targetWordDisplay = String(currentTargetWord.prefix(revealedLetters))
+        let target = currentTargetWord
+        targetWordDisplay = String(target.prefix(revealedLetters))
             + String(repeating: "?", count: max(0, wordLength - revealedLetters))
 
         let newMax = wordLength - revealedLetters

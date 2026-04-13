@@ -20,7 +20,7 @@ Deno.serve(async (req) => {
 
   const { data: chains, error } = await supabase
     .from("chains")
-    .select("id, chain")
+    .select("id, chain, explanations")
     .eq("difficulty", difficulty);
 
   if (error || !chains || chains.length === 0) {
@@ -39,14 +39,11 @@ Deno.serve(async (req) => {
     return new Response(JSON.stringify({ error: "Failed to create session" }), { status: 500, headers: corsHeaders });
   }
 
-  const chain: string[] = picked.chain;
-
   return new Response(
     JSON.stringify({
       session_id: session.id,
-      first_word: chain[0],
-      total_words: chain.length,
-      next_word: chain[1],
+      chain: picked.chain,
+      explanations: picked.explanations,
     }),
     { headers: { ...corsHeaders, "Content-Type": "application/json" } }
   );

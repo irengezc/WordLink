@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27EFA0962F8D1E23005088E6 /* SupabaseGameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFA0952F8D1E22005088E6 /* SupabaseGameService.swift */; };
-		27EFA0972F8D1E23005088E6 /* ReservoirService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFA0942F8D1E22005088E6 /* ReservoirService.swift */; };
+		27EFA0992F8D214F005088E6 /* SupabaseGameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFA0982F8D214F005088E6 /* SupabaseGameService.swift */; };
+		27EFA09B2F8D2159005088E6 /* ReservoirService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFA09A2F8D2159005088E6 /* ReservoirService.swift */; };
 		AA000001 /* WordLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100001 /* WordLinkApp.swift */; };
 		AA000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100002 /* ContentView.swift */; };
 		AA000003 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100003 /* Models.swift */; };
@@ -28,8 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		27EFA0942F8D1E22005088E6 /* ReservoirService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservoirService.swift; sourceTree = "<group>"; };
-		27EFA0952F8D1E22005088E6 /* SupabaseGameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseGameService.swift; sourceTree = "<group>"; };
+		27EFA0982F8D214F005088E6 /* SupabaseGameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseGameService.swift; sourceTree = "<group>"; };
+		27EFA09A2F8D2159005088E6 /* ReservoirService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservoirService.swift; sourceTree = "<group>"; };
 		AA100001 /* WordLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLinkApp.swift; sourceTree = "<group>"; };
 		AA100002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA100003 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -63,8 +63,6 @@
 		AA400001 = {
 			isa = PBXGroup;
 			children = (
-				27EFA0942F8D1E22005088E6 /* ReservoirService.swift */,
-				27EFA0952F8D1E22005088E6 /* SupabaseGameService.swift */,
 				AA400002 /* WordLink */,
 				AA400010 /* Products */,
 			);
@@ -73,6 +71,8 @@
 		AA400002 /* WordLink */ = {
 			isa = PBXGroup;
 			children = (
+				27EFA09A2F8D2159005088E6 /* ReservoirService.swift */,
+				27EFA0982F8D214F005088E6 /* SupabaseGameService.swift */,
 				AA100001 /* WordLinkApp.swift */,
 				AA100002 /* ContentView.swift */,
 				AA400003 /* Models */,
@@ -213,11 +213,10 @@
 				AA000001 /* WordLinkApp.swift in Sources */,
 				AA000002 /* ContentView.swift in Sources */,
 				AA000003 /* Models.swift in Sources */,
+				27EFA0992F8D214F005088E6 /* SupabaseGameService.swift in Sources */,
 				AA000004 /* GeminiService.swift in Sources */,
 				AA000005 /* AudioService.swift in Sources */,
 				AA000006 /* StorageService.swift in Sources */,
-				27EFA0962F8D1E23005088E6 /* SupabaseGameService.swift in Sources */,
-				27EFA0972F8D1E23005088E6 /* ReservoirService.swift in Sources */,
 				AA000007 /* GameViewModel.swift in Sources */,
 				AA000008 /* HomeView.swift in Sources */,
 				AA000009 /* DifficultySelectView.swift in Sources */,
@@ -225,6 +224,7 @@
 				AA000011 /* ResultsView.swift in Sources */,
 				AA000012 /* HistoryView.swift in Sources */,
 				AA000013 /* LoadingView.swift in Sources */,
+				27EFA09B2F8D2159005088E6 /* ReservoirService.swift in Sources */,
 				AA000014 /* WordDisplayView.swift in Sources */,
 				AA000015 /* PhraseFlashcardView.swift in Sources */,
 			);

@@ -4,8 +4,9 @@ import Foundation
 
 struct StartGameResult {
     let sessionId: String
-    let chain: [String]
-    let explanations: [String]
+    let firstWord: String
+    let totalWords: Int
+    let nextWord: String
 }
 
 struct CheckGuessResult {
@@ -24,22 +25,29 @@ final class SupabaseGameService {
 
     static func startGame(difficulty: Difficulty) async -> StartGameResult? {
         let body: [String: Any] = ["difficulty": difficulty.rawValue.lowercased()]
-        guard let json         = await post("start-game", body: body),
-              let sessionId    = json["session_id"]   as? String,
-              let chain        = json["chain"]        as? [String],
-              let explanations = json["explanations"] as? [String]
+        guard let json      = await post("start-game", body: body),
+              let sessionId = json["session_id"] as? String,
+              let firstWord = json["first_word"] as? String,
+              let totalWords = json["total_words"] as? Int,
+              let nextWord  = json["next_word"]  as? String
         else { return nil }
-        return StartGameResult(sessionId: sessionId, chain: chain, explanations: explanations)
+        return StartGameResult(sessionId: sessionId, firstWord: firstWord,
+                               totalWords: totalWords, nextWord: nextWord)
     }
 
-    /// Fire-and-forget: confirms a correct guess server-side for session tracking.
-    static func confirmGuess(sessionId: String, index: Int, guess: String) {
-        Task {
-            let body: [String: Any] = ["session_id": sessionId, "index": index, "guess": guess]
-            _ = await post("check-guess", body: body)
-        }
+    static func checkGuess(sessionId: String, index: Int, guess: String) async -> CheckGuessResult? {
+        let body: [String: Any] = ["session_id": sessionId, "index": index, "guess": guess]
+        guard let json    = await post("check-guess", body: body),
+              let correct = json["correct"] as? Bool
+        else { return nil }
+        return CheckGuessResult(
+            correct:     correct,
+            word:        json["word"]        as? String,
+            explanation: json["explanation"] as? String,
+            isFinal:     json["is_final"]    as? Bool ?? false,
+            nextWord:    json["next_word"]   as? String
+        )
     }
-
 
     // MARK: - Private
 
