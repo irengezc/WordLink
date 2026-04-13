@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- App background gradient: (0.25,0.15,0.55) → (0.15,0.08,0.38) -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3F268C"/>
+      <stop offset="100%" stop-color="#261461"/>
+    </linearGradient>
+
+    <!-- Soft center glow matching app decorative circles -->
+    <radialGradient id="centerGlow" cx="40%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.06)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+
+    <!-- White-to-ivory gradient for link strokes (gives slight depth) -->
+    <linearGradient id="linkColor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D8D0F8"/>
+    </linearGradient>
+
+    <!-- Clip: only the top half of the canvas (for the "behind" portion of horizontal link) -->
+    <clipPath id="topHalf">
+      <rect x="0" y="0" width="1024" height="512"/>
+    </clipPath>
+    <!-- Clip: only the bottom half of the canvas (for the "in front" portion) -->
+    <clipPath id="bottomHalf">
+      <rect x="0" y="512" width="1024" height="512"/>
+    </clipPath>
+
+    <!-- Subtle drop shadow for the chain links -->
+    <filter id="linkShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="rgba(0,0,0,0.45)"/>
+    </filter>
+  </defs>
+
+  <!-- ── Background ─────────────────────────────────────────── -->
+  <rect width="1024" height="1024" rx="224" fill="url(#bgGrad)"/>
+  <!-- Decorative glow overlay (mirrors HomeView circles) -->
+  <rect width="1024" height="1024" rx="224" fill="url(#centerGlow)"/>
+  <!-- Faint concentric rings (purely decorative) -->
+  <circle cx="512" cy="512" r="355" fill="none" stroke="rgba(255,255,255,0.045)" stroke-width="1"/>
+  <circle cx="512" cy="512" r="430" fill="none" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+
+  <!-- ── Interlocked Chain Links ─────────────────────────────── -->
+  <!--
+    Two perpendicular pill shapes, both centred on (512, 512).
+    Interlocking:  horizontal passes BEHIND vertical at top,
+                   horizontal passes IN FRONT of vertical at bottom.
+
+    Horizontal pill: rect x=296 y=418 w=432 h=188 rx=94   (centre 512,512)
+    Vertical   pill: rect x=418 y=296 w=188 h=432 rx=94   (centre 512,512)
+    Stroke width: 54  (extends 27 px each side)
+  -->
+
+  <!-- 1. Horizontal link — back section (top half, behind vertical) -->
+  <g clip-path="url(#topHalf)">
+    <rect x="296" y="418" width="432" height="188" rx="94"
+          fill="none" stroke="url(#linkColor)" stroke-width="54"
+          opacity="0.82"/>
+  </g>
+
+  <!-- 2. Vertical link — complete (middle z-order) -->
+  <rect x="418" y="296" width="188" height="432" rx="94"
+        fill="none" stroke="url(#linkColor)" stroke-width="54"
+        filter="url(#linkShadow)"/>
+
+  <!-- 3. Horizontal link — front section (bottom half, in front of vertical) -->
+  <g clip-path="url(#bottomHalf)">
+    <rect x="296" y="418" width="432" height="188" rx="94"
+          fill="none" stroke="url(#linkColor)" stroke-width="54"
+          filter="url(#linkShadow)"/>
+  </g>
+
+  <!-- ── Word-chain dots ─────────────────────────────────────── -->
+  <!-- Clusters of dots above / below / left / right of the chain,
+       suggesting an endless chain of words flowing through the links. -->
+
+  <!-- Top cluster (words flowing down into vertical link) -->
+  <circle cx="396" cy="226" r="11" fill="rgba(255,255,255,0.52)"/>
+  <circle cx="454" cy="202" r="8"  fill="rgba(255,255,255,0.34)"/>
+  <circle cx="512" cy="218" r="11" fill="rgba(255,255,255,0.52)"/>
+  <circle cx="570" cy="202" r="8"  fill="rgba(255,255,255,0.34)"/>
+  <circle cx="628" cy="226" r="11" fill="rgba(255,255,255,0.52)"/>
+  <!-- Connector dots -->
+  <circle cx="478" cy="252" r="5"  fill="rgba(255,255,255,0.20)"/>
+  <circle cx="546" cy="252" r="5"  fill="rgba(255,255,255,0.20)"/>
+
+  <!-- Bottom cluster -->
+  <circle cx="396" cy="798" r="11" fill="rgba(255,255,255,0.52)"/>
+  <circle cx="454" cy="822" r="8"  fill="rgba(255,255,255,0.34)"/>
+  <circle cx="512" cy="806" r="11" fill="rgba(255,255,255,0.52)"/>
+  <circle cx="570" cy="822" r="8"  fill="rgba(255,255,255,0.34)"/>
+  <circle cx="628" cy="798" r="11" fill="rgba(255,255,255,0.52)"/>
+  <circle cx="478" cy="772" r="5"  fill="rgba(255,255,255,0.20)"/>
+  <circle cx="546" cy="772" r="5"  fill="rgba(255,255,255,0.20)"/>
+
+  <!-- Left cluster -->
+  <circle cx="226" cy="396" r="11" fill="rgba(255,255,255,0.52)"/>
+  <circle cx="202" cy="454" r="8"  fill="rgba(255,255,255,0.34)"/>
+  <circle cx="218" cy="512" r="11" fill="rgba(255,255,255,0.52)"/>
+  <circle cx="202" cy="570" r="8"  fill="rgba(255,255,255,0.34)"/>
+  <circle cx="226" cy="628" r="11" fill="rgba(255,255,255,0.52)"/>
+  <circle cx="252" cy="478" r="5"  fill="rgba(255,255,255,0.20)"/>
+  <circle cx="252" cy="546" r="5"  fill="rgba(255,255,255,0.20)"/>
+
+  <!-- Right cluster -->
+  <circle cx="798" cy="396" r="11" fill="rgba(255,255,255,0.52)"/>
+  <circle cx="822" cy="454" r="8"  fill="rgba(255,255,255,0.34)"/>
+  <circle cx="806" cy="512" r="11" fill="rgba(255,255,255,0.52)"/>
+  <circle cx="822" cy="570" r="8"  fill="rgba(255,255,255,0.34)"/>
+  <circle cx="798" cy="628" r="11" fill="rgba(255,255,255,0.52)"/>
+  <circle cx="772" cy="478" r="5"  fill="rgba(255,255,255,0.20)"/>
+  <circle cx="772" cy="546" r="5"  fill="rgba(255,255,255,0.20)"/>
+</svg>
