@@ -7,9 +7,14 @@ final class GameViewModel: ObservableObject {
     // MARK: - Game Status
     @Published var gameStatus: GameStatus = .start
 
+    // MARK: - Session
+    private var sessionId: String? = nil
+
     // MARK: - Game State
-    @Published var chain: [String] = []
-    @Published var explanations: [String] = []
+    @Published var currentWord: String = ""       // the "link" word shown to user
+    @Published var targetWordDisplay: String = "" // revealed letters + "?" placeholders
+    @Published var wordLength: Int = 0
+    private var currentTargetWord: String = ""    // full target word stored locally for instant hints
     @Published var currentIndex: Int = 0
     @Published var hintsUsed: Int = 0
     @Published var revealedLetters: Int = 1
@@ -20,66 +25,44 @@ final class GameViewModel: ObservableObject {
     @Published var feedback: FeedbackState = .none
     @Published var completedPhrases: [PhraseInfo] = []
     @Published var difficulty: Difficulty = .medium
+    @Published var isChecking: Bool = false
 
     // MARK: - History
     @Published var history: [HistoryItem] = []
     @Published var selectedHistoryId: String? = nil
 
-    // MARK: - Pool
-    private var pool: [Difficulty: [ChainData]] = [.easy: [], .medium: [], .hard: []]
-
     // MARK: - Init
     init() {
         history = StorageService.shared.loadHistory()
-        Task { await prefillPools() }
     }
 
-    // MARK: - Pool Management
-    private func prefillPools() async {
-        // Fill pool from reservoir (instant, no network)
-        for diff in Difficulty.allCases {
-            for _ in 0..<GameConstants.poolSize {
-                if let data = ReservoirService.shared.next(for: diff) {
-                    pool[diff, default: []].append(data)
-                }
-            }
-        }
-    }
-
-    private func refillPool(_ diff: Difficulty) async {
-        if let data = ReservoirService.shared.next(for: diff) {
-            pool[diff, default: []].append(data)
-        } else {
-            // Reservoir exhausted — fall back to AI generation
-            let data = await GeminiService.generateWordChain(difficulty: diff)
-            pool[diff, default: []].append(data)
-        }
-    }
+    // MARK: - Computed Properties
+    var targetWord: String { targetWordDisplay }
+    var revealedPrefix: String { String(targetWordDisplay.prefix(revealedLetters)) }
+    var maxInputLength: Int { max(0, wordLength - revealedLetters) }
+    var totalWords: Int { GameConstants.maxWords }
 
     // MARK: - Start Game
     func startGame(difficulty: Difficulty) {
         self.difficulty = difficulty
-        if let chainData = pool[difficulty]?.first {
-            pool[difficulty]?.removeFirst()
-            Task { await refillPool(difficulty) }
-            setupGame(chainData: chainData)
-        } else if let chainData = ReservoirService.shared.next(for: difficulty) {
-            // Reservoir available but pool was empty
-            Task { await refillPool(difficulty) }
-            setupGame(chainData: chainData)
-        } else {
-            // Both pool and reservoir exhausted — generate via AI
-            gameStatus = .loading
-            Task {
+        gameStatus = .loading
+        Task {
+            if let result = await SupabaseGameService.startGame(difficulty: difficulty) {
+                setupGame(from: result)
+            } else {
+                // Server unreachable — fall back to local AI generation
                 let chainData = await GeminiService.generateWordChain(difficulty: difficulty)
-                setupGame(chainData: chainData)
+                setupGameFromChain(chainData)
             }
         }
     }
 
-    private func setupGame(chainData: ChainData) {
-        chain = chainData.chain
-        explanations = chainData.explanations
+    private func setupGame(from result: StartGameResult) {
+        sessionId = result.sessionId
+        currentWord = result.firstWord
+        currentTargetWord = result.nextWord
+        wordLength = result.nextWord.count
+        targetWordDisplay = String(result.nextWord.prefix(1)) + String(repeating: "?", count: wordLength - 1)
         currentIndex = 0
         hintsUsed = 0
         revealedLetters = 1
@@ -92,16 +75,35 @@ final class GameViewModel: ObservableObject {
         gameStatus = .playing
     }
 
-    // MARK: - Computed Properties
-    var currentWord: String { chain.indices.contains(currentIndex) ? chain[currentIndex] : "" }
-    var targetWord: String { chain.indices.contains(currentIndex + 1) ? chain[currentIndex + 1] : "" }
-    var maxInputLength: Int { max(0, targetWord.count - revealedLetters) }
-    var revealedPrefix: String { String(targetWord.prefix(revealedLetters)) }
-    var totalWords: Int { GameConstants.maxWords }
+    // Fallback: set up from a locally-generated chain (AI or reservoir)
+    private func setupGameFromChain(_ chainData: ChainData) {
+        sessionId = nil
+        currentWord = chainData.chain.first ?? ""
+        let nextWord = chainData.chain.count > 1 ? chainData.chain[1] : ""
+        currentTargetWord = nextWord
+        wordLength = nextWord.count
+        targetWordDisplay = String(nextWord.prefix(1)) + String(repeating: "?", count: wordLength - 1)
+        fallbackChain = chainData.chain
+        fallbackExplanations = chainData.explanations
+        currentIndex = 0
+        hintsUsed = 0
+        revealedLetters = 1
+        score = difficulty.startingScore
+        isGameOver = false
+        isGameWon = false
+        userInput = ""
+        feedback = .none
+        completedPhrases = []
+        gameStatus = .playing
+    }
+
+    // Fallback chain (used only when Supabase is unreachable)
+    private var fallbackChain: [String] = []
+    private var fallbackExplanations: [String] = []
 
     // MARK: - Input Handling
     func appendCharacter(_ char: Character) {
-        guard gameStatus == .playing, !isGameOver else { return }
+        guard gameStatus == .playing, !isGameOver, !isChecking else { return }
         let upperChar = char.uppercased().first ?? char
         guard upperChar.isLetter else { return }
         let newInput = userInput + String(upperChar)
@@ -115,33 +117,64 @@ final class GameViewModel: ObservableObject {
     }
 
     func deleteCharacter() {
-        guard !userInput.isEmpty else { return }
+        guard !userInput.isEmpty, !isChecking else { return }
         userInput.removeLast()
     }
 
     func handleGuess() {
+        guard !isChecking else { return }
         let guess = (revealedPrefix + userInput).uppercased()
-        if guess == targetWord.uppercased() {
-            processCorrectGuess()
+
+        if let sid = sessionId {
+            // Server-side validation
+            isChecking = true
+            Task {
+                let result = await SupabaseGameService.checkGuess(sessionId: sid, index: currentIndex, guess: guess)
+                isChecking = false
+                if let result {
+                    if result.correct {
+                        processCorrectGuess(result: result)
+                    } else {
+                        processWrongGuess()
+                    }
+                } else {
+                    // Network error — let user try again without penalty
+                    userInput = ""
+                }
+            }
         } else {
-            processWrongGuess()
+            // Fallback: local validation
+            let target = fallbackChain.indices.contains(currentIndex + 1) ? fallbackChain[currentIndex + 1] : ""
+            if guess == target.uppercased() {
+                let explanation = fallbackExplanations.indices.contains(currentIndex) ? fallbackExplanations[currentIndex] : ""
+                let isFinal = currentIndex + 1 >= GameConstants.maxWords
+                let nextWord = !isFinal && fallbackChain.indices.contains(currentIndex + 2) ? fallbackChain[currentIndex + 2] : ""
+                let result = CheckGuessResult(
+                    correct: true, word: target, explanation: explanation,
+                    isFinal: isFinal,
+                    nextWord: nextWord.isEmpty ? nil : nextWord
+                )
+                processCorrectGuess(result: result)
+            } else {
+                processWrongGuess()
+            }
         }
     }
 
-    private func processCorrectGuess() {
+    private func processCorrectGuess(result: CheckGuessResult) {
         let points = max(10, 50 - (revealedLetters - 1) * 10)
         score += points
 
         let phrase = PhraseInfo(
             word1: currentWord,
-            word2: targetWord,
-            explanation: explanations.indices.contains(currentIndex) ? explanations[currentIndex] : ""
+            word2: result.word ?? "",
+            explanation: result.explanation ?? ""
         )
         completedPhrases.append(phrase)
 
         AudioService.shared.playCorrect()
         HapticsService.shared.success()
-        SpeechService.shared.speak(targetWord)
+        SpeechService.shared.speak(result.word ?? "")
 
         feedback = .correct
 
@@ -149,11 +182,17 @@ final class GameViewModel: ObservableObject {
             guard let self else { return }
             self.feedback = .none
             self.userInput = ""
-            self.revealedLetters = 1
+            self.currentWord = result.word ?? ""
             self.currentIndex += 1
 
-            if self.currentIndex >= GameConstants.maxWords {
+            if result.isFinal {
                 self.finishGame(won: true)
+            } else {
+                let next = result.nextWord ?? ""
+                self.currentTargetWord = next
+                self.wordLength = next.count
+                self.targetWordDisplay = String(next.prefix(1)) + String(repeating: "?", count: max(0, next.count - 1))
+                self.revealedLetters = 1
             }
         }
     }
@@ -169,24 +208,25 @@ final class GameViewModel: ObservableObject {
         }
     }
 
-    // MARK: - Hint
+    // MARK: - Hint (fully local — target word is preloaded)
     func useHint() {
-        guard revealedLetters < targetWord.count else { return }
+        guard wordLength > 0, revealedLetters < wordLength else { return }
         guard score >= difficulty.hintCost else { return }
         score = max(0, score - difficulty.hintCost)
-        revealedLetters += 1
         hintsUsed += 1
         AudioService.shared.playHint()
         HapticsService.shared.medium()
 
-        // Trim user input if it now overflows
-        let newMax = maxInputLength
+        revealedLetters += 1
+        targetWordDisplay = String(currentTargetWord.prefix(revealedLetters))
+            + String(repeating: "?", count: max(0, wordLength - revealedLetters))
+
+        let newMax = wordLength - revealedLetters
         if userInput.count > newMax {
             userInput = String(userInput.prefix(newMax))
         }
 
-        // Auto-submit if we've revealed all letters
-        if revealedLetters >= targetWord.count {
+        if revealedLetters >= wordLength {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
                 self?.handleGuess()
             }
@@ -230,21 +270,8 @@ final class GameViewModel: ObservableObject {
     }
 
     // MARK: - Navigation
-    func goHome() {
-        gameStatus = .start
-    }
-
-    func goToDifficultySelect() {
-        gameStatus = .difficultySelect
-    }
-
-    func goToHistory() {
-        selectedHistoryId = nil
-        gameStatus = .history
-    }
-
-    func clearHistory() {
-        StorageService.shared.clearHistory()
-        history = []
-    }
+    func goHome() { gameStatus = .start }
+    func goToDifficultySelect() { gameStatus = .difficultySelect }
+    func goToHistory() { selectedHistoryId = nil; gameStatus = .history }
+    func clearHistory() { StorageService.shared.clearHistory(); history = [] }
 }

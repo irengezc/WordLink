@@ -40,11 +40,11 @@ struct LoadingView: View {
                 }
 
                 VStack(spacing: 8) {
-                    Text("Crafting your puzzle...")
+                    Text("Loading your puzzle...")
                         .font(.system(size: 20, weight: .black))
                         .foregroundColor(.white)
 
-                    Text("Generating word chain with AI")
+                    Text("Fetching word chain")
                         .font(.system(size: 13, weight: .medium))
                         .foregroundColor(.white.opacity(0.6))
                 }
