@@ -1,0 +1,9 @@
+{
+  "name": "wordlink-scripts",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.55.0",
+    "@supabase/supabase-js": "^2.47.0"
+  }
+}

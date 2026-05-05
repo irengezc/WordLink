@@ -25,6 +25,7 @@
 		AA000014 /* WordDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100014 /* WordDisplayView.swift */; };
 		AA000015 /* PhraseFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100015 /* PhraseFlashcardView.swift */; };
 		AA000016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA100016 /* Assets.xcassets */; };
+		AA000017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA100017 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		AA100014 /* WordDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDisplayView.swift; sourceTree = "<group>"; };
 		AA100015 /* PhraseFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseFlashcardView.swift; sourceTree = "<group>"; };
 		AA100016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA100017 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA200001 /* WordLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				AA400005 /* ViewModels */,
 				AA400006 /* Views */,
 				AA100016 /* Assets.xcassets */,
+				AA100017 /* LaunchScreen.storyboard */,
 			);
 			path = WordLink;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA000016 /* Assets.xcassets in Resources */,
+				AA000017 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,8 +364,7 @@
 				DEVELOPMENT_TEAM = XVW2C26TQX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -388,8 +391,7 @@
 				DEVELOPMENT_TEAM = XVW2C26TQX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (

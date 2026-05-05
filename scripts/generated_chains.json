@@ -1,0 +1,3458 @@
+{
+  "easy": [
+    {
+      "chain": [
+        "RAIN",
+        "GEAR",
+        "TRAIN",
+        "BACK",
+        "HOME",
+        "RUN",
+        "WILD",
+        "PLANT",
+        "COVER"
+      ],
+      "explanations": [
+        "RAIN GEAR: Clothing and equipment designed to protect against rain.",
+        "GEAR TRAIN: A system of gears that transmits power and motion between rotating shafts.",
+        "TRAIN BACK: The act of returning to a previous location or position, often after a journey.",
+        "BACK HOME: The return to one's place of residence or origin.",
+        "HOME RUN: A baseball term for a hit that allows the batter to round all bases and score.",
+        "RUN WILD: To act freely and without restraint, often in a chaotic or uncontrolled manner.",
+        "WILD PLANT: A plant that grows naturally in the wild without human cultivation.",
+        "PLANT COVER: Vegetation that covers the soil surface, providing protection and habitat."
+      ]
+    },
+    {
+      "chain": [
+        "LIGHT",
+        "GREEN",
+        "GRASS",
+        "COVER",
+        "GLASS",
+        "DOOR",
+        "CLOSE",
+        "WATCH",
+        "CHAIN"
+      ],
+      "explanations": [
+        "LIGHT GREEN: A pale shade of the color green, often associated with freshness and tranquility.",
+        "GREEN GRASS: Grass that is healthy and vibrant, typically indicating good growing conditions.",
+        "GRASS COVER: A layer of grass that protects the soil and prevents erosion in a given area.",
+        "COVER GLASS: A sheet of glass used to protect or enclose something, often in display cases or frames.",
+        "GLASS DOOR: A door made primarily of glass, allowing visibility while providing access between spaces.",
+        "DOOR CLOSE: An instruction or action indicating that a door should be shut securely.",
+        "CLOSE WATCH: A careful and attentive observation of someone or something to monitor their actions or status.",
+        "WATCH CHAIN: A chain used to attach a pocket watch to a person's clothing for security and ease of access."
+      ]
+    },
+    {
+      "chain": [
+        "WHITE",
+        "FLAG",
+        "DAY",
+        "SCHOOL",
+        "BOARD",
+        "GAME",
+        "ROOM",
+        "FLOOR",
+        "SPACE"
+      ],
+      "explanations": [
+        "WHITE FLAG: A symbol of surrender or truce, often used in warfare or conflict.",
+        "FLAG DAY: A day dedicated to celebrating and honoring a country's flag.",
+        "DAY SCHOOL: An educational institution where students attend classes during the day and return home in the evening.",
+        "SCHOOL BOARD: A group of elected officials responsible for overseeing the management and policies of a school district.",
+        "BOARD GAME: A tabletop game that involves pieces moved or placed on a pre-marked surface according to a set of rules.",
+        "GAME ROOM: A designated space for playing games, often equipped with various gaming equipment and entertainment options.",
+        "ROOM FLOOR: The surface of a room that people walk on, typically made of materials like wood, carpet, or tile.",
+        "FLOOR SPACE: The area within a room or building that is available for use, often measured in square feet or meters."
+      ]
+    },
+    {
+      "chain": [
+        "BLACK",
+        "BOX",
+        "FULL",
+        "SWING",
+        "BRIDGE",
+        "DECK",
+        "SPACE",
+        "FLIGHT",
+        "HOME"
+      ],
+      "explanations": [
+        "BLACK BOX: A device used to record data in aircraft, often crucial for accident investigations.",
+        "BOX FULL: A situation where a container or space has reached its maximum capacity.",
+        "FULL SWING: A state of maximum activity or intensity, often used to describe events or processes.",
+        "SWING BRIDGE: A movable bridge that rotates around a pivot point to allow boats to pass.",
+        "BRIDGE DECK: The surface of a bridge that supports the load of vehicles and pedestrians.",
+        "DECK SPACE: The area available on a deck, such as on a ship or a building, for various uses.",
+        "SPACE FLIGHT: The act of traveling into or through outer space using a spacecraft.",
+        "FLIGHT HOME: The journey taken by an aircraft to return to its origin or a person's home."
+      ]
+    },
+    {
+      "chain": [
+        "DOOR",
+        "WIDE",
+        "OPEN",
+        "AIR",
+        "FORCE",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "TUBE"
+      ],
+      "explanations": [
+        "DOOR WIDE: A door that is fully opened to allow easy passage.",
+        "WIDE OPEN: Completely unobstructed or unsealed, allowing full access.",
+        "OPEN AIR: An outdoor environment that is not enclosed or covered.",
+        "AIR FORCE: A branch of a nation's military responsible for aerial warfare and operations.",
+        "FORCE BASE: A military installation that supports air force operations and personnel.",
+        "BASE PLATE: A flat, usually horizontal plate that serves as a foundation for structures or machinery.",
+        "PLATE GLASS: A type of glass that is flat and smooth, often used in windows and displays.",
+        "GLASS TUBE: A hollow cylindrical object made of glass, often used in laboratory settings or for storage."
+      ]
+    },
+    {
+      "chain": [
+        "RED",
+        "LIGHT",
+        "BLUE",
+        "LAKE",
+        "ROAD",
+        "MAP",
+        "ROOM",
+        "DOOR",
+        "OPEN"
+      ],
+      "explanations": [
+        "RED LIGHT: A signal indicating that vehicles must stop at an intersection.",
+        "LIGHT BLUE: A pale shade of the color blue.",
+        "BLUE LAKE: A lake that has a blue hue, often due to clear water or mineral content.",
+        "LAKE ROAD: A road that runs alongside or leads to a lake.",
+        "ROAD MAP: A visual representation of roads and highways for navigation.",
+        "MAP ROOM: A designated space for studying or displaying maps.",
+        "ROOM DOOR: An entryway that provides access to a room.",
+        "DOOR OPEN: A state in which a door is not closed, allowing passage."
+      ]
+    },
+    {
+      "chain": [
+        "FULL",
+        "FORCE",
+        "FIELD",
+        "GUIDE",
+        "WIRE",
+        "LOOP",
+        "ROAD",
+        "MAP",
+        "ROOM"
+      ],
+      "explanations": [
+        "FULL FORCE: The maximum strength or intensity of an action or effort.",
+        "FORCE FIELD: A protective barrier created by energy or physical forces that repels or absorbs objects.",
+        "FIELD GUIDE: A reference book designed to help identify and understand various species or phenomena in nature.",
+        "GUIDE WIRE: A thin wire used to direct or assist in the placement of another object, often in medical procedures.",
+        "WIRE LOOP: A circular or bent piece of wire used for various applications, including electrical connections or crafting.",
+        "LOOP ROAD: A road that forms a circular route, allowing vehicles to travel in a loop without needing to turn around.",
+        "ROAD MAP: A detailed representation of roads and highways used for navigation and travel planning.",
+        "MAP ROOM: A designated space for storing, displaying, or studying maps and geographical information."
+      ]
+    },
+    {
+      "chain": [
+        "COLD",
+        "BLOOD",
+        "FLOW",
+        "FIELD",
+        "TRIP",
+        "HOME",
+        "TOWN",
+        "HALL",
+        "TABLE"
+      ],
+      "explanations": [
+        "COLD BLOOD: A term used to describe someone who is unemotional or lacks compassion.",
+        "BLOOD FLOW: The movement of blood through the circulatory system to supply organs and tissues with oxygen and nutrients.",
+        "FLOW FIELD: A vector field that represents the flow of a fluid or the movement of particles in a given space.",
+        "FIELD TRIP: An educational outing where students visit a location outside of their regular classroom to enhance learning.",
+        "TRIP HOME: A journey taken to return to one's place of residence.",
+        "HOME TOWN: The town or city where a person was born or grew up.",
+        "TOWN HALL: A building used for the administration of local government or a meeting place for community discussions.",
+        "HALL TABLE: A table typically found in an entryway or hallway, often used for decorative purposes or to hold items."
+      ]
+    },
+    {
+      "chain": [
+        "HOT",
+        "DAY",
+        "SCHOOL",
+        "BOARD",
+        "GAME",
+        "ROOM",
+        "AIR",
+        "SPACE",
+        "FLIGHT"
+      ],
+      "explanations": [
+        "HOT DAY: A day characterized by unusually high temperatures.",
+        "DAY SCHOOL: An educational institution where students attend classes during the day and return home afterward.",
+        "SCHOOL BOARD: A group of elected officials responsible for overseeing the policies and administration of a school district.",
+        "BOARD GAME: A tabletop game that involves pieces moved or placed on a pre-marked surface according to a set of rules.",
+        "GAME ROOM: A designated space for playing games, often equipped with various gaming equipment and entertainment options.",
+        "ROOM AIR: The air contained within a specific enclosed space or room.",
+        "AIR SPACE: The portion of the atmosphere controlled by a country or used for aviation purposes.",
+        "SPACE FLIGHT: The act of traveling beyond Earth's atmosphere, typically involving spacecraft."
+      ]
+    },
+    {
+      "chain": [
+        "BLUE",
+        "SEA",
+        "ICE",
+        "COLD",
+        "BLOOD",
+        "FLOW",
+        "SHEET",
+        "GLASS",
+        "DOOR"
+      ],
+      "explanations": [
+        "BLUE SEA: A large body of saltwater that appears blue due to the scattering of sunlight.",
+        "SEA ICE: Frozen seawater that forms in the ocean, typically found in polar regions.",
+        "ICE COLD: Extremely cold, often used to describe beverages or temperatures.",
+        "COLD BLOOD: Referring to animals whose body temperature is regulated by the environment, typically reptiles and amphibians.",
+        "BLOOD FLOW: The circulation of blood through the body's blood vessels, essential for delivering oxygen and nutrients.",
+        "FLOW SHEET: A diagram or chart that outlines the steps or processes in a system or operation.",
+        "SHEET GLASS: Flat glass that is produced in large sheets, commonly used in windows and doors.",
+        "GLASS DOOR: A door made primarily of glass, often used in commercial buildings for aesthetic appeal."
+      ]
+    },
+    {
+      "chain": [
+        "ROAD",
+        "MAP",
+        "SHEET",
+        "GLASS",
+        "DOOR",
+        "CLOSE",
+        "WATCH",
+        "CHAIN",
+        "MAIL"
+      ],
+      "explanations": [
+        "ROAD MAP: A detailed representation of roads and highways used for navigation.",
+        "MAP SHEET: A single page or section of a larger map, often containing specific geographic information.",
+        "SHEET GLASS: A flat piece of glass that is typically used in windows and doors.",
+        "GLASS DOOR: A door made primarily of glass, allowing visibility and light to pass through.",
+        "DOOR CLOSE: A command or mechanism that causes a door to shut securely.",
+        "CLOSE WATCH: A careful and attentive observation of someone or something.",
+        "WATCH CHAIN: A chain used to attach a pocket watch to a person's clothing for security and convenience.",
+        "CHAIN MAIL: A type of armor made from interlinked metal rings, historically used in battle."
+      ]
+    },
+    {
+      "chain": [
+        "ICE",
+        "PACK",
+        "TRAIN",
+        "TRIP",
+        "HOME",
+        "RUN",
+        "WILD",
+        "PLANT",
+        "COVER"
+      ],
+      "explanations": [
+        "ICE PACK: A bag filled with ice used to reduce swelling or relieve pain.",
+        "PACK TRAIN: A group of animals, typically mules or horses, used to carry goods on a journey.",
+        "TRAIN TRIP: A journey taken on a train, often for leisure or travel purposes.",
+        "TRIP HOME: A journey back to one's place of residence.",
+        "HOME RUN: A hit in baseball that allows the batter to round all bases and score a run.",
+        "RUN WILD: To behave in an uncontrolled or uninhibited manner.",
+        "WILD PLANT: A plant that grows naturally in the wild without human cultivation.",
+        "PLANT COVER: Vegetation that covers the ground, often used to prevent soil erosion."
+      ]
+    },
+    {
+      "chain": [
+        "SEA",
+        "AIR",
+        "SPACE",
+        "FLIGHT",
+        "HOME",
+        "RUN",
+        "WILD",
+        "GAME",
+        "BOARD"
+      ],
+      "explanations": [
+        "SEA AIR: The fresh, salty breeze that comes from the ocean.",
+        "AIR SPACE: The physical space above the earth's surface that is used for flight.",
+        "SPACE FLIGHT: The act of traveling into or through outer space.",
+        "FLIGHT HOME: The journey taken to return to one's residence by air.",
+        "HOME RUN: A baseball term for a hit that allows the batter to round all bases and score.",
+        "RUN WILD: To behave freely and without restraint.",
+        "WILD GAME: Animals that are hunted for food, typically in their natural habitat.",
+        "GAME BOARD: A flat surface used to play board games, often marked with a grid or design."
+      ]
+    },
+    {
+      "chain": [
+        "AIR",
+        "POWER",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "DOOR",
+        "OPEN",
+        "WATER",
+        "FLOW"
+      ],
+      "explanations": [
+        "AIR POWER: The military capability to project force through the use of aircraft and aerial operations.",
+        "POWER BASE: The foundational support or resources that provide strength and influence to an individual or organization.",
+        "BASE PLATE: A flat surface that serves as a foundation for mounting equipment or structures.",
+        "PLATE GLASS: A type of glass that is produced in large, flat sheets and is commonly used in windows and doors.",
+        "GLASS DOOR: A door made primarily of glass, often used for aesthetic purposes or to allow visibility between spaces.",
+        "DOOR OPEN: A state indicating that a door is not closed, allowing passage through it.",
+        "OPEN WATER: A body of water that is not enclosed or obstructed, typically referring to oceans, seas, or large lakes.",
+        "WATER FLOW: The movement of water, often measured in terms of volume per unit of time, through a specific area or channel."
+      ]
+    },
+    {
+      "chain": [
+        "GREEN",
+        "GLASS",
+        "WALL",
+        "SPACE",
+        "FLIGHT",
+        "BACK",
+        "YARD",
+        "FIELD",
+        "DAY"
+      ],
+      "explanations": [
+        "GREEN GLASS: A type of glass that has a green tint, often used in bottles and jars.",
+        "GLASS WALL: A transparent wall made of glass, commonly used in modern architecture to create open spaces.",
+        "WALL SPACE: The area available on a wall for decoration or storage, often used in interior design.",
+        "SPACE FLIGHT: The act of traveling into or through outer space, typically involving spacecraft.",
+        "FLIGHT BACK: The return journey by air to a previous location after traveling away.",
+        "BACK YARD: An outdoor area located at the rear of a house, often used for recreation or gardening.",
+        "YARD FIELD: An area of land, typically adjacent to a home, that may be used for various activities or gardening.",
+        "FIELD DAY: A day of outdoor activities or competitions, often organized for schools or community events."
+      ]
+    },
+    {
+      "chain": [
+        "FREE",
+        "PLAY",
+        "BALL",
+        "PARK",
+        "STREET",
+        "DOOR",
+        "OPEN",
+        "WATER",
+        "TABLE"
+      ],
+      "explanations": [
+        "FREE PLAY: Unstructured and voluntary playtime where children can engage in activities of their choice.",
+        "PLAY BALL: A phrase used to indicate the start of a game or to encourage participation in a sport.",
+        "BALL PARK: A recreational area designed for playing baseball, often including seating for spectators.",
+        "PARK STREET: A street that is typically lined with trees and greenery, often found in urban areas.",
+        "STREET DOOR: An entrance to a building that opens directly onto the street.",
+        "DOOR OPEN: A phrase indicating that a door is not closed, allowing entry or exit.",
+        "OPEN WATER: A body of water that is not enclosed or obstructed, often referring to oceans or lakes.",
+        "WATER TABLE: The level below which the ground is saturated with water, affecting soil moisture and plant growth."
+      ]
+    },
+    {
+      "chain": [
+        "BOOK",
+        "CLUB",
+        "WORK",
+        "HARD",
+        "WATER",
+        "POWER",
+        "BASE",
+        "PLATE",
+        "GLASS"
+      ],
+      "explanations": [
+        "BOOK CLUB: A group of people who meet regularly to discuss books they have read.",
+        "CLUB WORK: Activities or tasks performed by members of a club to support its goals.",
+        "WORK HARD: To put in significant effort and diligence to achieve a goal.",
+        "HARD WATER: Water that contains a high concentration of dissolved minerals, particularly calcium and magnesium.",
+        "WATER POWER: Energy generated from the movement of water, often used in hydroelectric power generation.",
+        "POWER BASE: The foundation of support or influence that enables a person or group to exert control.",
+        "BASE PLATE: A flat plate that serves as a foundation or support for a structure or device.",
+        "PLATE GLASS: A type of glass that is flat and smooth, commonly used in windows and mirrors."
+      ]
+    },
+    {
+      "chain": [
+        "GOLD",
+        "COIN",
+        "SILVER",
+        "SPRING",
+        "STREET",
+        "BRIDGE",
+        "DECK",
+        "SPACE",
+        "FLIGHT"
+      ],
+      "explanations": [
+        "GOLD COIN: A coin made primarily of gold, often used as currency or for investment.",
+        "COIN SILVER: A term referring to silver coins that contain a specific percentage of silver, typically 90%.",
+        "SILVER SPRING: A natural spring that produces water rich in minerals, often associated with health benefits.",
+        "SPRING STREET: A street name that may refer to a location characterized by the season of spring or a historical significance.",
+        "STREET BRIDGE: A bridge that spans a street, allowing for the passage of vehicles or pedestrians over it.",
+        "BRIDGE DECK: The surface of a bridge where vehicles and pedestrians travel.",
+        "DECK SPACE: An area on a deck, such as on a ship or building, used for various activities or purposes.",
+        "SPACE FLIGHT: The act of traveling into or through outer space, typically involving spacecraft."
+      ]
+    },
+    {
+      "chain": [
+        "NIGHT",
+        "SCHOOL",
+        "BOARD",
+        "GAME",
+        "FISH",
+        "OIL",
+        "PUMP",
+        "BODY",
+        "WALL"
+      ],
+      "explanations": [
+        "NIGHT SCHOOL: An educational program that takes place in the evening, often for adults seeking to further their education.",
+        "SCHOOL BOARD: A group of elected officials responsible for overseeing the management and policies of a school district.",
+        "BOARD GAME: A tabletop game that involves pieces moved or placed on a pre-marked surface according to a set of rules.",
+        "GAME FISH: Fish species that are pursued for sport or recreation rather than for food.",
+        "FISH OIL: Oil derived from the tissues of oily fish, often taken as a dietary supplement for its omega-3 fatty acids.",
+        "OIL PUMP: A mechanical device used to move oil from one location to another, often found in engines or oil extraction systems.",
+        "PUMP BODY: The main housing of a pump that contains the internal components and facilitates the movement of fluids.",
+        "BODY WALL: The outer structure of an organism that provides support and protection to its internal organs."
+      ]
+    },
+    {
+      "chain": [
+        "FRESH",
+        "AIR",
+        "FLOW",
+        "BACK",
+        "HOME",
+        "RUN",
+        "WILD",
+        "GAME",
+        "BOARD"
+      ],
+      "explanations": [
+        "FRESH AIR: Clean and unpolluted air, often associated with the outdoors.",
+        "AIR FLOW: The movement of air, typically in a specific direction or pattern.",
+        "FLOW BACK: The process of returning to a previous state or position.",
+        "BACK HOME: The act of returning to one's place of residence.",
+        "HOME RUN: A successful hit in baseball that allows the batter to round all bases and score.",
+        "RUN WILD: To behave freely and without restraint, often in a chaotic manner.",
+        "WILD GAME: Animals that are hunted for food, typically in their natural habitat.",
+        "GAME BOARD: A flat surface used for playing board games, often marked with a grid or design."
+      ]
+    },
+    {
+      "chain": [
+        "HOME",
+        "RUN",
+        "WILD",
+        "PLANT",
+        "COVER",
+        "ART",
+        "SCHOOL",
+        "BOARD",
+        "GAME"
+      ],
+      "explanations": [
+        "HOME RUN: A hit in baseball that allows the batter to round all bases and score a run.",
+        "RUN WILD: To behave in an uncontrolled or uninhibited manner.",
+        "WILD PLANT: A plant that grows naturally in the wild without human cultivation.",
+        "PLANT COVER: The layer of vegetation that covers the ground in a particular area.",
+        "COVER ART: The artwork used on the cover of a book, album, or other media.",
+        "ART SCHOOL: An educational institution dedicated to teaching various forms of visual arts.",
+        "SCHOOL BOARD: A group of elected officials responsible for overseeing a school district.",
+        "BOARD GAME: A tabletop game that involves pieces moved or placed on a pre-marked surface according to a set of rules."
+      ]
+    },
+    {
+      "chain": [
+        "PLAY",
+        "BALL",
+        "PARK",
+        "LANE",
+        "PRESS",
+        "CLUB",
+        "WORK",
+        "FORCE",
+        "FIELD"
+      ],
+      "explanations": [
+        "PLAY BALL: A phrase used to indicate the start of a game or activity.",
+        "BALL PARK: A term used to describe a baseball stadium or, informally, an approximate range or area.",
+        "PARK LANE: A specific street name, often associated with upscale areas or locations.",
+        "LANE PRESS: A type of printing press designed for narrow, continuous printing tasks.",
+        "PRESS CLUB: An organization of journalists and media professionals that promotes their interests.",
+        "CLUB WORK: Activities or tasks performed as part of a club or organization.",
+        "WORK FORCE: The total number of workers available for employment in a specific area or industry.",
+        "FORCE FIELD: A protective barrier created by a field of energy, often used in science fiction."
+      ]
+    },
+    {
+      "chain": [
+        "RAIN",
+        "WATER",
+        "POWER",
+        "PLANT",
+        "COVER",
+        "ART",
+        "SCHOOL",
+        "BOARD",
+        "SHIP"
+      ],
+      "explanations": [
+        "RAIN WATER: Rain water refers to the precipitation that falls from the atmosphere in the form of rain.",
+        "WATER POWER: Water power is the energy generated from the movement of water, typically used to produce electricity.",
+        "POWER PLANT: A power plant is a facility that generates electricity by converting various energy sources into electrical energy.",
+        "PLANT COVER: Plant cover describes the layer of vegetation that covers the ground in a particular area, influencing soil health and biodiversity.",
+        "COVER ART: Cover art is the visual artwork displayed on the front of a book, album, or other media, designed to attract attention.",
+        "ART SCHOOL: An art school is an educational institution that specializes in teaching various forms of visual and performing arts.",
+        "SCHOOL BOARD: A school board is a governing body responsible for overseeing and making decisions about public education in a district.",
+        "BOARD SHIP: Board ship means to get on or enter a ship, typically for travel or transport purposes."
+      ]
+    },
+    {
+      "chain": [
+        "LIGHT",
+        "BLUE",
+        "LAKE",
+        "ROAD",
+        "MAP",
+        "SHEET",
+        "IRON",
+        "GATE",
+        "PARK"
+      ],
+      "explanations": [
+        "LIGHT BLUE: A pale shade of blue that resembles the color of the sky on a clear day.",
+        "BLUE LAKE: A lake that has a blue hue, often due to the clarity of the water or the minerals present.",
+        "LAKE ROAD: A road that runs alongside or leads to a lake.",
+        "ROAD MAP: A detailed representation of roads and highways used for navigation.",
+        "MAP SHEET: A single page or section of a larger map, often used for specific areas.",
+        "SHEET IRON: A thin, flat piece of iron that is typically used in construction or manufacturing.",
+        "IRON GATE: A gate made of iron, often used for security or decorative purposes.",
+        "GATE PARK: A park that features a prominent entrance gate, often serving as a landmark."
+      ]
+    },
+    {
+      "chain": [
+        "BLACK",
+        "BOX",
+        "FULL",
+        "SWING",
+        "ARM",
+        "FREE",
+        "SCHOOL",
+        "BOARD",
+        "SHIP"
+      ],
+      "explanations": [
+        "BLACK BOX: A device or system whose internal workings are not understood or visible, often used in the context of complex systems.",
+        "BOX FULL: A container that has reached its maximum capacity and cannot hold any more items.",
+        "FULL SWING: A state of maximum activity or intensity, often used to describe events or processes that are in progress.",
+        "SWING ARM: A mechanical component that pivots or moves back and forth, often used in machinery or tools.",
+        "ARM FREE: A state in which the arm is unrestricted or not bound, allowing for movement and flexibility.",
+        "FREE SCHOOL: An educational institution that operates without traditional constraints, often emphasizing alternative teaching methods.",
+        "SCHOOL BOARD: A governing body responsible for overseeing the management and policies of a school district.",
+        "BOARD SHIP: An instruction or action to get on a vessel, typically used in the context of travel or transportation."
+      ]
+    },
+    {
+      "chain": [
+        "DOOR",
+        "CLOSE",
+        "WATCH",
+        "GLASS",
+        "TUBE",
+        "FEET",
+        "LONG",
+        "DAY",
+        "SCHOOL"
+      ],
+      "explanations": [
+        "DOOR CLOSE: The action of shutting a door to prevent entry or exit.",
+        "CLOSE WATCH: A careful and attentive observation of someone or something.",
+        "WATCH GLASS: The protective cover over the face of a watch that displays the time.",
+        "GLASS TUBE: A hollow cylindrical object made of glass, often used in laboratories.",
+        "TUBE FEET: The elongated, flexible appendages found in certain marine animals, such as sea stars.",
+        "FEET LONG: A measurement indicating that something is twelve inches in length.",
+        "LONG DAY: A day that feels extended due to fatigue or a heavy workload.",
+        "DAY SCHOOL: An educational institution where students attend classes during the day and return home in the evening."
+      ]
+    },
+    {
+      "chain": [
+        "RED",
+        "HEAT",
+        "FLOW",
+        "BACK",
+        "COVER",
+        "ART",
+        "WORLD",
+        "BANK",
+        "RATE"
+      ],
+      "explanations": [
+        "RED HEAT: A term often used to describe intense heat or a high temperature, sometimes in a political context.",
+        "HEAT FLOW: The transfer of thermal energy from one material or area to another, typically measured in terms of temperature difference.",
+        "FLOW BACK: The process of returning or reverting to a previous state or position, often used in various contexts such as water movement or data processing.",
+        "BACK COVER: The rear side of a book or publication, often containing information about the book or promotional content.",
+        "COVER ART: The visual artwork or design that appears on the front of a book, album, or other media, intended to attract attention.",
+        "ART WORLD: The collective community of artists, galleries, museums, and art enthusiasts involved in the creation and appreciation of art.",
+        "WORLD BANK: An international financial institution that provides loans and grants to the governments of poorer countries for development projects.",
+        "BANK RATE: The interest rate set by a central bank for lending to commercial banks, influencing overall interest rates in the economy."
+      ]
+    },
+    {
+      "chain": [
+        "FULL",
+        "POWER",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "DOOR",
+        "CLOSE",
+        "WATCH",
+        "CHAIN"
+      ],
+      "explanations": [
+        "FULL POWER: The maximum level of energy or capacity that can be exerted by a system or device.",
+        "POWER BASE: The foundational support or resources that provide strength or influence to an individual or organization.",
+        "BASE PLATE: A flat, usually horizontal surface that serves as a foundation for mounting equipment or structures.",
+        "PLATE GLASS: A type of glass that is produced in large, flat sheets and is often used in windows and mirrors.",
+        "GLASS DOOR: A door made primarily of glass, allowing visibility while providing access to a space.",
+        "DOOR CLOSE: The action or mechanism that causes a door to shut securely after being opened.",
+        "CLOSE WATCH: A careful and attentive observation of someone or something over a period of time.",
+        "WATCH CHAIN: A decorative chain used to secure a pocket watch to a person's clothing or to enhance its appearance."
+      ]
+    },
+    {
+      "chain": [
+        "COLD",
+        "LIGHT",
+        "GREEN",
+        "GRASS",
+        "ROOT",
+        "WORD",
+        "LIST",
+        "BOX",
+        "FULL"
+      ],
+      "explanations": [
+        "COLD LIGHT: A type of illumination that lacks warmth or color temperature, often associated with a bluish hue.",
+        "LIGHT GREEN: A pale shade of green that is softer and less intense than standard green.",
+        "GREEN GRASS: Grass that is healthy and vibrant in color, often associated with lush, fertile environments.",
+        "GRASS ROOT: The underground part of a grass plant that anchors it and absorbs nutrients and water.",
+        "ROOT WORD: The basic form of a word from which other words can be derived by adding prefixes or suffixes.",
+        "WORD LIST: A collection of words organized for reference or study, often used in language learning or vocabulary exercises.",
+        "LIST BOX: A graphical user interface element that displays a list of options for users to select from.",
+        "BOX FULL: A state indicating that a container has reached its maximum capacity and cannot hold additional items."
+      ]
+    },
+    {
+      "chain": [
+        "HOT",
+        "WATER",
+        "POWER",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "TUBE",
+        "WALL",
+        "SPACE"
+      ],
+      "explanations": [
+        "HOT WATER: Water that has been heated to a high temperature, often used for bathing or cooking.",
+        "WATER POWER: The energy generated from the movement of water, commonly harnessed for electricity production.",
+        "POWER BASE: The foundational support or resources that provide strength or influence to an individual or organization.",
+        "BASE PLATE: A flat component used to support or stabilize machinery or structures.",
+        "PLATE GLASS: A type of glass that is flat and smooth, typically used in windows and mirrors.",
+        "GLASS TUBE: A hollow cylindrical object made of glass, often used in scientific experiments or as a container.",
+        "TUBE WALL: The outer surface of a tube, which can affect its strength and insulation properties.",
+        "WALL SPACE: The area available on a wall for decoration, storage, or other functional uses."
+      ]
+    },
+    {
+      "chain": [
+        "BLUE",
+        "CLOTH",
+        "BAG",
+        "FULL",
+        "POWER",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "TUBE"
+      ],
+      "explanations": [
+        "BLUE CLOTH: A type of fabric that is dyed or woven in a blue color.",
+        "CLOTH BAG: A reusable bag made from fabric, often used for carrying items.",
+        "BAG FULL: A bag that has reached its maximum capacity of contents.",
+        "FULL POWER: The maximum level of energy or strength that a device or system can produce.",
+        "POWER BASE: The foundational support or resources that provide strength or influence to a person or organization.",
+        "BASE PLATE: A flat, foundational component that supports or stabilizes other structures or devices.",
+        "PLATE GLASS: A type of glass that is flat and smooth, typically used in windows and mirrors.",
+        "GLASS TUBE: A hollow cylindrical object made of glass, often used in scientific applications or as a container."
+      ]
+    },
+    {
+      "chain": [
+        "ROAD",
+        "MAP",
+        "ROOM",
+        "DOOR",
+        "CLOSE",
+        "WATCH",
+        "CHAIN",
+        "DRIVE",
+        "HOME"
+      ],
+      "explanations": [
+        "ROAD MAP: A detailed representation of roads and highways used for navigation.",
+        "MAP ROOM: A designated space where maps are displayed and analyzed, often for strategic purposes.",
+        "ROOM DOOR: A door that provides access to a specific room.",
+        "DOOR CLOSE: An action or mechanism that shuts a door.",
+        "CLOSE WATCH: A careful and attentive observation of someone or something.",
+        "WATCH CHAIN: A chain used to secure a pocket watch to clothing or a belt.",
+        "CHAIN DRIVE: A mechanical system that transmits power through a chain connecting gears or sprockets.",
+        "DRIVE HOME: The act of driving to one's residence or the process of making a point clear."
+      ]
+    },
+    {
+      "chain": [
+        "ICE",
+        "COLD",
+        "SPRING",
+        "DAY",
+        "SCHOOL",
+        "BOARD",
+        "FEET",
+        "HIGH",
+        "COURT"
+      ],
+      "explanations": [
+        "ICE COLD: A term used to describe something that is extremely cold, often referring to beverages or weather.",
+        "COLD SPRING: A season or period in spring characterized by unusually low temperatures.",
+        "SPRING DAY: A day during the spring season, typically associated with mild weather and blooming flowers.",
+        "DAY SCHOOL: An educational institution where students attend classes during the day and return home in the evening.",
+        "SCHOOL BOARD: A group of elected officials responsible for overseeing and making decisions about a school district's policies and operations.",
+        "BOARD FEET: A unit of measurement for lumber, representing a volume of one foot long by one foot wide by one inch thick.",
+        "FEET HIGH: A measurement indicating the height of an object in feet.",
+        "HIGH COURT: The highest court in a jurisdiction, responsible for making final legal decisions and interpretations of the law."
+      ]
+    },
+    {
+      "chain": [
+        "SEA",
+        "ICE",
+        "WATER",
+        "POWER",
+        "PLANT",
+        "COVER",
+        "PLATE",
+        "GLASS",
+        "TUBE"
+      ],
+      "explanations": [
+        "SEA ICE: Frozen seawater that forms in the polar regions and influences global climate and marine ecosystems.",
+        "ICE WATER: Water that is at or below freezing temperature, often used in beverages or for cooling purposes.",
+        "WATER POWER: Energy derived from the movement or flow of water, commonly harnessed for electricity generation.",
+        "POWER PLANT: A facility that generates electricity by converting various energy sources into electrical power.",
+        "PLANT COVER: The layer of vegetation that covers the ground in an area, important for soil protection and biodiversity.",
+        "COVER PLATE: A protective layer or sheet placed over an object or surface to shield it from damage or contamination.",
+        "PLATE GLASS: A flat glass product made by floating molten glass on molten tin, known for its clarity and smooth surface.",
+        "GLASS TUBE: A hollow cylindrical piece of glass used in various applications, including scientific experiments and lighting."
+      ]
+    },
+    {
+      "chain": [
+        "AIR",
+        "FORCE",
+        "FIELD",
+        "GUIDE",
+        "WIRE",
+        "BRUSH",
+        "BACK",
+        "ROOM",
+        "TABLE"
+      ],
+      "explanations": [
+        "AIR FORCE: The branch of a nation's military that is primarily responsible for aerial warfare and operations.",
+        "FORCE FIELD: A protective barrier created by a physical or theoretical force that prevents objects from entering a certain area.",
+        "FIELD GUIDE: A book or manual designed to help identify and understand various species of plants, animals, or other subjects in their natural environment.",
+        "GUIDE WIRE: A wire used to provide support or direction for structures or equipment, often in construction or electrical applications.",
+        "WIRE BRUSH: A tool consisting of wire bristles used for cleaning, polishing, or removing rust from surfaces.",
+        "BRUSH BACK: A technique in sports, particularly baseball, where a pitcher throws a ball close to a batter to intimidate them.",
+        "BACK ROOM: A private or hidden space where important discussions or decisions are made, often away from public view.",
+        "ROOM TABLE: A table designed for use in a specific room, often for meetings, dining, or collaborative work."
+      ]
+    },
+    {
+      "chain": [
+        "GREEN",
+        "CORN",
+        "OIL",
+        "FIELD",
+        "DAY",
+        "SCHOOL",
+        "BOARD",
+        "GAME",
+        "FISH"
+      ],
+      "explanations": [
+        "GREEN CORN: Young, immature corn that is harvested before it fully ripens.",
+        "CORN OIL: A type of vegetable oil extracted from corn kernels, commonly used in cooking.",
+        "OIL FIELD: An area where oil is extracted from the ground, often containing multiple oil wells.",
+        "FIELD DAY: A day set aside for outdoor activities, typically involving demonstrations or competitions.",
+        "DAY SCHOOL: An educational institution where students attend classes during the day and return home afterward.",
+        "SCHOOL BOARD: A governing body responsible for overseeing the policies and operations of a school district.",
+        "BOARD GAME: A tabletop game that involves pieces moved or placed on a pre-marked surface according to a set of rules.",
+        "GAME FISH: Fish species that are sought after for sport fishing due to their size, strength, or challenge."
+      ]
+    },
+    {
+      "chain": [
+        "FREE",
+        "PRESS",
+        "CLUB",
+        "WORK",
+        "HARD",
+        "WATER",
+        "FLOW",
+        "SHEET",
+        "IRON"
+      ],
+      "explanations": [
+        "FREE PRESS: The right of media to publish news and opinions without government interference.",
+        "PRESS CLUB: An organization for journalists and media professionals to network and share information.",
+        "CLUB WORK: Activities and responsibilities undertaken by members of a club or organization.",
+        "WORK HARD: The act of putting in significant effort and dedication to achieve a goal.",
+        "HARD WATER: Water that contains high levels of dissolved minerals, particularly calcium and magnesium.",
+        "WATER FLOW: The movement of water, typically in rivers, streams, or pipes.",
+        "FLOW SHEET: A diagram that represents the sequence of operations or processes in a system.",
+        "SHEET IRON: Thin, flat pieces of iron or steel used in construction and manufacturing."
+      ]
+    },
+    {
+      "chain": [
+        "BOOK",
+        "CLUB",
+        "WORK",
+        "FORCE",
+        "FIELD",
+        "TRIP",
+        "BACK",
+        "HOME",
+        "TOWN"
+      ],
+      "explanations": [
+        "BOOK CLUB: A group of people who meet regularly to discuss books they have read.",
+        "CLUB WORK: Tasks or activities performed as part of a club's operations or events.",
+        "WORK FORCE: The total number of people engaged in or available for work in a specific area.",
+        "FORCE FIELD: A region of influence around an object, often used in physics or science fiction.",
+        "FIELD TRIP: An educational outing where students visit a location related to their studies.",
+        "TRIP BACK: A return journey to a previous location.",
+        "BACK HOME: The act of returning to one's place of residence.",
+        "HOME TOWN: The town or city where a person was born or grew up."
+      ]
+    },
+    {
+      "chain": [
+        "GOLD",
+        "COIN",
+        "BOX",
+        "FULL",
+        "FORCE",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "TUBE"
+      ],
+      "explanations": [
+        "GOLD COIN: A coin made primarily of gold, often used as currency or for investment.",
+        "COIN BOX: A container designed to hold coins, typically used for collecting or storing spare change.",
+        "BOX FULL: A box that has reached its maximum capacity and cannot hold any more items.",
+        "FULL FORCE: The maximum strength or intensity of an action, effort, or phenomenon.",
+        "FORCE BASE: A military installation that serves as a headquarters for air or ground forces.",
+        "BASE PLATE: A flat, horizontal surface that serves as a foundation for equipment or structures.",
+        "PLATE GLASS: A type of glass that is flat and smooth, commonly used in windows and mirrors.",
+        "GLASS TUBE: A hollow cylindrical object made of glass, often used in laboratory settings or for display."
+      ]
+    },
+    {
+      "chain": [
+        "NIGHT",
+        "AIR",
+        "FLOW",
+        "SHEET",
+        "GLASS",
+        "WALL",
+        "STREET",
+        "BRIDGE",
+        "ROAD"
+      ],
+      "explanations": [
+        "NIGHT AIR: The cool and often refreshing atmosphere outside during the nighttime.",
+        "AIR FLOW: The movement of air, typically in a specific direction, often used in ventilation and climate control.",
+        "FLOW SHEET: A diagram or chart that outlines the steps or processes in a system or operation.",
+        "SHEET GLASS: A flat piece of glass that is produced in large, thin panels for use in windows and other applications.",
+        "GLASS WALL: A wall made primarily of glass, often used in modern architecture to create open and transparent spaces.",
+        "WALL STREET: A street in New York City known as the financial center of the United States, home to the New York Stock Exchange.",
+        "STREET BRIDGE: A bridge that spans a street, allowing for the passage of vehicles or pedestrians over the roadway.",
+        "BRIDGE ROAD: A road that leads to or is associated with a bridge, often providing access to the structure."
+      ]
+    },
+    {
+      "chain": [
+        "FRESH",
+        "GREEN",
+        "GLASS",
+        "DOOR",
+        "OPEN",
+        "MOUTH",
+        "WATER",
+        "POWER",
+        "BASE"
+      ],
+      "explanations": [
+        "FRESH GREEN: Refers to newly sprouted or vibrant plant life, often associated with health and vitality.",
+        "GREEN GLASS: A type of glass that is tinted green, commonly used in bottles and jars.",
+        "GLASS DOOR: A door made primarily of glass, often used in commercial buildings for transparency and aesthetics.",
+        "DOOR OPEN: Indicates that an entrance is not closed, allowing access to a space.",
+        "OPEN MOUTH: Describes a mouth that is not closed, often used to express surprise or readiness to speak.",
+        "MOUTH WATER: A phrase indicating the salivation response triggered by the anticipation of food.",
+        "WATER POWER: Energy derived from the movement of water, often harnessed for electricity generation.",
+        "POWER BASE: The foundation of influence or control that an individual or group has in a particular context."
+      ]
+    },
+    {
+      "chain": [
+        "HOME",
+        "RUN",
+        "WILD",
+        "CARD",
+        "GAME",
+        "FISH",
+        "OIL",
+        "FIELD",
+        "DAY"
+      ],
+      "explanations": [
+        "HOME RUN: A baseball term for hitting the ball out of the playing field, allowing the batter to score easily.",
+        "RUN WILD: To behave in an uncontrolled or unrestricted manner.",
+        "WILD CARD: An unpredictable factor or person that can change the outcome of a situation.",
+        "CARD GAME: A game played with a deck of cards, often involving strategy and skill.",
+        "GAME FISH: Fish species that are sought after for sport fishing rather than for food.",
+        "FISH OIL: An oil derived from the tissues of oily fish, often taken as a dietary supplement for its health benefits.",
+        "OIL FIELD: An area where oil is extracted from the ground, typically containing multiple oil wells.",
+        "FIELD DAY: A day set aside for outdoor activities or events, often involving fun and games."
+      ]
+    },
+    {
+      "chain": [
+        "PLAY",
+        "BALL",
+        "JOINT",
+        "BOARD",
+        "FEET",
+        "DEEP",
+        "RED",
+        "CLAY",
+        "STREET"
+      ],
+      "explanations": [
+        "PLAY BALL: A phrase used to indicate the start of a game or activity, often in sports.",
+        "BALL JOINT: A type of mechanical joint that allows for rotational movement in multiple directions.",
+        "JOINT BOARD: A panel or group that oversees and manages the activities of a joint venture or partnership.",
+        "BOARD FEET: A unit of measure for lumber that represents a volume of one foot long by one foot wide by one inch thick.",
+        "FEET DEEP: A measurement indicating how far below the surface something is, typically used in reference to water or excavation.",
+        "DEEP RED: A rich, dark shade of the color red, often associated with intensity or passion.",
+        "RED CLAY: A type of soil that is rich in iron oxide, giving it a reddish color and often used in pottery and ceramics.",
+        "CLAY STREET: A street that may be made of or associated with clay, often referring to a rural or unpaved road."
+      ]
+    },
+    {
+      "chain": [
+        "RAIN",
+        "GEAR",
+        "DRIVE",
+        "BACK",
+        "ROOM",
+        "FLOOR",
+        "SPACE",
+        "FLIGHT",
+        "TIME"
+      ],
+      "explanations": [
+        "RAIN GEAR: Clothing and equipment designed to protect against rain.",
+        "GEAR DRIVE: A mechanical system that transmits power through gears.",
+        "DRIVE BACK: The act of returning to a previous location by driving.",
+        "BACK ROOM: A private area in a business or establishment, often used for confidential discussions.",
+        "ROOM FLOOR: The surface area of a room where activities take place.",
+        "FLOOR SPACE: The total area available on a floor for use or occupancy.",
+        "SPACE FLIGHT: The act of traveling into or through outer space.",
+        "FLIGHT TIME: The duration of time an aircraft spends in the air during a journey."
+      ]
+    },
+    {
+      "chain": [
+        "LIGHT",
+        "BLUE",
+        "DRESS",
+        "CODE",
+        "WORD",
+        "LIST",
+        "BOX",
+        "FULL",
+        "DAY"
+      ],
+      "explanations": [
+        "LIGHT BLUE: A pale shade of the color blue.",
+        "BLUE DRESS: A dress that is primarily colored blue.",
+        "DRESS CODE: A set of rules or guidelines regarding appropriate attire in a specific setting.",
+        "CODE WORD: A word or phrase used to convey a specific meaning, often in a secretive or coded manner.",
+        "WORD LIST: A collection of words, typically organized for reference or study.",
+        "LIST BOX: A graphical user interface element that allows users to select one or more items from a list.",
+        "BOX FULL: A container that has reached its maximum capacity and cannot hold any more items.",
+        "FULL DAY: A complete 24-hour period, typically referring to a day filled with activities or events."
+      ]
+    },
+    {
+      "chain": [
+        "WHITE",
+        "CLOTH",
+        "ROUND",
+        "HOLE",
+        "CUT",
+        "OPEN",
+        "SEA",
+        "POWER",
+        "PLANT"
+      ],
+      "explanations": [
+        "WHITE CLOTH: A fabric that is dyed or bleached to be completely white, often used for clothing or table linens.",
+        "CLOTH ROUND: A circular piece of fabric, typically used for table coverings or decorative purposes.",
+        "ROUND HOLE: A circular opening or cavity in a surface or object.",
+        "HOLE CUT: An opening created by removing material from a surface, often for functional or aesthetic purposes.",
+        "CUT OPEN: To slice or sever an object to reveal its interior or contents.",
+        "OPEN SEA: The vast, unbounded area of the ocean that is not enclosed by land or coastal features.",
+        "SEA POWER: The military and economic strength of a nation derived from its naval capabilities and maritime resources.",
+        "POWER PLANT: A facility that generates electricity by converting various energy sources into electrical power."
+      ]
+    },
+    {
+      "chain": [
+        "BLACK",
+        "POWER",
+        "PLANT",
+        "COVER",
+        "PLATE",
+        "GLASS",
+        "WALL",
+        "STREET",
+        "DOOR"
+      ],
+      "explanations": [
+        "BLACK POWER: A political and social movement advocating for the rights and empowerment of Black individuals and communities.",
+        "POWER PLANT: A facility that generates electricity by converting various energy sources into electrical power.",
+        "PLANT COVER: The layer of vegetation that protects and stabilizes the soil in an ecosystem.",
+        "COVER PLATE: A flat piece used to protect or conceal an opening or component in a structure or device.",
+        "PLATE GLASS: A type of glass that is produced in large, flat sheets and is commonly used in windows and mirrors.",
+        "GLASS WALL: A wall made primarily of glass, often used in modern architecture to create transparency and open spaces.",
+        "WALL STREET: A street in New York City known as the financial center of the United States, housing major financial institutions.",
+        "STREET DOOR: An entrance or exit located on a street level, typically leading into a building."
+      ]
+    },
+    {
+      "chain": [
+        "DOOR",
+        "CLOSE",
+        "WATCH",
+        "GLASS",
+        "TUBE",
+        "WALL",
+        "SPACE",
+        "FLIGHT",
+        "PATH"
+      ],
+      "explanations": [
+        "DOOR CLOSE: This refers to the action of shutting a door securely.",
+        "CLOSE WATCH: This means to observe someone or something very carefully.",
+        "WATCH GLASS: This is the transparent cover that protects the face of a watch.",
+        "GLASS TUBE: This is a cylindrical container made of glass, often used in laboratories.",
+        "TUBE WALL: This refers to the outer surface of a tube, which can be made from various materials.",
+        "WALL SPACE: This is the area available on a wall for hanging or displaying items.",
+        "SPACE FLIGHT: This refers to the act of traveling into or through outer space.",
+        "FLIGHT PATH: This is the trajectory or route taken by an aircraft or spacecraft during its journey."
+      ]
+    },
+    {
+      "chain": [
+        "RED",
+        "BLOOD",
+        "FLOW",
+        "FIELD",
+        "TRIP",
+        "HOME",
+        "RUN",
+        "WILD",
+        "TYPE"
+      ],
+      "explanations": [
+        "RED BLOOD: The type of blood that contains hemoglobin, which carries oxygen throughout the body.",
+        "BLOOD FLOW: The movement of blood through the circulatory system to supply organs and tissues with nutrients and oxygen.",
+        "FLOW FIELD: A vector field that represents the velocity of a fluid at different points in space.",
+        "FIELD TRIP: An educational outing where students visit a location outside of their classroom to enhance learning.",
+        "TRIP HOME: A journey taken to return to one's place of residence.",
+        "HOME RUN: A hit in baseball that allows the batter to round all bases and score a run without stopping.",
+        "RUN WILD: To behave in an uncontrolled or uninhibited manner, often associated with freedom and spontaneity.",
+        "WILD TYPE: The typical form of a species found in nature, used as a reference for genetic studies."
+      ]
+    },
+    {
+      "chain": [
+        "FULL",
+        "FORCE",
+        "FIELD",
+        "GUIDE",
+        "WIRE",
+        "SCREEN",
+        "SHOT",
+        "DEAD",
+        "HAND"
+      ],
+      "explanations": [
+        "FULL FORCE: The maximum strength or intensity of something.",
+        "FORCE FIELD: A protective barrier that deflects or absorbs energy or objects.",
+        "FIELD GUIDE: A book or resource that helps identify and understand various species or phenomena in nature.",
+        "GUIDE WIRE: A wire used to direct or support the movement of something, often in construction or navigation.",
+        "WIRE SCREEN: A mesh made of wire used to filter or separate materials.",
+        "SCREEN SHOT: An image captured of the display on a computer or mobile device screen.",
+        "SHOT DEAD: A phrase indicating that someone has been killed by gunfire.",
+        "DEAD HAND: A term often used to describe a mechanism or system that operates automatically even after the operator is incapacitated."
+      ]
+    }
+  ],
+  "medium": [
+    {
+      "chain": [
+        "DOUBLE",
+        "TRACK",
+        "TEAM",
+        "PLAY",
+        "BALL",
+        "GAME",
+        "BOARD",
+        "FEET",
+        "LONG"
+      ],
+      "explanations": [
+        "DOUBLE TRACK: A railway system with two parallel tracks allowing trains to travel in both directions simultaneously.",
+        "TRACK TEAM: A group of athletes who compete in track and field events.",
+        "TEAM PLAY: A collaborative approach in sports or activities where players work together to achieve a common goal.",
+        "PLAY BALL: A phrase used to signal the start of a game or activity, particularly in baseball.",
+        "BALL GAME: A general term for any game played with a ball, often referring specifically to baseball.",
+        "GAME BOARD: A flat surface used to play board games, typically marked with a grid or design for gameplay.",
+        "BOARD FEET: A unit of measurement for lumber, representing a volume of wood that is 1 foot long, 1 foot wide, and 1 inch thick.",
+        "FEET LONG: A measurement indicating the length of an object in feet."
+      ]
+    },
+    {
+      "chain": [
+        "GRAND",
+        "TRUNK",
+        "ROAD",
+        "BACK",
+        "ROOM",
+        "FULL",
+        "FORCE",
+        "FIELD",
+        "DAY"
+      ],
+      "explanations": [
+        "GRAND TRUNK: A major transportation route or railway system, often referring to historical trade routes in India.",
+        "TRUNK ROAD: A primary road that connects major cities and regions, facilitating long-distance travel.",
+        "ROAD BACK: A route or path leading back to a previous location or state.",
+        "BACK ROOM: A private or secretive space where discussions or decisions are made away from public view.",
+        "ROOM FULL: A space that is completely occupied or filled with people or objects.",
+        "FULL FORCE: The maximum strength or intensity of an action or effort.",
+        "FORCE FIELD: A protective barrier created by energy or physical means that prevents entry or damage.",
+        "FIELD DAY: An event or occasion for outdoor activities, often involving games or competitions."
+      ]
+    },
+    {
+      "chain": [
+        "GROUND",
+        "FLOOR",
+        "ROOM",
+        "AIR",
+        "POWER",
+        "PLANT",
+        "COVER",
+        "ART",
+        "SCHOOL"
+      ],
+      "explanations": [
+        "GROUND FLOOR: The lowest level of a building, typically at ground level.",
+        "FLOOR ROOM: A room that is located on a specific floor of a building.",
+        "ROOM AIR: The air contained within a room, often referring to its quality or temperature.",
+        "AIR POWER: The military capability to use aircraft and other aerial resources in combat.",
+        "POWER PLANT: A facility that generates electricity by converting various energy sources.",
+        "PLANT COVER: The layer of vegetation that covers the ground in a specific area.",
+        "COVER ART: The artwork used on the cover of a book, album, or other media.",
+        "ART SCHOOL: An educational institution focused on teaching various forms of visual and performing arts."
+      ]
+    },
+    {
+      "chain": [
+        "FIELD",
+        "DAY",
+        "SCHOOL",
+        "BOARD",
+        "FEET",
+        "WIDE",
+        "WORLD",
+        "BANK",
+        "RATE"
+      ],
+      "explanations": [
+        "FIELD DAY: A special day for outdoor activities and games, often organized by schools or organizations.",
+        "DAY SCHOOL: An educational institution where students attend classes during the day and return home in the evening.",
+        "SCHOOL BOARD: A group of elected officials responsible for overseeing the policies and administration of a school district.",
+        "BOARD FEET: A unit of measurement used in the lumber industry to quantify the volume of wood.",
+        "FEET WIDE: A measurement indicating the width of an object or space in feet.",
+        "WIDE WORLD: A phrase often used to refer to the vastness and diversity of the entire globe.",
+        "WORLD BANK: An international financial institution that provides loans and grants to the governments of poorer countries for development projects.",
+        "BANK RATE: The interest rate set by a central bank for lending to commercial banks, influencing overall interest rates in the economy."
+      ]
+    },
+    {
+      "chain": [
+        "GLASS",
+        "WALL",
+        "CLOCK",
+        "BACK",
+        "YARD",
+        "LONG",
+        "RUN",
+        "WILD",
+        "BIRD"
+      ],
+      "explanations": [
+        "GLASS WALL: A transparent barrier that allows visibility while providing separation between spaces.",
+        "WALL CLOCK: A timekeeping device mounted on a wall, typically displaying hours and minutes.",
+        "CLOCK BACK: To set the time on a clock to an earlier hour or to reverse the time.",
+        "BACK YARD: An outdoor area located behind a house, often used for recreation or gardening.",
+        "YARD LONG: A term describing something that is three feet in length, often used for measuring.",
+        "LONG RUN: An extended period of time during which a particular event or trend continues.",
+        "RUN WILD: To behave freely and without restraint, often leading to chaotic or uncontrolled actions.",
+        "WILD BIRD: A bird that lives and breeds in its natural habitat without human intervention."
+      ]
+    },
+    {
+      "chain": [
+        "STORM",
+        "KING",
+        "STREET",
+        "BRIDGE",
+        "CLUB",
+        "HEAD",
+        "HIGH",
+        "COURT",
+        "JUDGE"
+      ],
+      "explanations": [
+        "STORM KING: A title often used to refer to a powerful figure or deity associated with storms.",
+        "KING STREET: A common street name that may refer to a prominent road in a city, often named after a king.",
+        "STREET BRIDGE: A bridge that spans a street, allowing for the passage of vehicles or pedestrians over it.",
+        "BRIDGE CLUB: A social group or organization where members gather to play the card game bridge.",
+        "CLUB HEAD: The part of a golf club that strikes the ball, typically made of metal or composite materials.",
+        "HEAD HIGH: A term used in sports or physical activities to indicate that one's head is held up high, often signifying confidence.",
+        "HIGH COURT: The highest court in a jurisdiction, responsible for making significant legal decisions and interpretations.",
+        "COURT JUDGE: An official who presides over court proceedings, making legal rulings and ensuring justice is served."
+      ]
+    },
+    {
+      "chain": [
+        "STAGE",
+        "DOOR",
+        "OPEN",
+        "FIELD",
+        "TRIP",
+        "HOME",
+        "RULE",
+        "BILL",
+        "RATE"
+      ],
+      "explanations": [
+        "STAGE DOOR: The entrance used by performers to access the stage, typically located at the back of a theater.",
+        "DOOR OPEN: A phrase indicating that an opportunity or possibility is available.",
+        "OPEN FIELD: A large, unobstructed area of land, often used for activities like sports or agriculture.",
+        "FIELD TRIP: An educational outing where students visit a location outside of the classroom to enhance learning.",
+        "TRIP HOME: The journey taken to return to one's place of residence.",
+        "HOME RULE: The authority of a local government to govern itself with minimal interference from the state or federal government.",
+        "RULE BILL: A legislative proposal that establishes procedures or guidelines for the operation of a legislative body.",
+        "BILL RATE: The interest rate applied to a financial instrument, such as a loan or a bond."
+      ]
+    },
+    {
+      "chain": [
+        "ROCK",
+        "ART",
+        "WORLD",
+        "WIDE",
+        "WEB",
+        "SPACE",
+        "FLIGHT",
+        "HOME",
+        "PAGE"
+      ],
+      "explanations": [
+        "ROCK ART: Ancient artistic expressions carved or painted on natural rock surfaces.",
+        "ART WORLD: The global community of artists, galleries, collectors, and institutions involved in the creation and appreciation of art.",
+        "WORLD WIDE: Referring to something that encompasses the entire globe or is accessible from anywhere in the world.",
+        "WIDE WEB: A system of interlinked hypertext documents accessed via the internet, commonly known as the World Wide Web.",
+        "WEB SPACE: The virtual environment or storage area on the internet where websites and online content reside.",
+        "SPACE FLIGHT: The act of traveling into or through outer space, typically involving spacecraft.",
+        "FLIGHT HOME: A journey taken by air to return to one's place of residence.",
+        "HOME PAGE: The main webpage of a website, serving as the starting point for navigation."
+      ]
+    },
+    {
+      "chain": [
+        "BROAD",
+        "FLAT",
+        "PLANE",
+        "WAVE",
+        "FIELD",
+        "DAY",
+        "SCHOOL",
+        "BOARD",
+        "GAME"
+      ],
+      "explanations": [
+        "BROAD FLAT: A surface that is wide and level without significant elevation changes.",
+        "FLAT PLANE: A two-dimensional surface that is completely level and has no curvature.",
+        "PLANE WAVE: A wave that travels in a uniform direction with constant amplitude and phase across a flat surface.",
+        "WAVE FIELD: A spatial representation of the amplitude and phase of waves in a given area.",
+        "FIELD DAY: A day set aside for outdoor activities and games, often in a school or community setting.",
+        "DAY SCHOOL: An educational institution where students attend classes during the day and return home in the evening.",
+        "SCHOOL BOARD: A group of elected officials responsible for overseeing the policies and administration of a school district.",
+        "BOARD GAME: A tabletop game that involves pieces moved or placed on a pre-marked surface according to a set of rules."
+      ]
+    },
+    {
+      "chain": [
+        "WILD",
+        "CARD",
+        "GAME",
+        "ROOM",
+        "AIR",
+        "SPACE",
+        "FLIGHT",
+        "BACK",
+        "HOME"
+      ],
+      "explanations": [
+        "WILD CARD: A flexible element in a game or situation that can represent any value or category.",
+        "CARD GAME: A game played with a deck of cards, often involving strategy and skill.",
+        "GAME ROOM: A designated space for playing games, typically equipped with various gaming equipment.",
+        "ROOM AIR: The air contained within an enclosed space, such as a room, which can affect comfort and health.",
+        "AIR SPACE: The portion of the atmosphere controlled by a specific country or organization for aviation purposes.",
+        "SPACE FLIGHT: The act of traveling into or through outer space, typically using a spacecraft.",
+        "FLIGHT BACK: The return journey on an airplane to the original departure point.",
+        "BACK HOME: The act of returning to one's place of residence or familiar surroundings."
+      ]
+    },
+    {
+      "chain": [
+        "DEEP",
+        "BLUE",
+        "EYE",
+        "OPEN",
+        "SEA",
+        "AIR",
+        "FORCE",
+        "BASE",
+        "LINE"
+      ],
+      "explanations": [
+        "DEEP BLUE: A term often used to describe a very dark shade of blue or the vastness of the ocean.",
+        "BLUE EYE: Refers to a person with blue-colored irises, often associated with specific genetic traits.",
+        "EYE OPEN: An expression meaning to become aware or alert to something.",
+        "OPEN SEA: Refers to the vast, unconfined areas of the ocean away from land.",
+        "SEA AIR: The fresh, salty air found near the ocean, often considered invigorating.",
+        "AIR FORCE: A branch of a nation's military responsible for aerial warfare and operations.",
+        "FORCE BASE: A military installation where forces are stationed and operations are conducted.",
+        "BASE LINE: A minimum standard or reference point used for comparison in various contexts."
+      ]
+    },
+    {
+      "chain": [
+        "RING",
+        "GEAR",
+        "TRAIN",
+        "TRIP",
+        "HOME",
+        "TOWN",
+        "HALL",
+        "DOOR",
+        "WIDE"
+      ],
+      "explanations": [
+        "RING GEAR: A circular gear with teeth on its inner circumference, used in mechanical systems to transmit motion.",
+        "GEAR TRAIN: A series of gears that work together to transfer torque and speed between rotating shafts.",
+        "TRAIN TRIP: A journey taken by train from one location to another.",
+        "TRIP HOME: A journey returning to one's place of residence.",
+        "HOME TOWN: The town where a person was born or grew up.",
+        "TOWN HALL: A building used for the administration of local government and community meetings.",
+        "HALL DOOR: A door that leads into a hallway or corridor within a building.",
+        "DOOR WIDE: A door that has a large opening, allowing for easy passage."
+      ]
+    },
+    {
+      "chain": [
+        "DEAD",
+        "TREE",
+        "TRUNK",
+        "FULL",
+        "SWING",
+        "LOW",
+        "TIDE",
+        "POOL",
+        "TABLE"
+      ],
+      "explanations": [
+        "DEAD TREE: A tree that is no longer alive, often characterized by a lack of leaves and bark.",
+        "TREE TRUNK: The main wooden stem of a tree that supports its branches and leaves.",
+        "TRUNK FULL: A situation where a vehicle's storage compartment is completely filled with items.",
+        "FULL SWING: A state of maximum activity or intensity, often used to describe a lively event.",
+        "SWING LOW: A phrase that can refer to a gentle downward motion or a request to lower something.",
+        "LOW TIDE: The period when the sea level is at its lowest point, exposing more of the shore.",
+        "TIDE POOL: A shallow pool of seawater that forms on rocky shorelines, often home to various marine life.",
+        "POOL TABLE: A flat table used for playing billiards or pool, typically covered with felt and marked with pockets."
+      ]
+    },
+    {
+      "chain": [
+        "SPRING",
+        "BREAK",
+        "FREE",
+        "SCHOOL",
+        "BOARD",
+        "FEET",
+        "LONG",
+        "RUN",
+        "TIME"
+      ],
+      "explanations": [
+        "SPRING BREAK: A vacation period in the spring, typically for students and schools.",
+        "BREAK FREE: To escape from confinement or control.",
+        "FREE SCHOOL: An educational institution that does not charge tuition fees.",
+        "SCHOOL BOARD: A group of elected officials responsible for overseeing a school district.",
+        "BOARD FEET: A unit of measure for lumber, representing a volume of wood.",
+        "FEET LONG: A measurement indicating the length of an object in feet.",
+        "LONG RUN: A prolonged period of time or distance, often used in contexts like running or planning.",
+        "RUN TIME: The duration of time a program or process takes to execute."
+      ]
+    },
+    {
+      "chain": [
+        "SILVER",
+        "MINE",
+        "EYE",
+        "OPEN",
+        "SEA",
+        "AIR",
+        "POWER",
+        "PLANT",
+        "COVER"
+      ],
+      "explanations": [
+        "SILVER MINE: A location where silver ore is extracted from the earth.",
+        "MINE EYE: An expression referring to one's ability to perceive or notice something.",
+        "EYE OPEN: To become aware or enlightened about something.",
+        "OPEN SEA: The vast, unbounded ocean away from land.",
+        "SEA AIR: The fresh, salty air found near the ocean.",
+        "AIR POWER: The military capability to use aircraft and missiles to project force.",
+        "POWER PLANT: A facility that generates electricity from various energy sources.",
+        "PLANT COVER: The layer of vegetation that protects and stabilizes soil in an area."
+      ]
+    },
+    {
+      "chain": [
+        "CROSS",
+        "STREET",
+        "BRIDGE",
+        "ROAD",
+        "MAP",
+        "SHEET",
+        "GLASS",
+        "DOOR",
+        "OPEN"
+      ],
+      "explanations": [
+        "CROSS STREET: A street that intersects another street at an angle.",
+        "STREET BRIDGE: A bridge that spans a street or roadway, allowing traffic to pass over it.",
+        "BRIDGE ROAD: A road that leads to or is associated with a bridge.",
+        "ROAD MAP: A visual representation of roads and highways used for navigation.",
+        "MAP SHEET: A single page or section of a larger map, often detailing a specific area.",
+        "SHEET GLASS: A flat piece of glass that is produced in large, thin panels.",
+        "GLASS DOOR: A door made primarily of glass, often used for entrances to buildings.",
+        "DOOR OPEN: A state in which a door is not closed, allowing entry or exit."
+      ]
+    },
+    {
+      "chain": [
+        "SHARP",
+        "KNIFE",
+        "CUT",
+        "SHORT",
+        "WAY",
+        "HOME",
+        "RULE",
+        "BILL",
+        "RATE"
+      ],
+      "explanations": [
+        "SHARP KNIFE: A knife with a finely honed edge that can easily slice through materials.",
+        "KNIFE CUT: A technique in cooking or crafting where a knife is used to slice or divide something.",
+        "CUT SHORT: To end something prematurely before its intended conclusion.",
+        "SHORT WAY: A quicker or more direct route to a destination.",
+        "WAY HOME: The path or route taken to return to one's residence.",
+        "HOME RULE: The authority of a local government to govern itself independently from a central authority.",
+        "RULE BILL: A legislative proposal that sets the terms for debate and amendment of a bill in a legislative body.",
+        "BILL RATE: The interest rate applied to a short-term loan or financial instrument, often associated with treasury bills."
+      ]
+    },
+    {
+      "chain": [
+        "LONG",
+        "BLACK",
+        "EYE",
+        "OPEN",
+        "SPACE",
+        "FLIGHT",
+        "PATH",
+        "LOSS",
+        "RATE"
+      ],
+      "explanations": [
+        "LONG BLACK: A type of coffee made by brewing espresso with hot water, resulting in a strong, black beverage.",
+        "BLACK EYE: A bruise around the eye caused by impact or injury, often resulting in discoloration.",
+        "EYE OPEN: A phrase indicating awareness or realization, often used to describe gaining new insights.",
+        "OPEN SPACE: An area that is free from buildings or obstacles, often used for recreation or natural environments.",
+        "SPACE FLIGHT: The act of traveling into or through outer space, typically involving spacecraft and astronauts.",
+        "FLIGHT PATH: The trajectory or route taken by an aircraft during its flight from one point to another.",
+        "PATH LOSS: The reduction in signal strength as it travels through a medium, often used in telecommunications.",
+        "LOSS RATE: The frequency or proportion at which losses occur in a given context, such as finance or data transmission."
+      ]
+    },
+    {
+      "chain": [
+        "SMOKE",
+        "SCREEN",
+        "DOOR",
+        "OPEN",
+        "WATER",
+        "POWER",
+        "PLANT",
+        "COVER",
+        "PLATE"
+      ],
+      "explanations": [
+        "SMOKE SCREEN: A method used to obscure or mislead others about one's true intentions or actions.",
+        "SCREEN DOOR: A door that is made of a mesh material designed to keep insects out while allowing air to flow.",
+        "DOOR OPEN: A phrase indicating that an entrance is not closed, allowing access or passage.",
+        "OPEN WATER: A body of water that is free of ice or obstructions, typically used for navigation or recreation.",
+        "WATER POWER: Energy generated from the movement or flow of water, often harnessed for electricity production.",
+        "POWER PLANT: A facility that generates electricity by converting various energy sources into electrical power.",
+        "PLANT COVER: Vegetation that grows over the ground, providing protection and habitat for wildlife.",
+        "COVER PLATE: A protective or decorative plate used to conceal or shield an underlying component or area."
+      ]
+    },
+    {
+      "chain": [
+        "SPIN",
+        "WAVE",
+        "FIELD",
+        "DAY",
+        "SCHOOL",
+        "BOARD",
+        "GAME",
+        "ROOM",
+        "DOOR"
+      ],
+      "explanations": [
+        "SPIN WAVE: A quantum mechanical phenomenon where the collective excitations of spins in a material propagate like a wave.",
+        "WAVE FIELD: A mathematical representation of wave phenomena over a spatial domain, often used in physics and engineering.",
+        "FIELD DAY: A day of outdoor activities and games, typically organized for students or community members.",
+        "DAY SCHOOL: An educational institution where students attend classes during the day and return home in the evening.",
+        "SCHOOL BOARD: A group of elected officials responsible for overseeing the policies and administration of a school district.",
+        "BOARD GAME: A tabletop game that involves players moving pieces around a board according to a set of rules.",
+        "GAME ROOM: A designated space where various games, such as video games or board games, are played for entertainment.",
+        "ROOM DOOR: A door that provides access to or from a specific room within a building."
+      ]
+    },
+    {
+      "chain": [
+        "BRAIN",
+        "POWER",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "WALL",
+        "STREET",
+        "DOOR",
+        "WIDE"
+      ],
+      "explanations": [
+        "BRAIN POWER: The mental capacity or intelligence of an individual.",
+        "POWER BASE: The source of influence or authority that supports a person or organization.",
+        "BASE PLATE: A flat component that serves as a foundation for other structures or equipment.",
+        "PLATE GLASS: A type of glass that is flat and smooth, commonly used in windows and mirrors.",
+        "GLASS WALL: A transparent barrier that allows visibility while separating spaces, often used in architecture.",
+        "WALL STREET: A street in New York City known as the financial district and the center of the U.S. stock market.",
+        "STREET DOOR: An entrance to a building that opens directly onto a street.",
+        "DOOR WIDE: A description indicating that a door has a broad opening, allowing easy passage."
+      ]
+    },
+    {
+      "chain": [
+        "SHORT",
+        "SPACE",
+        "FLIGHT",
+        "CREW",
+        "CUT",
+        "WOOD",
+        "STREET",
+        "BRIDGE",
+        "DECK"
+      ],
+      "explanations": [
+        "SHORT SPACE: A limited area or distance that is brief in measurement.",
+        "SPACE FLIGHT: The act of traveling beyond Earth's atmosphere into outer space.",
+        "FLIGHT CREW: A group of personnel responsible for operating and managing an aircraft during a flight.",
+        "CREW CUT: A very short hairstyle typically worn by men, where the hair is cut close to the scalp.",
+        "CUT WOOD: The process of chopping or slicing timber into smaller pieces.",
+        "WOOD STREET: A street that may be named after wood or is characterized by wooden structures.",
+        "STREET BRIDGE: A bridge that spans a street, allowing for the passage of vehicles or pedestrians over it.",
+        "BRIDGE DECK: The surface of a bridge where vehicles and pedestrians travel."
+      ]
+    },
+    {
+      "chain": [
+        "DOUBLE",
+        "ROOM",
+        "FLOOR",
+        "SPACE",
+        "FLIGHT",
+        "CREW",
+        "CUT",
+        "SHORT",
+        "NOTE"
+      ],
+      "explanations": [
+        "DOUBLE ROOM: A hotel room designed to accommodate two guests, typically featuring one large bed or two separate beds.",
+        "ROOM FLOOR: The level of a building that contains a specific room or set of rooms.",
+        "FLOOR SPACE: The area of a room or building that is available for use, often measured in square feet or meters.",
+        "SPACE FLIGHT: The act of traveling into or through outer space, typically involving a spacecraft.",
+        "FLIGHT CREW: The team of personnel responsible for operating an aircraft, including pilots and cabin staff.",
+        "CREW CUT: A short hairstyle typically worn by men, where the hair is cut very short on the sides and back.",
+        "CUT SHORT: To reduce the length or duration of something, often unexpectedly.",
+        "SHORT NOTE: A brief written message or reminder that conveys essential information."
+      ]
+    },
+    {
+      "chain": [
+        "GRAND",
+        "TRUNK",
+        "ROAD",
+        "MAP",
+        "SHEET",
+        "IRON",
+        "CROSS",
+        "STREET",
+        "BRIDGE"
+      ],
+      "explanations": [
+        "GRAND TRUNK: A historic transportation network in India and Bangladesh, originally established by the Mauryan Empire.",
+        "TRUNK ROAD: A major road that connects cities and towns, often serving as a primary route for long-distance travel.",
+        "ROAD MAP: A visual representation of roads and highways, used for navigation and planning travel routes.",
+        "MAP SHEET: A single page or section of a larger map, typically showing a specific geographic area in detail.",
+        "SHEET IRON: Thin, flat pieces of iron or steel used in construction and manufacturing, often for roofing or siding.",
+        "IRON CROSS: A military decoration awarded for bravery in Germany, originally established in the early 19th century.",
+        "CROSS STREET: A street that intersects another street, often used to describe locations or directions in urban areas.",
+        "STREET BRIDGE: A bridge that spans a street or roadway, allowing for the passage of vehicles or pedestrians over it."
+      ]
+    },
+    {
+      "chain": [
+        "GROUND",
+        "PLANE",
+        "TREE",
+        "TRUNK",
+        "FULL",
+        "SWING",
+        "ARM",
+        "FREE",
+        "FLOW"
+      ],
+      "explanations": [
+        "GROUND PLANE: The flat, horizontal surface on which objects are placed or built.",
+        "PLANE TREE: A type of deciduous tree known for its broad leaves and distinctive bark.",
+        "TREE TRUNK: The main wooden stem of a tree that supports its branches and leaves.",
+        "TRUNK FULL: A state where a storage compartment, like a car trunk, is completely filled.",
+        "FULL SWING: The peak of activity or intensity in a process or event.",
+        "SWING ARM: A mechanical arm that pivots to facilitate movement or operation.",
+        "ARM FREE: A condition where the arm is not restricted or bound, allowing for movement.",
+        "FREE FLOW: A state of movement or progression that is unrestricted and smooth."
+      ]
+    },
+    {
+      "chain": [
+        "FIELD",
+        "GUIDE",
+        "WIRE",
+        "LOOP",
+        "BACK",
+        "HOME",
+        "TOWN",
+        "HALL",
+        "DOOR"
+      ],
+      "explanations": [
+        "FIELD GUIDE: A book or manual that provides information about a specific subject, often used for identifying plants or animals in their natural environment.",
+        "GUIDE WIRE: A thin wire used to direct or support another object, often in construction or medical applications.",
+        "WIRE LOOP: A circular or oval shape formed by bending a wire, commonly used in jewelry making or electrical connections.",
+        "LOOP BACK: A process of returning to a previous point or state, often used in technology to refer to feedback mechanisms.",
+        "BACK HOME: The act of returning to one's place of residence or origin after being away.",
+        "HOME TOWN: The town or city where a person was born or grew up, often associated with personal identity.",
+        "TOWN HALL: A building or venue where local government meetings and community events are held.",
+        "HALL DOOR: A door that leads into a hallway or corridor, typically found in residential or public buildings."
+      ]
+    },
+    {
+      "chain": [
+        "GLASS",
+        "TUBE",
+        "FEET",
+        "BROAD",
+        "BACK",
+        "YARD",
+        "RUN",
+        "WILD",
+        "BIRD"
+      ],
+      "explanations": [
+        "GLASS TUBE: A hollow cylinder made of glass, often used for laboratory experiments or as a container.",
+        "TUBE FEET: Extensions found on certain marine animals, like sea stars, used for locomotion and feeding.",
+        "FEET BROAD: A measurement indicating the width of a person's feet, often used in shoe sizing.",
+        "BROAD BACK: A term describing a wide or expansive back, often associated with strength or physical build.",
+        "BACK YARD: An outdoor area located behind a house, typically used for recreation or gardening.",
+        "YARD RUN: A term referring to a space where animals, particularly pets, can run freely in a yard.",
+        "RUN WILD: To behave freely and without restraint, often used to describe animals or children in playful situations.",
+        "WILD BIRD: A bird that lives and breeds in its natural habitat, not domesticated or tamed."
+      ]
+    },
+    {
+      "chain": [
+        "STORM",
+        "KING",
+        "STREET",
+        "BRIDGE",
+        "CLUB",
+        "HEAD",
+        "HIGH",
+        "BLOOD",
+        "LOSS"
+      ],
+      "explanations": [
+        "STORM KING: A title often used to refer to a powerful figure or deity associated with storms and weather.",
+        "KING STREET: A street name that may signify a prominent or historically significant road in a city.",
+        "STREET BRIDGE: A bridge that spans a street, allowing for the passage of vehicles or pedestrians over the road.",
+        "BRIDGE CLUB: A social group or organization where members gather to play the card game bridge.",
+        "CLUB HEAD: The part of a golf club that strikes the ball, typically designed for specific types of shots.",
+        "HEAD HIGH: A term used in sports or physical activities to describe a position where the head is held upright or elevated.",
+        "HIGH BLOOD: A phrase that can refer to elevated blood pressure or a state of heightened emotions.",
+        "BLOOD LOSS: The reduction of blood volume in the body, which can occur due to injury, surgery, or medical conditions."
+      ]
+    },
+    {
+      "chain": [
+        "STAGE",
+        "DOOR",
+        "CLOSE",
+        "WATCH",
+        "GLASS",
+        "TUBE",
+        "WALL",
+        "CLOCK",
+        "BACK"
+      ],
+      "explanations": [
+        "STAGE DOOR: The entrance or exit used by performers in a theater.",
+        "DOOR CLOSE: A command or indication that a door should be shut.",
+        "CLOSE WATCH: To observe someone or something very carefully.",
+        "WATCH GLASS: The transparent cover that protects the face of a watch.",
+        "GLASS TUBE: A hollow cylinder made of glass, often used for scientific or laboratory purposes.",
+        "TUBE WALL: The outer surface of a tube, which can be made from various materials.",
+        "WALL CLOCK: A clock designed to be mounted on a wall for timekeeping.",
+        "CLOCK BACK: The rear part of a clock, often containing the mechanism and battery."
+      ]
+    },
+    {
+      "chain": [
+        "ROCK",
+        "WALL",
+        "CLOCK",
+        "BACK",
+        "ROOM",
+        "DOOR",
+        "OPEN",
+        "SEA",
+        "ICE"
+      ],
+      "explanations": [
+        "ROCK WALL: A vertical or steeply sloped structure made of rock, often used for climbing or as a barrier.",
+        "WALL CLOCK: A timekeeping device designed to be mounted on a wall for easy visibility.",
+        "CLOCK BACK: The action of setting a clock to an earlier time, often done during daylight saving time changes.",
+        "BACK ROOM: A private or hidden area in a building, typically used for confidential meetings or storage.",
+        "ROOM DOOR: A door that provides entry or exit to a specific room within a building.",
+        "DOOR OPEN: The state of a door being unlatched and ajar, allowing passage through it.",
+        "OPEN SEA: The vast, unobstructed expanse of ocean away from land or coastal areas.",
+        "SEA ICE: Frozen seawater that forms on the surface of the ocean, typically found in polar regions."
+      ]
+    },
+    {
+      "chain": [
+        "BROAD",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "WALL",
+        "STREET",
+        "DOOR",
+        "WIDE",
+        "FIELD"
+      ],
+      "explanations": [
+        "BROAD BASE: A wide foundation or support that provides stability or strength.",
+        "BASE PLATE: A flat piece of material used as a foundation for mounting equipment or structures.",
+        "PLATE GLASS: A type of glass that is produced in large, flat sheets and is commonly used in windows.",
+        "GLASS WALL: A wall made primarily of glass, often used in modern architecture to create transparency.",
+        "WALL STREET: A famous street in New York City known as the heart of the U.S. financial industry.",
+        "STREET DOOR: An entrance or exit that opens directly onto a street.",
+        "DOOR WIDE: A door that has a larger than standard width, allowing for easier access.",
+        "WIDE FIELD: An expansive area or scope of view, often used in contexts like photography or research."
+      ]
+    },
+    {
+      "chain": [
+        "WILD",
+        "PLANT",
+        "COVER",
+        "ART",
+        "WORK",
+        "FORCE",
+        "FIELD",
+        "DAY",
+        "SCHOOL"
+      ],
+      "explanations": [
+        "WILD PLANT: A plant that grows naturally in the wild without human cultivation.",
+        "PLANT COVER: The layer of vegetation that covers the ground in a specific area.",
+        "COVER ART: The artwork used on the front of a book, album, or magazine.",
+        "ART WORK: A creation produced by an artist, typically in the form of painting, sculpture, or other visual media.",
+        "WORK FORCE: The total number of people engaged in or available for work in a particular area or industry.",
+        "FORCE FIELD: A region in which a particular force, such as gravity or magnetism, is effective.",
+        "FIELD DAY: A day set aside for outdoor activities or competitions, often in an educational or recreational context.",
+        "DAY SCHOOL: An educational institution where students attend classes during the day and return home in the evening."
+      ]
+    },
+    {
+      "chain": [
+        "DEEP",
+        "BLUE",
+        "SMOKE",
+        "SCREEN",
+        "SPACE",
+        "FLIGHT",
+        "CREW",
+        "CUT",
+        "SHORT"
+      ],
+      "explanations": [
+        "DEEP BLUE: A term often used to describe a rich, dark shade of blue, or in a specific context, a famous chess computer developed by IBM.",
+        "BLUE SMOKE: A visual phenomenon that occurs when oil or fuel is burned, often indicating engine problems in vehicles.",
+        "SMOKE SCREEN: A tactic used to obscure or conceal something, often employed in military or strategic contexts.",
+        "SCREEN SPACE: The area available on a display for visual content, often considered in design and layout.",
+        "SPACE FLIGHT: The act of traveling beyond Earth's atmosphere, typically involving spacecraft and astronauts.",
+        "FLIGHT CREW: The team of personnel responsible for operating an aircraft, including pilots and cabin crew.",
+        "CREW CUT: A short hairstyle typically worn by men, characterized by very short sides and slightly longer hair on top.",
+        "CUT SHORT: To reduce the length of something, often referring to time or duration, resulting in an abrupt ending."
+      ]
+    },
+    {
+      "chain": [
+        "RING",
+        "GEAR",
+        "TRAIN",
+        "BACK",
+        "HOME",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "DOOR"
+      ],
+      "explanations": [
+        "RING GEAR: A circular gear with teeth on its inner or outer edge, used in mechanical systems to transmit torque.",
+        "GEAR TRAIN: A series of gears that work together to transfer motion and force between different parts of a machine.",
+        "TRAIN BACK: The act of returning to a previous location or state, often used in the context of reversing a train's direction.",
+        "BACK HOME: The act of returning to one's place of residence or origin after being away.",
+        "HOME BASE: A central location or starting point from which activities are coordinated or where someone feels secure.",
+        "BASE PLATE: A flat, often rectangular component that serves as a foundation for mounting or supporting other parts.",
+        "PLATE GLASS: A type of glass that is flat and smooth, commonly used in windows and mirrors.",
+        "GLASS DOOR: A door made primarily of glass, allowing visibility and light to pass through while providing access."
+      ]
+    },
+    {
+      "chain": [
+        "DEAD",
+        "SPACE",
+        "FLIGHT",
+        "HOME",
+        "TOWN",
+        "HALL",
+        "DOOR",
+        "CLOSE",
+        "RANGE"
+      ],
+      "explanations": [
+        "DEAD SPACE: An area devoid of activity or significance, often used in various contexts such as gaming or physics.",
+        "SPACE FLIGHT: The act of traveling beyond Earth's atmosphere, typically involving spacecraft.",
+        "FLIGHT HOME: The journey taken to return to one's place of residence, usually by airplane.",
+        "HOME TOWN: The town where a person was born or grew up, often associated with personal identity.",
+        "TOWN HALL: A building used for the administration of local government and public meetings in a town.",
+        "HALL DOOR: A door that leads into or out of a hallway or corridor within a building.",
+        "DOOR CLOSE: An action or command to shut a door, often used in various contexts including safety protocols.",
+        "CLOSE RANGE: A short distance between two objects or people, often relevant in contexts like shooting or combat."
+      ]
+    },
+    {
+      "chain": [
+        "SPRING",
+        "HILL",
+        "PRESS",
+        "CLUB",
+        "WORK",
+        "HARD",
+        "DAY",
+        "SCHOOL",
+        "BOARD"
+      ],
+      "explanations": [
+        "SPRING HILL: A geographical location or community often associated with natural springs or hilly terrain.",
+        "HILL PRESS: A type of printing press that operates on a hill-like mechanism or a reference to a specific press located on a hill.",
+        "PRESS CLUB: An organization or association of journalists and media professionals that provides networking and resources.",
+        "CLUB WORK: Activities or tasks performed by members of a club, often related to its goals or events.",
+        "WORK HARD: A motivational phrase encouraging diligent effort and perseverance in tasks or goals.",
+        "HARD DAY: A day characterized by difficulty, stress, or challenges, often leading to exhaustion.",
+        "DAY SCHOOL: An educational institution where students attend classes during the day and return home in the evening.",
+        "SCHOOL BOARD: A governing body responsible for overseeing the policies and administration of a school district."
+      ]
+    },
+    {
+      "chain": [
+        "SILVER",
+        "MINE",
+        "EYE",
+        "OPEN",
+        "MOUTH",
+        "WIDE",
+        "WORLD",
+        "BANK",
+        "RATE"
+      ],
+      "explanations": [
+        "SILVER MINE: A location where silver is extracted from the earth.",
+        "MINE EYE: A phrase referring to one's personal perspective or observation.",
+        "EYE OPEN: To become aware or enlightened about something.",
+        "OPEN MOUTH: To express surprise or shock, often leading to speechlessness.",
+        "MOUTH WIDE: To indicate astonishment or disbelief, often with an open mouth.",
+        "WIDE WORLD: Refers to the vastness of the earth and its diverse cultures and experiences.",
+        "WORLD BANK: An international financial institution that provides loans and grants to the governments of poorer countries.",
+        "BANK RATE: The interest rate set by a central bank for lending to commercial banks."
+      ]
+    },
+    {
+      "chain": [
+        "CROSS",
+        "STREET",
+        "DOOR",
+        "WIDE",
+        "OPEN",
+        "WATER",
+        "FLOW",
+        "SHEET",
+        "LEAD"
+      ],
+      "explanations": [
+        "CROSS STREET: A street that intersects another street.",
+        "STREET DOOR: An entrance or exit located on a street side of a building.",
+        "DOOR WIDE: A door that is open to its full width.",
+        "WIDE OPEN: Completely unobstructed or unsealed, allowing full access.",
+        "OPEN WATER: A body of water that is not enclosed or obstructed, typically referring to oceans or large lakes.",
+        "WATER FLOW: The movement of water in a particular direction, often in rivers or streams.",
+        "FLOW SHEET: A diagram that represents the sequence of steps in a process or system.",
+        "SHEET LEAD: A flat piece of lead that is used for various applications, including radiation shielding."
+      ]
+    },
+    {
+      "chain": [
+        "SHARP",
+        "DROP",
+        "DEAD",
+        "FISH",
+        "OIL",
+        "FIELD",
+        "GUIDE",
+        "WIRE",
+        "ROPE"
+      ],
+      "explanations": [
+        "SHARP DROP: A sudden and significant decrease in value or quantity.",
+        "DROP DEAD: A colloquial expression used to indicate a strong desire for someone to go away or to express disdain.",
+        "DEAD FISH: A term used to describe fish that are no longer alive, often used metaphorically to refer to something lifeless or unresponsive.",
+        "FISH OIL: An oil derived from the tissues of oily fish, often used as a dietary supplement for its omega-3 fatty acids.",
+        "OIL FIELD: An area of land where oil is extracted from underground reservoirs.",
+        "FIELD GUIDE: A book or resource designed to help identify and learn about various species of plants, animals, or other natural phenomena.",
+        "GUIDE WIRE: A wire used to support or direct the position of another object, often in construction or rigging.",
+        "WIRE ROPE: A type of rope made from multiple strands of wire twisted together, commonly used for lifting and rigging applications."
+      ]
+    },
+    {
+      "chain": [
+        "LONG",
+        "RUN",
+        "WILD",
+        "PLANT",
+        "COVER",
+        "GLASS",
+        "TUBE",
+        "WALL",
+        "SPACE"
+      ],
+      "explanations": [
+        "LONG RUN: A term referring to a prolonged period during which certain trends or outcomes are expected to manifest.",
+        "RUN WILD: To behave freely and without restraint, often leading to chaotic or uncontrolled actions.",
+        "WILD PLANT: A plant that grows naturally in the environment without human cultivation or intervention.",
+        "PLANT COVER: The layer of vegetation that covers the ground in a particular area, contributing to soil protection and ecosystem health.",
+        "COVER GLASS: A thin piece of glass used to protect or enclose an object, often in scientific or display contexts.",
+        "GLASS TUBE: A cylindrical container made of glass, commonly used in laboratories for holding liquids or gases.",
+        "TUBE WALL: The outer surface of a tube, which can be made from various materials and serves to contain its contents.",
+        "WALL SPACE: The area available on a wall for decoration, storage, or display purposes."
+      ]
+    },
+    {
+      "chain": [
+        "SMOKE",
+        "HOLE",
+        "CUT",
+        "OPEN",
+        "GROUND",
+        "FLOOR",
+        "SPACE",
+        "FLIGHT",
+        "BACK"
+      ],
+      "explanations": [
+        "SMOKE HOLE: A vent or opening in a structure, typically a roof, designed to allow smoke to escape.",
+        "HOLE CUT: The act of creating an opening in a material or surface, often for a specific purpose.",
+        "CUT OPEN: To slice or sever something to reveal its interior or contents.",
+        "OPEN GROUND: Land that is unobstructed and free from buildings or other structures.",
+        "GROUND FLOOR: The lowest level of a building, typically at ground level, often used for entry.",
+        "FLOOR SPACE: The area available on a particular level of a building for use or occupancy.",
+        "SPACE FLIGHT: The act of traveling beyond Earth's atmosphere using a spacecraft.",
+        "FLIGHT BACK: The return journey taken by an aircraft to its original departure point."
+      ]
+    },
+    {
+      "chain": [
+        "SPIN",
+        "WAVE",
+        "FIELD",
+        "TRIP",
+        "BACK",
+        "COVER",
+        "PLATE",
+        "GLASS",
+        "DOOR"
+      ],
+      "explanations": [
+        "SPIN WAVE: A quantum mechanical phenomenon where the spin configuration in a material propagates as a wave.",
+        "WAVE FIELD: A mathematical representation of waves in a given area, often used in physics and engineering.",
+        "FIELD TRIP: An educational outing where students visit a location to enhance their learning experience outside the classroom.",
+        "TRIP BACK: A return journey to a previous location or time, often implying nostalgia or reflection.",
+        "BACK COVER: The rear exterior part of a book or magazine, typically containing information about the publication.",
+        "COVER PLATE: A protective or decorative plate that conceals or shields the underlying components of an object.",
+        "PLATE GLASS: A type of flat glass that is produced in large sheets and used for windows and mirrors.",
+        "GLASS DOOR: A door made primarily of glass, often used for aesthetic purposes or to create a sense of openness."
+      ]
+    },
+    {
+      "chain": [
+        "BRAIN",
+        "POWER",
+        "PLANT",
+        "COVER",
+        "PLATE",
+        "GLASS",
+        "WALL",
+        "CLOCK",
+        "EDGE"
+      ],
+      "explanations": [
+        "BRAIN POWER: The mental capacity or intelligence of an individual or group.",
+        "POWER PLANT: A facility that generates electricity from various energy sources.",
+        "PLANT COVER: The layer of vegetation that covers the ground in a specific area.",
+        "COVER PLATE: A flat piece used to conceal or protect an opening or surface.",
+        "PLATE GLASS: A type of glass that is flat and used for windows and mirrors.",
+        "GLASS WALL: A wall made primarily of glass, often used in modern architecture.",
+        "WALL CLOCK: A timekeeping device designed to be hung on a wall.",
+        "CLOCK EDGE: The outer boundary or rim of a clock, often decorative."
+      ]
+    },
+    {
+      "chain": [
+        "SHORT",
+        "SPACE",
+        "FLIGHT",
+        "CREW",
+        "CUT",
+        "WOOD",
+        "SMOKE",
+        "SCREEN",
+        "SHOT"
+      ],
+      "explanations": [
+        "SHORT SPACE: A limited or brief area or duration.",
+        "SPACE FLIGHT: The act of traveling beyond Earth's atmosphere in a spacecraft.",
+        "FLIGHT CREW: The group of personnel responsible for operating an aircraft during a flight.",
+        "CREW CUT: A very short hairstyle typically worn by men, often associated with military style.",
+        "CUT WOOD: The process of chopping or sawing timber into smaller pieces.",
+        "WOOD SMOKE: The smoke produced from burning wood, often used for heating or cooking.",
+        "SMOKE SCREEN: A method used to conceal or obscure something, often by creating a cloud of smoke.",
+        "SCREEN SHOT: An image captured from a computer or mobile device display, showing the content on the screen."
+      ]
+    },
+    {
+      "chain": [
+        "DOUBLE",
+        "ROOM",
+        "AIR",
+        "SPACE",
+        "FLIGHT",
+        "CREW",
+        "CUT",
+        "STONE",
+        "BRIDGE"
+      ],
+      "explanations": [
+        "DOUBLE ROOM: A hotel accommodation designed to accommodate two guests, typically featuring two beds.",
+        "ROOM AIR: The air present within an enclosed space or room.",
+        "AIR SPACE: The physical space above a country or region that is controlled by its government for aviation purposes.",
+        "SPACE FLIGHT: The act of traveling into or through outer space using a spacecraft.",
+        "FLIGHT CREW: The group of personnel responsible for operating an aircraft, including pilots and cabin crew.",
+        "CREW CUT: A short hairstyle typically worn by men, where the hair is cut very short on the sides and back.",
+        "CUT STONE: Stone that has been shaped and finished for use in construction or decorative purposes.",
+        "STONE BRIDGE: A bridge constructed primarily from stone, often used for crossing rivers or valleys."
+      ]
+    },
+    {
+      "chain": [
+        "GRAND",
+        "CROSS",
+        "STREET",
+        "DOOR",
+        "CLOSE",
+        "WATCH",
+        "CHAIN",
+        "DRIVE",
+        "HOME"
+      ],
+      "explanations": [
+        "GRAND CROSS: A significant astrological aspect formed when four planets are positioned in a cross formation.",
+        "CROSS STREET: A street that intersects another street, typically at a right angle.",
+        "STREET DOOR: An entrance to a building that faces the street.",
+        "DOOR CLOSE: A command or action to shut a door.",
+        "CLOSE WATCH: A careful and attentive observation of someone or something.",
+        "WATCH CHAIN: A chain used to secure a pocket watch to a person's clothing.",
+        "CHAIN DRIVE: A mechanism that uses a chain to transmit power from one part of a machine to another.",
+        "DRIVE HOME: To return to one's residence by vehicle."
+      ]
+    },
+    {
+      "chain": [
+        "GROUND",
+        "COVER",
+        "PLATE",
+        "GLASS",
+        "WALL",
+        "STREET",
+        "BRIDGE",
+        "CLUB",
+        "WORK"
+      ],
+      "explanations": [
+        "GROUND COVER: A type of vegetation that grows close to the ground and helps prevent soil erosion.",
+        "COVER PLATE: A flat piece of material used to protect or conceal an underlying surface or component.",
+        "PLATE GLASS: A type of glass that is made in large, flat sheets and is often used in windows.",
+        "GLASS WALL: A wall made primarily of glass panels, providing transparency and natural light in a space.",
+        "WALL STREET: A street in New York City known as the center of the financial industry and stock trading.",
+        "STREET BRIDGE: A bridge that spans a street, allowing vehicles or pedestrians to cross over it.",
+        "BRIDGE CLUB: A social group or organization where members gather to play the card game bridge.",
+        "CLUB WORK: Activities or tasks performed by members of a club, often related to its specific interests or goals."
+      ]
+    },
+    {
+      "chain": [
+        "FIELD",
+        "GUIDE",
+        "WIRE",
+        "BRUSH",
+        "BACK",
+        "HOME",
+        "RUN",
+        "WILD",
+        "LAND"
+      ],
+      "explanations": [
+        "FIELD GUIDE: A book or manual that provides information about a specific subject, often used for identifying plants or animals.",
+        "GUIDE WIRE: A thin wire used to support or direct the position of something, often in construction or navigation.",
+        "WIRE BRUSH: A tool with bristles made of wire, used for cleaning or polishing surfaces.",
+        "BRUSH BACK: A technique in sports, particularly baseball, where a pitcher throws a pitch close to a batter to intimidate them.",
+        "BACK HOME: Referring to returning to one's place of origin or residence.",
+        "HOME RUN: A term in baseball for a hit that allows the batter to circle all the bases and score a run without stopping.",
+        "RUN WILD: To act freely and without restraint, often leading to chaotic or uncontrolled behavior.",
+        "WILD LAND: An area of land that is in its natural state, often untouched by human development."
+      ]
+    },
+    {
+      "chain": [
+        "GLASS",
+        "WALL",
+        "SPACE",
+        "FLIGHT",
+        "HOME",
+        "TOWN",
+        "HALL",
+        "DOOR",
+        "CLOSE"
+      ],
+      "explanations": [
+        "GLASS WALL: A transparent barrier that allows visibility while providing separation or protection.",
+        "WALL SPACE: The area on or adjacent to a wall that can be used for decoration or storage.",
+        "SPACE FLIGHT: The act of traveling beyond Earth's atmosphere in a spacecraft.",
+        "FLIGHT HOME: A journey taken by air to return to one's place of residence.",
+        "HOME TOWN: The town where a person was born or grew up, often associated with personal identity.",
+        "TOWN HALL: A building used for the administration of local government and community meetings.",
+        "HALL DOOR: A door that leads into or out of a hallway, often serving as an entrance to rooms.",
+        "DOOR CLOSE: An action or command to shut a door, typically to secure an area or maintain privacy."
+      ]
+    },
+    {
+      "chain": [
+        "STORM",
+        "CLOUD",
+        "TOP",
+        "PLATE",
+        "GLASS",
+        "WALL",
+        "STREET",
+        "DOOR",
+        "OPEN"
+      ],
+      "explanations": [
+        "STORM CLOUD: A dark, dense cloud that indicates the likelihood of a storm or heavy precipitation.",
+        "CLOUD TOP: The uppermost part of a cloud, often where condensation occurs and can be seen from the ground.",
+        "TOP PLATE: The uppermost layer or component of a structure, often providing support or a finishing surface.",
+        "PLATE GLASS: A flat glass sheet that is manufactured through a specific process, known for its clarity and smoothness.",
+        "GLASS WALL: A wall made primarily of glass, often used in modern architecture to create open, airy spaces.",
+        "WALL STREET: A famous street in New York City known as the financial center of the United States, housing the New York Stock Exchange.",
+        "STREET DOOR: An entrance door that opens directly onto a street, often used for businesses or residences.",
+        "DOOR OPEN: A state in which a door is not closed, allowing access to the space behind it."
+      ]
+    }
+  ],
+  "hard": [
+    {
+      "chain": [
+        "THIN",
+        "BODY",
+        "WALL",
+        "STREET",
+        "DOOR",
+        "OPEN",
+        "SPACE",
+        "FLIGHT",
+        "TIME"
+      ],
+      "explanations": [
+        "THIN BODY: A body that has little fat or muscle, often appearing slender.",
+        "BODY WALL: The outer structure of an organism that encloses its internal organs.",
+        "WALL STREET: A famous street in New York City known as the center of the financial industry.",
+        "STREET DOOR: An entrance or exit located on a street, typically leading into a building.",
+        "DOOR OPEN: A state in which a door is not closed, allowing access through it.",
+        "OPEN SPACE: An area that is free of buildings or obstacles, often used for recreation or nature.",
+        "SPACE FLIGHT: The act of traveling into or through outer space using a spacecraft.",
+        "FLIGHT TIME: The duration of time that an aircraft is in the air during a journey."
+      ]
+    },
+    {
+      "chain": [
+        "GREY",
+        "LIGHT",
+        "GREEN",
+        "TREE",
+        "COVER",
+        "PLATE",
+        "GLASS",
+        "WALL",
+        "STREET"
+      ],
+      "explanations": [
+        "GREY LIGHT: A dim or muted illumination that lacks brightness and vibrancy.",
+        "LIGHT GREEN: A pale or soft shade of green that is often associated with freshness and tranquility.",
+        "GREEN TREE: A tree that has healthy foliage and is typically associated with nature and vitality.",
+        "TREE COVER: The layer of leaves and branches formed by trees in a forest or wooded area, providing habitat and shade.",
+        "COVER PLATE: A flat piece used to conceal or protect an opening or surface, often in construction or machinery.",
+        "PLATE GLASS: A type of glass that is flat and smooth, commonly used in windows and mirrors.",
+        "GLASS WALL: A wall made primarily of glass panels, often used in modern architecture to create transparency and openness.",
+        "WALL STREET: A famous street in New York City known as the center of the financial district and stock market activities."
+      ]
+    },
+    {
+      "chain": [
+        "NIGHT",
+        "SCHOOL",
+        "BOARD",
+        "FEET",
+        "BROAD",
+        "FLAT",
+        "PLANE",
+        "TREE",
+        "TRUNK"
+      ],
+      "explanations": [
+        "NIGHT SCHOOL: An educational program that takes place in the evening, often for adults seeking to further their education.",
+        "SCHOOL BOARD: A group of elected officials responsible for overseeing the policies and administration of a school district.",
+        "BOARD FEET: A unit of measure used in the lumber industry to quantify the volume of wood, equivalent to a board that is 1 foot long, 1 foot wide, and 1 inch thick.",
+        "FEET BROAD: A measurement indicating the width of an object, typically referring to its span across the ground.",
+        "BROAD FLAT: Describing a surface that is wide and level, lacking significant elevation changes.",
+        "FLAT PLANE: A two-dimensional surface that is completely level and extends infinitely in all directions.",
+        "PLANE TREE: A type of tree known for its broad leaves and distinctive bark, often found in urban areas.",
+        "TREE TRUNK: The main wooden stem of a tree that supports its branches and leaves."
+      ]
+    },
+    {
+      "chain": [
+        "BONE",
+        "JOINT",
+        "BOARD",
+        "FEET",
+        "BROAD",
+        "STREET",
+        "BRIDGE",
+        "DECK",
+        "HAND"
+      ],
+      "explanations": [
+        "BONE JOINT: A connection point between two bones in the skeletal system.",
+        "JOINT BOARD: A panel or committee that oversees or manages joint activities or interests.",
+        "BOARD FEET: A unit of measurement for lumber, representing a volume of one foot long by one foot wide by one inch thick.",
+        "FEET BROAD: A measurement indicating the width of an object or area, typically in feet.",
+        "BROAD STREET: A wide street, often used as a name for specific streets in various cities.",
+        "STREET BRIDGE: A bridge that spans a street, allowing for the passage of vehicles or pedestrians over it.",
+        "BRIDGE DECK: The surface of a bridge where vehicles and pedestrians travel.",
+        "DECK HAND: A crew member responsible for various tasks on the deck of a ship."
+      ]
+    },
+    {
+      "chain": [
+        "DARK",
+        "NIGHT",
+        "CLUB",
+        "HEAD",
+        "BACK",
+        "HOME",
+        "TOWN",
+        "HALL",
+        "TABLE"
+      ],
+      "explanations": [
+        "DARK NIGHT: A night characterized by little or no light, often associated with mystery or danger.",
+        "NIGHT CLUB: A venue that operates late into the night, offering entertainment, music, and dancing.",
+        "CLUB HEAD: The part of a golf club that strikes the ball, typically designed for specific types of shots.",
+        "HEAD BACK: To return to a previous location or point, often used in the context of travel.",
+        "BACK HOME: The place where one resides or feels a sense of belonging, often after being away.",
+        "HOME TOWN: The town or city where a person was born or grew up, often associated with personal identity.",
+        "TOWN HALL: A building used for the administration of local government and community meetings.",
+        "HALL TABLE: A table located in an entryway or hallway, often used for decorative purposes or to hold items."
+      ]
+    },
+    {
+      "chain": [
+        "STIFF",
+        "WHITE",
+        "LEAD",
+        "PIPE",
+        "DREAM",
+        "WORK",
+        "FORCE",
+        "BASE",
+        "PLATE"
+      ],
+      "explanations": [
+        "STIFF WHITE: A term often used to describe a rigid or unyielding white object or substance.",
+        "WHITE LEAD: A pigment made from lead oxide, historically used in paints and cosmetics.",
+        "LEAD PIPE: A pipe made of lead, commonly used in plumbing but now known to pose health risks.",
+        "PIPE DREAM: An unrealistic or fanciful hope or plan that is unlikely to be realized.",
+        "DREAM WORK: The process of analyzing and interpreting dreams to uncover subconscious thoughts.",
+        "WORK FORCE: The total number of individuals engaged in or available for work in a particular area.",
+        "FORCE BASE: A military installation where armed forces are stationed and operations are conducted.",
+        "BASE PLATE: A flat plate used as a foundation or support for machinery or equipment."
+      ]
+    },
+    {
+      "chain": [
+        "RAW",
+        "POWER",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "DOOR",
+        "WIDE",
+        "OPEN",
+        "HOUSE"
+      ],
+      "explanations": [
+        "RAW POWER: The unrefined and direct strength or energy of a system or entity.",
+        "POWER BASE: The foundational support or resources that enable an individual or group to exert influence.",
+        "BASE PLATE: A flat, horizontal surface that serves as a foundation for mounting equipment or structures.",
+        "PLATE GLASS: A type of glass that is flat and smooth, typically used in windows and mirrors.",
+        "GLASS DOOR: A door made primarily of glass, often used for aesthetic purposes or to create a sense of openness.",
+        "DOOR WIDE: A phrase indicating that a door is open to its maximum width, allowing easy passage.",
+        "WIDE OPEN: A term describing something that is fully accessible or unobstructed.",
+        "OPEN HOUSE: An event where a property is made available for public viewing, typically for potential buyers."
+      ]
+    },
+    {
+      "chain": [
+        "DRY",
+        "MOUTH",
+        "OPEN",
+        "AIR",
+        "FLOW",
+        "SHEET",
+        "IRON",
+        "PLATE",
+        "GLASS"
+      ],
+      "explanations": [
+        "DRY MOUTH: A condition where the salivary glands do not produce enough saliva, leading to a feeling of thirst and discomfort.",
+        "MOUTH OPEN: A state in which the lips are parted, often indicating surprise, shock, or readiness to speak.",
+        "OPEN AIR: An outdoor environment that is free from enclosure or cover, allowing for natural ventilation and exposure to the elements.",
+        "AIR FLOW: The movement of air from one place to another, often measured in terms of speed and direction.",
+        "FLOW SHEET: A diagram or chart that outlines the steps or processes in a system or operation, often used in engineering and manufacturing.",
+        "SHEET IRON: A flat piece of iron that has been rolled or pressed into thin sheets, commonly used in construction and manufacturing.",
+        "IRON PLATE: A thick, flat piece of iron used for structural support or as a protective covering in various applications.",
+        "PLATE GLASS: A flat glass product that is manufactured by casting or rolling, typically used in windows and mirrors."
+      ]
+    },
+    {
+      "chain": [
+        "COLD",
+        "BLOOD",
+        "FLOW",
+        "BACK",
+        "ROOM",
+        "FULL",
+        "SWING",
+        "LOW",
+        "RATE"
+      ],
+      "explanations": [
+        "COLD BLOOD: Refers to a lack of emotion or compassion, often associated with ruthless behavior.",
+        "BLOOD FLOW: The circulation of blood through the body's vessels, essential for delivering oxygen and nutrients.",
+        "FLOW BACK: The process of returning or reversing the movement of something to its original position or state.",
+        "BACK ROOM: A private or secretive space where discussions or decisions are made away from public view.",
+        "ROOM FULL: A space that is completely occupied or filled with people or objects.",
+        "FULL SWING: A state of maximum activity or intensity, often used to describe an event or process that is in progress.",
+        "SWING LOW: A phrase that can refer to a downward movement or a call to lower one's expectations or position.",
+        "LOW RATE: A term indicating a reduced or minimal level of something, often used in financial contexts to describe interest rates or prices."
+      ]
+    },
+    {
+      "chain": [
+        "FLAT",
+        "ROCK",
+        "WALL",
+        "SPACE",
+        "FLIGHT",
+        "BACK",
+        "COVER",
+        "PLATE",
+        "GLASS"
+      ],
+      "explanations": [
+        "FLAT ROCK: A smooth, level stone often used for sitting or as a surface in outdoor settings.",
+        "ROCK WALL: A vertical structure made of stones, typically used for landscaping or as a barrier.",
+        "WALL SPACE: The area available on a wall for decoration, storage, or display purposes.",
+        "SPACE FLIGHT: The act of traveling into or through outer space using a spacecraft.",
+        "FLIGHT BACK: The return journey taken by an aircraft or a person after a trip.",
+        "BACK COVER: The rear side of a book or publication, often containing information about the content.",
+        "COVER PLATE: A flat piece used to cover an opening or protect a component in machinery or electronics.",
+        "PLATE GLASS: A type of glass that is flat and smooth, commonly used in windows and mirrors."
+      ]
+    },
+    {
+      "chain": [
+        "DOUBLE",
+        "TRACK",
+        "TEAM",
+        "PLAY",
+        "BALL",
+        "CLUB",
+        "HEAD",
+        "HIGH",
+        "RATE"
+      ],
+      "explanations": [
+        "DOUBLE TRACK: A method of railway construction where two parallel tracks are laid to allow trains to travel in both directions simultaneously.",
+        "TRACK TEAM: A group of athletes who compete in track and field events, representing a school or organization.",
+        "TEAM PLAY: A style of play in sports or games that emphasizes cooperation and collaboration among team members.",
+        "PLAY BALL: A phrase used to signal the start of a game or to indicate readiness to begin an activity.",
+        "BALL CLUB: An organization or team that is dedicated to playing and promoting a specific sport, typically baseball or soccer.",
+        "CLUB HEAD: The part of a golf club that strikes the ball, typically consisting of a face and a body.",
+        "HEAD HIGH: A term used in sports, particularly in basketball, to describe maintaining confidence and composure, often while facing adversity.",
+        "HIGH RATE: A term that refers to a significant or elevated level of occurrence, performance, or interest in a particular context."
+      ]
+    },
+    {
+      "chain": [
+        "IRON",
+        "DOOR",
+        "CLOSE",
+        "WATCH",
+        "CHAIN",
+        "LINK",
+        "BACK",
+        "HOME",
+        "PAGE"
+      ],
+      "explanations": [
+        "IRON DOOR: A heavy, durable entrance typically made of iron, often used for security.",
+        "DOOR CLOSE: The action of shutting a door, which can also refer to a mechanism that automatically closes it.",
+        "CLOSE WATCH: The act of observing someone or something attentively and carefully.",
+        "WATCH CHAIN: A chain used to secure a pocket watch, often worn attached to clothing.",
+        "CHAIN LINK: A single loop or segment in a series of interconnected links that form a chain.",
+        "LINK BACK: To create a reference or connection to a previous point or source.",
+        "BACK HOME: The return to one's place of residence or origin.",
+        "HOME PAGE: The main or introductory page of a website, typically serving as a starting point for navigation."
+      ]
+    },
+    {
+      "chain": [
+        "THIN",
+        "WIRE",
+        "SCREEN",
+        "DOOR",
+        "WIDE",
+        "OPEN",
+        "WATER",
+        "POWER",
+        "PLANT"
+      ],
+      "explanations": [
+        "THIN WIRE: A slender piece of metal used for electrical connections or crafting.",
+        "WIRE SCREEN: A mesh made of metal wire used for filtering or protecting against insects.",
+        "SCREEN DOOR: A door fitted with a screen to allow airflow while keeping insects out.",
+        "DOOR WIDE: A door that has a large opening, allowing easy passage.",
+        "WIDE OPEN: An expression describing something that is completely unblocked or unobstructed.",
+        "OPEN WATER: A term for large bodies of water that are not enclosed or obstructed.",
+        "WATER POWER: Energy generated from the movement of water, often used in hydroelectric plants.",
+        "POWER PLANT: A facility that generates electricity from various energy sources."
+      ]
+    },
+    {
+      "chain": [
+        "GREY",
+        "CLOTH",
+        "BAG",
+        "FULL",
+        "SWING",
+        "OPEN",
+        "SPACE",
+        "FLIGHT",
+        "PATH"
+      ],
+      "explanations": [
+        "GREY CLOTH: A type of fabric that is unbleached and has a greyish color.",
+        "CLOTH BAG: A reusable bag made from fabric, often used for carrying items.",
+        "BAG FULL: A bag that is completely filled with items or contents.",
+        "FULL SWING: A state of maximum activity or intensity in a particular situation.",
+        "SWING OPEN: To open something, such as a door, by moving it back and forth.",
+        "OPEN SPACE: An area that is free of buildings or obstacles, often used for recreation.",
+        "SPACE FLIGHT: The act of traveling beyond Earth's atmosphere in a spacecraft.",
+        "FLIGHT PATH: The route taken by an aircraft or spacecraft during its journey."
+      ]
+    },
+    {
+      "chain": [
+        "NIGHT",
+        "SCHOOL",
+        "BOARD",
+        "GAME",
+        "FISH",
+        "OIL",
+        "FIELD",
+        "GUIDE",
+        "WIRE"
+      ],
+      "explanations": [
+        "NIGHT SCHOOL: A type of educational program held in the evening for students who may be working during the day.",
+        "SCHOOL BOARD: A group of elected officials responsible for overseeing the policies and administration of a school district.",
+        "BOARD GAME: A tabletop game that involves pieces moved or placed on a pre-marked surface according to a set of rules.",
+        "GAME FISH: Fish species that are sought after for sport fishing due to their size, strength, or challenge in catching.",
+        "FISH OIL: A dietary supplement derived from the tissues of oily fish, rich in omega-3 fatty acids beneficial for health.",
+        "OIL FIELD: An area with a network of oil wells and associated infrastructure for extracting crude oil from the ground.",
+        "FIELD GUIDE: A book or resource designed to help identify and understand various species of plants, animals, or other natural phenomena.",
+        "GUIDE WIRE: A wire used to direct or support the movement of another object, often in construction or navigation contexts."
+      ]
+    },
+    {
+      "chain": [
+        "BONE",
+        "JOINT",
+        "SPACE",
+        "FLIGHT",
+        "DECK",
+        "CREW",
+        "CUT",
+        "SHORT",
+        "TIME"
+      ],
+      "explanations": [
+        "BONE JOINT: A connection point between two bones in the skeletal system that allows for movement.",
+        "JOINT SPACE: The area between the surfaces of two bones that form a joint, often filled with synovial fluid.",
+        "SPACE FLIGHT: The act of traveling beyond Earth's atmosphere, typically involving spacecraft.",
+        "FLIGHT DECK: The area on an aircraft carrier or in an airplane where the pilots control the aircraft.",
+        "DECK CREW: The team of personnel responsible for the maintenance and operation of an aircraft's exterior and systems.",
+        "CREW CUT: A very short hairstyle typically worn by men, where the hair is cut close to the scalp.",
+        "CUT SHORT: To terminate something earlier than planned or expected.",
+        "SHORT TIME: A brief duration or period of time."
+      ]
+    },
+    {
+      "chain": [
+        "DARK",
+        "CLOUD",
+        "COVER",
+        "ART",
+        "WORLD",
+        "BANK",
+        "BOARD",
+        "GAME",
+        "FISH"
+      ],
+      "explanations": [
+        "DARK CLOUD: A metaphor for a looming problem or negative situation.",
+        "CLOUD COVER: The extent to which clouds obscure the sky, affecting sunlight and weather.",
+        "COVER ART: The artwork used on the front of a book, album, or other media to attract attention.",
+        "ART WORLD: The community and industry surrounding the creation, exhibition, and sale of art.",
+        "WORLD BANK: An international financial institution that provides loans and grants to the governments of poorer countries for development projects.",
+        "BANK BOARD: A group of individuals responsible for overseeing the management and operations of a bank.",
+        "BOARD GAME: A tabletop game that involves counters or pieces moved on a pre-marked surface according to a set of rules.",
+        "GAME FISH: Fish species that are sought after for recreational fishing due to their size, strength, or fighting ability."
+      ]
+    },
+    {
+      "chain": [
+        "STIFF",
+        "BRUSH",
+        "STROKE",
+        "WORK",
+        "HARD",
+        "CORE",
+        "TEAM",
+        "PLAY",
+        "BALL"
+      ],
+      "explanations": [
+        "STIFF BRUSH: A stiff brush is a cleaning tool with firm bristles used for scrubbing surfaces.",
+        "BRUSH STROKE: A brush stroke refers to a single application of a brush on a surface, often used in painting.",
+        "STROKE WORK: Stroke work involves the technique and style of applying strokes in art or writing.",
+        "WORK HARD: To work hard means to put in significant effort and dedication towards tasks or goals.",
+        "HARD CORE: Hard core describes something that is extreme or intense, often used in reference to committed individuals or activities.",
+        "CORE TEAM: A core team is a group of essential members who are central to a project's success.",
+        "TEAM PLAY: Team play refers to the cooperative effort of individuals working together towards a common goal.",
+        "PLAY BALL: To play ball means to participate in a game or to cooperate with others in a situation."
+      ]
+    },
+    {
+      "chain": [
+        "RAW",
+        "WATER",
+        "FLOW",
+        "SHEET",
+        "IRON",
+        "BRIDGE",
+        "DECK",
+        "SPACE",
+        "FLIGHT"
+      ],
+      "explanations": [
+        "RAW WATER: Untreated water that has not undergone any purification or filtration processes.",
+        "WATER FLOW: The movement of water, typically measured in terms of volume per unit of time.",
+        "FLOW SHEET: A diagram that represents the sequence of operations or processes in a system.",
+        "SHEET IRON: Thin, flat pieces of iron that are often used in construction and manufacturing.",
+        "IRON BRIDGE: A bridge constructed primarily from iron, known for its strength and durability.",
+        "BRIDGE DECK: The surface of a bridge where vehicles and pedestrians travel.",
+        "DECK SPACE: The area available on a deck, often referring to outdoor or upper levels of a structure.",
+        "SPACE FLIGHT: The act of traveling into or through outer space, typically involving spacecraft."
+      ]
+    },
+    {
+      "chain": [
+        "DRY",
+        "GROUND",
+        "GLASS",
+        "WALL",
+        "CLOCK",
+        "BACK",
+        "COVER",
+        "ART",
+        "SCHOOL"
+      ],
+      "explanations": [
+        "DRY GROUND: Land that lacks moisture, often suitable for walking or building.",
+        "GROUND GLASS: Glass that has been treated to create a frosted or opaque surface.",
+        "GLASS WALL: A transparent barrier made of glass, often used in modern architecture.",
+        "WALL CLOCK: A timekeeping device designed to be mounted on a wall.",
+        "CLOCK BACK: The rear part of a clock, often housing the mechanism and battery.",
+        "BACK COVER: The rear protective panel of a book or magazine.",
+        "COVER ART: The visual design or illustration featured on the front of a publication.",
+        "ART SCHOOL: An educational institution focused on teaching various forms of visual arts."
+      ]
+    },
+    {
+      "chain": [
+        "COLD",
+        "WIND",
+        "POWER",
+        "PLANT",
+        "COVER",
+        "GLASS",
+        "DOOR",
+        "CLOSE",
+        "RANGE"
+      ],
+      "explanations": [
+        "COLD WIND: A chilly breeze that can create discomfort or signify a change in weather.",
+        "WIND POWER: Energy generated from the movement of air, typically harnessed by turbines.",
+        "POWER PLANT: A facility that produces electricity by converting various energy sources.",
+        "PLANT COVER: Vegetation that protects soil from erosion and provides habitat for wildlife.",
+        "COVER GLASS: A protective layer of glass that shields an object or surface from damage.",
+        "GLASS DOOR: A door made primarily of glass, often used for aesthetic appeal and visibility.",
+        "DOOR CLOSE: The action of shutting a door to secure an entrance or exit.",
+        "CLOSE RANGE: A short distance between two objects, often relevant in shooting or targeting."
+      ]
+    },
+    {
+      "chain": [
+        "FLAT",
+        "PLANE",
+        "TREE",
+        "COVER",
+        "GLASS",
+        "TUBE",
+        "FEET",
+        "WIDE",
+        "GAP"
+      ],
+      "explanations": [
+        "FLAT PLANE: A flat plane is a two-dimensional surface that extends infinitely in all directions without any curvature.",
+        "PLANE TREE: A plane tree is a type of deciduous tree known for its broad leaves and distinctive bark, often found in urban areas.",
+        "TREE COVER: Tree cover refers to the area of land that is covered by trees, which plays a crucial role in ecosystems and climate regulation.",
+        "COVER GLASS: Cover glass is a thin piece of glass used to protect or enclose an object, often used in microscopy or display cases.",
+        "GLASS TUBE: A glass tube is a hollow cylindrical piece of glass used for various purposes, including laboratory experiments and packaging.",
+        "TUBE FEET: Tube feet are small, flexible appendages found in echinoderms like starfish, used for locomotion and feeding.",
+        "FEET WIDE: Feet wide describes a measurement of width, indicating how many feet across an object or space is.",
+        "WIDE GAP: A wide gap refers to a significant distance or opening between two objects or points, often implying a lack of connection."
+      ]
+    },
+    {
+      "chain": [
+        "DOUBLE",
+        "TRACK",
+        "TEAM",
+        "PLAY",
+        "BALL",
+        "GAME",
+        "ROOM",
+        "FLOOR",
+        "SPACE"
+      ],
+      "explanations": [
+        "DOUBLE TRACK: A railway system that uses two parallel tracks for trains to travel in both directions.",
+        "TRACK TEAM: A group of athletes who compete in track and field events.",
+        "TEAM PLAY: A style of play in sports or games that emphasizes cooperation and collaboration among team members.",
+        "PLAY BALL: A phrase used to signal the start of a game or to indicate readiness to begin.",
+        "BALL GAME: A general term for any game that involves a ball, often referring to baseball.",
+        "GAME ROOM: A designated space where games, such as video games or board games, are played.",
+        "ROOM FLOOR: The surface of a room where people walk, often referring to the material or design.",
+        "FLOOR SPACE: The area available on the floor of a room or building for use or occupancy."
+      ]
+    },
+    {
+      "chain": [
+        "IRON",
+        "DOOR",
+        "OPEN",
+        "SEA",
+        "WATER",
+        "POWER",
+        "PLANT",
+        "COVER",
+        "GLASS"
+      ],
+      "explanations": [
+        "IRON DOOR: A heavy door made primarily of iron, often used for security or durability.",
+        "DOOR OPEN: The state of a door being unlatched or ajar, allowing entry or passage.",
+        "OPEN SEA: A vast area of ocean that is not enclosed by land or islands.",
+        "SEA WATER: Water that is found in oceans and seas, characterized by its salt content.",
+        "WATER POWER: Energy derived from the movement or flow of water, often used for generating electricity.",
+        "POWER PLANT: A facility that generates electricity by converting various energy sources into electrical power.",
+        "PLANT COVER: Vegetation that grows over an area, providing protection and habitat for wildlife.",
+        "COVER GLASS: A thin layer of glass used to protect or shield an object, often found in frames or displays."
+      ]
+    },
+    {
+      "chain": [
+        "THIN",
+        "RED",
+        "HOT",
+        "DAY",
+        "SCHOOL",
+        "BOARD",
+        "GAME",
+        "ROOM",
+        "DOOR"
+      ],
+      "explanations": [
+        "THIN RED: A narrow line or marking that is colored red.",
+        "RED HOT: Extremely hot in temperature or very passionate and intense.",
+        "HOT DAY: A day characterized by high temperatures.",
+        "DAY SCHOOL: An educational institution where students attend classes during the day.",
+        "SCHOOL BOARD: A group of individuals responsible for overseeing the management of a school district.",
+        "BOARD GAME: A tabletop game that involves a board and pieces or cards.",
+        "GAME ROOM: A designated space for playing games, often equipped with various gaming equipment.",
+        "ROOM DOOR: A door that provides access to a specific room."
+      ]
+    },
+    {
+      "chain": [
+        "GREY",
+        "WATER",
+        "POWER",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "TUBE",
+        "FEET",
+        "LONG"
+      ],
+      "explanations": [
+        "GREY WATER: Grey water refers to wastewater generated from domestic activities like washing dishes and laundry, which can be reused for irrigation or flushing toilets.",
+        "WATER POWER: Water power is the energy derived from the movement of water, commonly harnessed for generating electricity through hydroelectric plants.",
+        "POWER BASE: A power base is a foundation of support or resources that enables an individual or organization to exert influence or authority.",
+        "BASE PLATE: A base plate is a flat piece of material that provides stability and support for structures or equipment, often used in construction and machinery.",
+        "PLATE GLASS: Plate glass is a type of flat glass that is produced by a process of casting or rolling, known for its smooth surface and clarity.",
+        "GLASS TUBE: A glass tube is a hollow cylindrical piece of glass used in various applications, including laboratory experiments and lighting.",
+        "TUBE FEET: Tube feet are small, flexible appendages found in echinoderms like starfish, used for locomotion and feeding.",
+        "FEET LONG: Feet long is a measurement indicating the length of an object in feet, often used to describe the size of various items."
+      ]
+    },
+    {
+      "chain": [
+        "NIGHT",
+        "CLUB",
+        "WORK",
+        "HARD",
+        "DAY",
+        "SCHOOL",
+        "BOARD",
+        "GAME",
+        "SHOW"
+      ],
+      "explanations": [
+        "NIGHT CLUB: A venue that operates late into the night, typically featuring music, dancing, and entertainment.",
+        "CLUB WORK: Activities or tasks performed by members of a club to support its objectives or events.",
+        "WORK HARD: To put in significant effort and dedication towards accomplishing a task or goal.",
+        "HARD DAY: A day that is particularly challenging or exhausting due to various stresses or demands.",
+        "DAY SCHOOL: An educational institution where students attend classes during the day and return home afterward.",
+        "SCHOOL BOARD: A group of elected officials responsible for overseeing and making decisions about a school district's policies and operations.",
+        "BOARD GAME: A tabletop game that involves players moving pieces around a board according to a set of rules.",
+        "GAME SHOW: A television program where contestants participate in games or quizzes to win prizes."
+      ]
+    },
+    {
+      "chain": [
+        "BONE",
+        "JOINT",
+        "WORK",
+        "HARD",
+        "DRIVE",
+        "BACK",
+        "YARD",
+        "FULL",
+        "POWER"
+      ],
+      "explanations": [
+        "BONE JOINT: A connection point between two bones in the skeletal system.",
+        "JOINT WORK: Collaborative effort between individuals or groups to achieve a common goal.",
+        "WORK HARD: To put in significant effort and dedication towards tasks or responsibilities.",
+        "HARD DRIVE: A data storage device used in computers to store and retrieve digital information.",
+        "DRIVE BACK: To return to a previous location, often by vehicle.",
+        "BACK YARD: An outdoor area located at the rear of a house, typically used for recreation or gardening.",
+        "YARD FULL: A situation where a yard or outdoor space is completely occupied or filled.",
+        "FULL POWER: The maximum capacity or strength of a system or device."
+      ]
+    },
+    {
+      "chain": [
+        "DARK",
+        "GREY",
+        "IRON",
+        "CROSS",
+        "STREET",
+        "DOOR",
+        "OPEN",
+        "WATER",
+        "FLOW"
+      ],
+      "explanations": [
+        "DARK GREY: A color that is a shade of grey with low brightness and high saturation.",
+        "GREY IRON: A type of cast iron that is characterized by its graphite content, giving it a grey appearance.",
+        "IRON CROSS: A military decoration originally awarded in Prussia, symbolizing bravery and valor.",
+        "CROSS STREET: A street that intersects another street, typically at a right angle.",
+        "STREET DOOR: An entrance door that opens directly onto a street from a building.",
+        "DOOR OPEN: A state in which a door is not closed, allowing passage through it.",
+        "OPEN WATER: A body of water that is not obstructed by land or ice, typically referring to oceans or large lakes.",
+        "WATER FLOW: The movement of water, often used to describe the rate and direction of water in rivers or streams."
+      ]
+    },
+    {
+      "chain": [
+        "STIFF",
+        "CLAY",
+        "STREET",
+        "BRIDGE",
+        "ROAD",
+        "BACK",
+        "COVER",
+        "GLASS",
+        "PLATE"
+      ],
+      "explanations": [
+        "STIFF CLAY: A type of clay that is hard and difficult to mold or shape due to its low moisture content.",
+        "CLAY STREET: A street that may be characterized by its clay surface or proximity to clay deposits.",
+        "STREET BRIDGE: A bridge that spans a street, allowing for the passage of vehicles or pedestrians over it.",
+        "BRIDGE ROAD: A road that leads to or is located near a bridge.",
+        "ROAD BACK: A route that leads back to a previous location or point of origin.",
+        "BACK COVER: The rear outer part of a book or publication that often contains information about the content.",
+        "COVER GLASS: A thin piece of glass used to protect or cover an object, often in scientific or display contexts.",
+        "GLASS PLATE: A flat piece of glass used for various purposes, including photography or as a surface for painting."
+      ]
+    },
+    {
+      "chain": [
+        "RAW",
+        "FISH",
+        "OIL",
+        "PUMP",
+        "BLOOD",
+        "FLOW",
+        "BACK",
+        "COVER",
+        "PLATE"
+      ],
+      "explanations": [
+        "RAW FISH: Uncooked fish that is often served in dishes like sushi or sashimi.",
+        "FISH OIL: A dietary supplement derived from the tissues of oily fish, rich in omega-3 fatty acids.",
+        "OIL PUMP: A mechanical device used to circulate oil in an engine or machinery.",
+        "PUMP BLOOD: The action of the heart or a mechanical device that moves blood through the circulatory system.",
+        "BLOOD FLOW: The movement of blood through the circulatory system to supply organs and tissues with oxygen and nutrients.",
+        "FLOW BACK: The return movement of a fluid to its source or original position.",
+        "BACK COVER: The rear protective cover of a book or magazine that often contains information about the publication.",
+        "COVER PLATE: A flat piece used to seal or protect an opening or surface, often in machinery or electrical devices."
+      ]
+    },
+    {
+      "chain": [
+        "DRY",
+        "GRASS",
+        "SEED",
+        "OIL",
+        "PUMP",
+        "BLOOD",
+        "FLOW",
+        "BACK",
+        "ROOM"
+      ],
+      "explanations": [
+        "DRY GRASS: Grass that has lost moisture, often becoming brown and brittle.",
+        "GRASS SEED: Seeds used to grow grass, commonly for lawns or pastures.",
+        "SEED OIL: Oil extracted from seeds, used in cooking or as a food ingredient.",
+        "OIL PUMP: A mechanical device that moves oil from one location to another, often used in engines.",
+        "PUMP BLOOD: The action of the heart or a medical device that circulates blood throughout the body.",
+        "BLOOD FLOW: The movement of blood through the circulatory system to supply organs and tissues.",
+        "FLOW BACK: The return movement of a fluid, often referring to the reversal of a previously directed flow.",
+        "BACK ROOM: A private or hidden area where confidential discussions or transactions occur."
+      ]
+    },
+    {
+      "chain": [
+        "COLD",
+        "WATER",
+        "POWER",
+        "PLANT",
+        "COVER",
+        "ART",
+        "SCHOOL",
+        "BOARD",
+        "FEET"
+      ],
+      "explanations": [
+        "COLD WATER: Water that is at a low temperature, often used for drinking or cooling.",
+        "WATER POWER: Energy generated from the movement of water, typically used for electricity production.",
+        "POWER PLANT: A facility that generates electricity by converting various energy sources into electrical power.",
+        "PLANT COVER: Vegetation that grows on the surface of the ground, providing protection and habitat for wildlife.",
+        "COVER ART: The visual artwork featured on the cover of a book, album, or magazine, designed to attract attention.",
+        "ART SCHOOL: An educational institution focused on teaching various forms of visual and performing arts.",
+        "SCHOOL BOARD: A governing body responsible for overseeing the management and policies of a school district.",
+        "BOARD FEET: A unit of measurement for lumber, representing a volume of one foot long by one foot wide by one inch thick."
+      ]
+    },
+    {
+      "chain": [
+        "FLAT",
+        "FEET",
+        "THICK",
+        "WOOD",
+        "SMOKE",
+        "SCREEN",
+        "DOOR",
+        "WIDE",
+        "FIELD"
+      ],
+      "explanations": [
+        "FLAT FEET: A condition where the arches of the feet are flattened, causing the entire sole to make contact with the ground.",
+        "FEET THICK: A measurement indicating that something has a thickness equivalent to several feet.",
+        "THICK WOOD: Wood that has a substantial density or width, often used for durability in construction.",
+        "WOOD SMOKE: The smoke produced by burning wood, often associated with campfires or fireplaces.",
+        "SMOKE SCREEN: A tactic used to obscure or conceal something from view, often used in military or strategic contexts.",
+        "SCREEN DOOR: A door made of a mesh material that allows air to flow while keeping insects out.",
+        "DOOR WIDE: A door that has a greater than standard width, allowing for easier access or movement.",
+        "WIDE FIELD: An expansive area of land or space, often used for agriculture, sports, or open activities."
+      ]
+    },
+    {
+      "chain": [
+        "DOUBLE",
+        "ROOM",
+        "DOOR",
+        "WIDE",
+        "FIELD",
+        "GUIDE",
+        "WIRE",
+        "FRAME",
+        "RATE"
+      ],
+      "explanations": [
+        "DOUBLE ROOM: A hotel room designed to accommodate two people, typically featuring two beds.",
+        "ROOM DOOR: The entrance or exit to a specific room, usually equipped with a lock.",
+        "DOOR WIDE: A door that has a larger-than-normal opening, allowing for easier access.",
+        "WIDE FIELD: An expansive area or space, often used in contexts like photography or agriculture.",
+        "FIELD GUIDE: A book or resource that helps identify and understand various species or objects in nature.",
+        "GUIDE WIRE: A wire used to provide support or direction, often in construction or navigation contexts.",
+        "WIRE FRAME: A skeletal structure made of wires, commonly used in modeling or design to outline shapes.",
+        "FRAME RATE: The frequency at which consecutive images or frames are displayed in a video or animation."
+      ]
+    },
+    {
+      "chain": [
+        "IRON",
+        "CROSS",
+        "STREET",
+        "BRIDGE",
+        "CLUB",
+        "HEAD",
+        "BACK",
+        "HOME",
+        "RUN"
+      ],
+      "explanations": [
+        "IRON CROSS: A military decoration awarded for bravery, typically associated with German forces.",
+        "CROSS STREET: A street that intersects another street, often used for navigation.",
+        "STREET BRIDGE: A bridge that spans a street, allowing vehicles or pedestrians to cross over.",
+        "BRIDGE CLUB: A social group or organization where members play the card game bridge.",
+        "CLUB HEAD: The part of a golf club that strikes the ball, typically made of metal or composite material.",
+        "HEAD BACK: To return to a previous location or point of origin.",
+        "BACK HOME: The act of returning to one's residence or place of origin.",
+        "HOME RUN: A score in baseball achieved when a batter hits the ball out of the playing field in fair territory."
+      ]
+    },
+    {
+      "chain": [
+        "THIN",
+        "AIR",
+        "FLOW",
+        "SHEET",
+        "GLASS",
+        "WALL",
+        "STREET",
+        "BRIDGE",
+        "ROAD"
+      ],
+      "explanations": [
+        "THIN AIR: A phrase used to describe something that disappears suddenly and without a trace.",
+        "AIR FLOW: The movement of air, often measured in terms of volume or speed, in a given space.",
+        "FLOW SHEET: A diagram or chart that outlines the steps and processes in a system or operation.",
+        "SHEET GLASS: Flat glass that is produced in large sheets and used in windows and other applications.",
+        "GLASS WALL: A wall made primarily of glass, often used in modern architecture to create transparency.",
+        "WALL STREET: A street in New York City known as the financial center of the United States.",
+        "STREET BRIDGE: A bridge that spans a street, allowing for the passage of vehicles or pedestrians over it.",
+        "BRIDGE ROAD: A road that includes a bridge as part of its route, facilitating travel across an obstacle."
+      ]
+    },
+    {
+      "chain": [
+        "GREY",
+        "STONE",
+        "FLOOR",
+        "SPACE",
+        "FLIGHT",
+        "DECK",
+        "CREW",
+        "CUT",
+        "SHORT"
+      ],
+      "explanations": [
+        "GREY STONE: A type of stone that is characterized by its grey color, often used in construction and landscaping.",
+        "STONE FLOOR: A flooring material made from natural stone, known for its durability and aesthetic appeal.",
+        "FLOOR SPACE: The area available on a floor for use, often measured in square feet or meters.",
+        "SPACE FLIGHT: The act of traveling into or through outer space, typically involving spacecraft.",
+        "FLIGHT DECK: The area on an aircraft carrier or the upper deck of an airplane where pilots control the aircraft.",
+        "DECK CREW: A team of personnel responsible for maintaining and operating the deck of a ship or aircraft.",
+        "CREW CUT: A short hairstyle typically worn by men, where the hair is cut very close to the scalp.",
+        "CUT SHORT: To reduce the length or duration of something, often abruptly or unexpectedly."
+      ]
+    },
+    {
+      "chain": [
+        "NIGHT",
+        "CLUB",
+        "WORK",
+        "FORCE",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "DOOR",
+        "CLOSE"
+      ],
+      "explanations": [
+        "NIGHT CLUB: A venue that operates late at night, typically featuring music, dancing, and entertainment.",
+        "CLUB WORK: Activities or tasks performed by members of a club, often related to its goals or events.",
+        "WORK FORCE: The total number of individuals engaged in or available for work in a specific area or industry.",
+        "FORCE BASE: A military installation where armed forces are stationed and operations are conducted.",
+        "BASE PLATE: A flat piece of material used as a foundation or support for structures or machinery.",
+        "PLATE GLASS: A type of glass that is flat and smooth, commonly used in windows and mirrors.",
+        "GLASS DOOR: A door made primarily of glass, often used for aesthetic purposes in buildings.",
+        "DOOR CLOSE: A mechanism or action that causes a door to shut or seal off an entrance."
+      ]
+    },
+    {
+      "chain": [
+        "BONE",
+        "JOINT",
+        "WORK",
+        "HARD",
+        "ROCK",
+        "ART",
+        "SCHOOL",
+        "BOARD",
+        "SHIP"
+      ],
+      "explanations": [
+        "BONE JOINT: A connection point between two bones in the skeletal system.",
+        "JOINT WORK: Collaborative effort between individuals or groups to achieve a common goal.",
+        "WORK HARD: To put in significant effort and dedication towards completing tasks or achieving success.",
+        "HARD ROCK: A genre of music characterized by heavy use of electric guitars and strong rhythms.",
+        "ROCK ART: Ancient or prehistoric artwork created on rock surfaces, often depicting animals or human figures.",
+        "ART SCHOOL: An educational institution focused on teaching various forms of visual arts and design.",
+        "SCHOOL BOARD: A group of elected officials responsible for overseeing and making decisions about a school district.",
+        "BOARD SHIP: To get on or enter a vessel, such as a ship or boat, for travel."
+      ]
+    },
+    {
+      "chain": [
+        "DARK",
+        "RED",
+        "CLOTH",
+        "CAP",
+        "ROCK",
+        "ART",
+        "WORK",
+        "FORCE",
+        "BASE"
+      ],
+      "explanations": [
+        "DARK RED: A deep shade of the color red, often associated with intensity or richness.",
+        "RED CLOTH: Fabric that is dyed or woven in a shade of red, commonly used in clothing or decoration.",
+        "CLOTH CAP: A type of soft cap made from fabric, often worn for warmth or fashion.",
+        "CAP ROCK: A hard layer of rock that protects softer underlying layers from erosion.",
+        "ROCK ART: Artistic representations created on rock surfaces, often by prehistoric cultures.",
+        "ART WORK: A creation or piece of art, such as a painting, sculpture, or other artistic endeavor.",
+        "WORK FORCE: The total number of individuals engaged in or available for work in a specific area or industry.",
+        "FORCE BASE: A military installation that serves as a center for operations and support for armed forces."
+      ]
+    },
+    {
+      "chain": [
+        "STIFF",
+        "WIND",
+        "POWER",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "TUBE",
+        "FEET",
+        "HIGH"
+      ],
+      "explanations": [
+        "STIFF WIND: A strong and forceful breeze that can make it difficult to walk or maintain balance.",
+        "WIND POWER: Energy generated from the movement of air, typically harnessed by wind turbines.",
+        "POWER BASE: The foundational support or resources that provide strength and influence to an individual or organization.",
+        "BASE PLATE: A flat, usually horizontal surface that serves as a foundation for mounting equipment or structures.",
+        "PLATE GLASS: A type of glass that is flat and smooth, commonly used in windows and mirrors.",
+        "GLASS TUBE: A hollow cylindrical object made of glass, often used in laboratory settings or for decorative purposes.",
+        "TUBE FEET: The elongated, flexible appendages of certain marine animals, such as sea stars, used for locomotion and feeding.",
+        "FEET HIGH: A measurement indicating the vertical distance from the ground to a specified height, expressed in feet."
+      ]
+    },
+    {
+      "chain": [
+        "RAW",
+        "FISH",
+        "OIL",
+        "PUMP",
+        "DRIVE",
+        "HOME",
+        "RUN",
+        "WILD",
+        "BIRD"
+      ],
+      "explanations": [
+        "RAW FISH: Uncooked fish that is often used in dishes like sushi or sashimi.",
+        "FISH OIL: A dietary supplement derived from the tissues of oily fish, rich in omega-3 fatty acids.",
+        "OIL PUMP: A mechanical device that moves oil through a system, often used in engines.",
+        "PUMP DRIVE: A mechanism that powers a pump, converting energy into fluid movement.",
+        "DRIVE HOME: The act of traveling to one's residence by vehicle.",
+        "HOME RUN: A baseball term referring to a hit that allows the batter to round all bases and score.",
+        "RUN WILD: To behave freely and without restraint, often in a chaotic manner.",
+        "WILD BIRD: A bird that lives and breeds in its natural environment, not domesticated."
+      ]
+    },
+    {
+      "chain": [
+        "DRY",
+        "ICE",
+        "WATER",
+        "POWER",
+        "BASE",
+        "PLATE",
+        "GLASS",
+        "TUBE",
+        "FEET"
+      ],
+      "explanations": [
+        "DRY ICE: Solid carbon dioxide that sublimates at room temperature, used for refrigeration and special effects.",
+        "ICE WATER: Water that is mixed with ice, typically served as a cold beverage.",
+        "WATER POWER: Energy generated from the movement of water, often harnessed for electricity production.",
+        "POWER BASE: The foundational support or resources that provide strength or influence in a particular context.",
+        "BASE PLATE: A flat, usually horizontal surface that serves as a foundation for mounting equipment or structures.",
+        "PLATE GLASS: A type of glass that is flat and smooth, commonly used in windows and mirrors.",
+        "GLASS TUBE: A hollow cylindrical object made of glass, often used in laboratory settings for experiments.",
+        "TUBE FEET: The elongated, flexible appendages of certain marine animals, such as sea stars, used for locomotion and feeding."
+      ]
+    },
+    {
+      "chain": [
+        "COLD",
+        "FEET",
+        "WIDE",
+        "MOUTH",
+        "FULL",
+        "POWER",
+        "BASE",
+        "PLATE",
+        "GLASS"
+      ],
+      "explanations": [
+        "COLD FEET: A feeling of nervousness or hesitation about a decision or commitment.",
+        "FEET WIDE: A measurement indicating the width of an object in feet.",
+        "WIDE MOUTH: A term describing a container or opening that has a large diameter.",
+        "MOUTH FULL: A state of having food or another substance occupying the mouth.",
+        "FULL POWER: The maximum level of energy or capacity that something can produce or operate at.",
+        "POWER BASE: The foundation of support or influence that enables someone to exert control or authority.",
+        "BASE PLATE: A flat, usually horizontal surface that serves as a foundation for an object or structure.",
+        "PLATE GLASS: A type of glass that is flat and smooth, commonly used in windows and mirrors."
+      ]
+    },
+    {
+      "chain": [
+        "FLAT",
+        "SHEET",
+        "GLASS",
+        "DOOR",
+        "WIDE",
+        "WEB",
+        "SPACE",
+        "FLIGHT",
+        "BACK"
+      ],
+      "explanations": [
+        "FLAT SHEET: A flat sheet refers to a large, thin piece of material, often used in construction or manufacturing.",
+        "SHEET GLASS: Sheet glass is a flat piece of glass that is typically used in windows and doors.",
+        "GLASS DOOR: A glass door is a door made primarily of glass, allowing visibility and light to pass through.",
+        "DOOR WIDE: A door wide indicates a door that has a greater than standard width, allowing easier access.",
+        "WIDE WEB: A wide web refers to a broad network, often used to describe the expansive nature of the internet.",
+        "WEB SPACE: Web space is the storage area on a server where website files and data are kept.",
+        "SPACE FLIGHT: Space flight is the act of traveling into or through outer space using a spacecraft.",
+        "FLIGHT BACK: Flight back refers to the return journey of an aircraft to its original departure point."
+      ]
+    },
+    {
+      "chain": [
+        "DOUBLE",
+        "STAR",
+        "TEAM",
+        "PLAY",
+        "BALL",
+        "JOINT",
+        "WORK",
+        "HARD",
+        "LINE"
+      ],
+      "explanations": [
+        "DOUBLE STAR: A celestial object that appears as two distinct stars due to their close proximity or binary nature.",
+        "STAR TEAM: A group of highly skilled individuals brought together to achieve a specific goal or project.",
+        "TEAM PLAY: Collaborative behavior among members of a group to achieve a common objective.",
+        "PLAY BALL: An expression used to indicate readiness to begin a game or activity, often used in a broader context to mean starting a task.",
+        "BALL JOINT: A type of joint in the body that allows for a wide range of motion, resembling a ball fitting into a socket.",
+        "JOINT WORK: Collaborative efforts between individuals or groups to accomplish a task or project.",
+        "WORK HARD: The act of putting in significant effort and diligence to achieve a goal or complete a task.",
+        "HARD LINE: A strict or uncompromising stance on an issue, often associated with tough policies or decisions."
+      ]
+    },
+    {
+      "chain": [
+        "IRON",
+        "WIRE",
+        "SCREEN",
+        "SPACE",
+        "FLIGHT",
+        "BACK",
+        "COVER",
+        "ART",
+        "SCHOOL"
+      ],
+      "explanations": [
+        "IRON WIRE: A strong, thin metal wire made from iron, often used in construction and crafting.",
+        "WIRE SCREEN: A mesh made of wire used to filter or protect against insects and debris.",
+        "SCREEN SPACE: The area available on a display for visual content, such as images or videos.",
+        "SPACE FLIGHT: The act of traveling into or through outer space using a spacecraft.",
+        "FLIGHT BACK: The return journey taken by an aircraft or spacecraft to its original location.",
+        "BACK COVER: The rear side of a book or magazine, often featuring information about the content.",
+        "COVER ART: The visual design or illustration on the front of a book, album, or magazine that represents its theme.",
+        "ART SCHOOL: An educational institution focused on teaching various forms of visual and performing arts."
+      ]
+    },
+    {
+      "chain": [
+        "THIN",
+        "GOLD",
+        "WATCH",
+        "CHAIN",
+        "LINK",
+        "BACK",
+        "COVER",
+        "ART",
+        "WORK"
+      ],
+      "explanations": [
+        "THIN GOLD: A type of gold that has a low thickness, often used in jewelry and decorative items.",
+        "GOLD WATCH: A timepiece made primarily of gold, symbolizing luxury and status.",
+        "WATCH CHAIN: A chain used to secure a pocket watch to a person's clothing or belt.",
+        "CHAIN LINK: A single loop or segment of a chain, often used in construction or fencing.",
+        "LINK BACK: A reference or connection to a previous point or source in a discussion or document.",
+        "BACK COVER: The rear exterior part of a book or magazine that often contains information about the content.",
+        "COVER ART: The visual artwork displayed on the front of a book, album, or magazine, designed to attract attention.",
+        "ART WORK: A creation or piece of art, such as a painting, sculpture, or installation, produced by an artist."
+      ]
+    },
+    {
+      "chain": [
+        "GREY",
+        "IRON",
+        "PIPE",
+        "FLOW",
+        "FIELD",
+        "TRIP",
+        "HOME",
+        "RULE",
+        "BILL"
+      ],
+      "explanations": [
+        "GREY IRON: A type of cast iron that contains graphite, giving it a grey appearance and making it suitable for various applications.",
+        "IRON PIPE: A strong, durable pipe made of iron, commonly used in plumbing and construction.",
+        "PIPE FLOW: The movement of fluid through a pipe, which can be analyzed for efficiency and pressure changes.",
+        "FLOW FIELD: A representation of the velocity and direction of fluid flow in a given area, often visualized with arrows.",
+        "FIELD TRIP: An educational outing where students visit a location to gain practical experience related to their studies.",
+        "TRIP HOME: The journey taken to return to one's place of residence, often after being away for a period.",
+        "HOME RULE: The authority of a local government to govern itself independently from state or federal control.",
+        "RULE BILL: A legislative proposal that outlines the procedures and regulations for how a bill will be debated and voted on."
+      ]
+    }
+  ]
+}
