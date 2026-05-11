@@ -1,0 +1,282 @@
+/* ============================================================
+   WORD LINK DESIGN SYSTEM — Design Tokens
+   Extracted from the live WordLink interface (React + Tailwind).
+   Follows the Atelier Design System token structure.
+   ============================================================ */
+
+/* ---------- Typeface ----------
+   Outfit (Google Fonts) — 300 / 400 / 600 / 700 / 900
+   Used at every scale, from 8px micro-labels to 72px display.
+   900 (black) is the dominant heading weight. */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap");
+
+:root {
+
+  /* ====== FONT FAMILIES ====== */
+  --font-display: "Outfit", system-ui, sans-serif;
+  --font-body:    "Outfit", system-ui, sans-serif;
+
+  /* ====== BRAND — Indigo ======
+     The entire UI pivots on a single indigo ramp.
+     --brand-600 (#4f46e5) is the signature action colour: buttons, logo
+     background, progress bar, revealed-letter boxes. */
+  --brand-50:  #eef2ff;
+  --brand-100: #e0e7ff;   /* border-brand-subtle, flashcard front border */
+  --brand-200: #c7d2fe;   /* focus ring, letter-box filled border */
+  --brand-300: #a5b4fc;   /* secondary icons, link icon */
+  --brand-400: #818cf8;   /* cursor pulse, muted brand accent */
+  --brand-500: #6366f1;   /* progress bar fill */
+  --brand-600: #4f46e5;   /* PRIMARY — buttons, revealed letters, logo bg */
+  --brand-700: #4338ca;   /* revealed letter text, flashcard back border */
+  --brand-900: #312e81;   /* display headings */
+
+  /* ====== NEUTRAL — Slate ======
+     Warm-neutral ramp. slate-50 is the global page background. */
+  --slate-50:  #f8fafc;
+  --slate-100: #f1f5f9;   /* card borders, dividers */
+  --slate-200: #e2e8f0;   /* empty letter-box border */
+  --slate-300: #cbd5e1;   /* disabled / muted text */
+  --slate-400: #94a3b8;   /* secondary labels, history metadata */
+  --slate-500: #64748b;   /* body text, first-word display */
+  --slate-600: #475569;   /* medium-emphasis text */
+  --slate-700: #334155;   /* user-typed letter text */
+  --slate-800: #1e293b;   /* nav heading, history title */
+  --slate-900: #0f172a;   /* primary body text */
+
+  /* ====== WHITE & BLACK ALPHAS ====== */
+  --white-80:  rgba(255,255,255,0.80);   /* glass overlay (navbar, keyboard hint) */
+  --white-500: #ffffff;
+  --black-05:  rgba(0,0,0,0.05);
+  --black-10:  rgba(0,0,0,0.10);
+  --black-25:  rgba(0,0,0,0.25);
+  --black-500: #000000;
+
+  /* ====== POSITIVE — Emerald ======
+     Correct answer feedback: border, background, text. */
+  --positive-50:  #ecfdf5;
+  --positive-100: #d1fae5;
+  --positive-200: #a7f3d0;
+  --positive-400: #34d399;   /* correct-state border, pool-ready pulse */
+  --positive-600: #059669;   /* status badge text */
+  --positive-900: #064e3b;   /* results screen heading */
+
+  /* ====== DANGER — Rose ======
+     Wrong answer feedback: border, background, text. */
+  --danger-50:  #fff1f2;
+  --danger-100: #ffe4e6;
+  --danger-400: #fb7185;   /* wrong-state border */
+  --danger-500: #f43f5e;   /* danger text, clear button */
+
+  /* ====== WARNING — Amber ======
+     Hint button, score star icon. */
+  --warning-50:  #fffbeb;
+  --warning-100: #fef3c7;   /* hint button border */
+  --warning-400: #fbbf24;   /* star icon */
+  --warning-600: #d97706;   /* hint button text */
+
+  /* ====== SEMANTIC — Fill ====== */
+  --fill-default:             var(--slate-900);
+  --fill-secondary:           var(--slate-500);
+  --fill-tertiary:            var(--slate-100);
+  --fill-focus:               var(--brand-600);
+  --fill-brand:               var(--brand-600);
+  --fill-brand-subtle:        var(--brand-50);
+  --fill-on-brand:            var(--white-500);
+  --fill-positive:            var(--positive-400);
+  --fill-positive-subtle:     var(--positive-100);
+  --fill-on-positive:         var(--positive-600);
+  --fill-danger:              var(--danger-400);
+  --fill-danger-subtle:       var(--danger-100);
+  --fill-on-danger:           var(--danger-500);
+  --fill-warning:             var(--warning-400);
+  --fill-warning-subtle:      var(--warning-100);
+  --fill-on-warning:          var(--warning-600);
+
+  /* ====== SEMANTIC — Background ====== */
+  --bg-base:          var(--white-500);    /* card surfaces */
+  --bg-sunken:        var(--slate-50);     /* page background, playing screen */
+  --bg-muted:         var(--slate-100);    /* difficulty cards, history items */
+  --bg-brand:         var(--brand-600);    /* primary button, flashcard back */
+  --bg-brand-subtle:  var(--brand-50);     /* revealed-letter box, history score */
+  --bg-positive:      var(--positive-50);  /* correct-feedback card */
+  --bg-results:       #ecfdf5;            /* results screen full bleed */
+  --bg-danger:        var(--danger-50);    /* wrong-feedback card */
+  --bg-warning:       var(--warning-50);   /* hint button */
+  --bg-overlay:       var(--white-80);     /* navbar glass, keyboard hint pill */
+
+  /* ====== SEMANTIC — Text ====== */
+  --text-default:          var(--slate-900);
+  --text-secondary:        var(--slate-500);
+  --text-muted:            var(--slate-400);
+  --text-disabled:         var(--slate-300);
+  --text-brand:            var(--brand-600);   /* scores, word2 on flashcard front */
+  --text-brand-secondary:  var(--brand-400);   /* muted brand, history icon */
+  --text-brand-heading:    var(--brand-900);   /* h1 on home, difficulty, loading */
+  --text-brand-subtle:     rgba(79,70,229,0.60); /* tagline (#4f46e5 / 60%) */
+  --text-on-brand:         var(--white-500);   /* button labels on indigo bg */
+  --text-positive:         var(--positive-600);
+  --text-positive-heading: var(--positive-900);
+  --text-danger:           var(--danger-500);
+  --text-warning:          var(--warning-600);
+
+  /* ====== SEMANTIC — Border ====== */
+  --border-default:       var(--slate-100);    /* card 1px hairline */
+  --border-secondary:     var(--slate-200);    /* empty letter-box */
+  --border-strong:        var(--slate-300);    /* less-used structural */
+  --border-brand:         var(--brand-600);    /* primary button, revealed box */
+  --border-brand-subtle:  var(--brand-100);    /* flashcard front, install card */
+  --border-focus:         var(--brand-200);    /* input focus ring */
+  --border-positive:      var(--positive-400); /* correct state */
+  --border-positive-result: var(--positive-200); /* score card bottom */
+  --border-danger:        var(--danger-400);   /* wrong state */
+  --border-warning:       var(--warning-100);  /* hint button */
+
+  /* ====== RADII ======
+     Intentional ladder; no arbitrary values used in production. */
+  --radius-sm:   12px;    /* letter boxes, first-word card, mini icon badges */
+  --radius-md:   16px;    /* primary buttons, flashcards, navbar back button */
+  --radius-lg:   24px;    /* difficulty cards, history items */
+  --radius-xl:   32px;    /* logo box, install prompt, icon-box on results */
+  --radius-2xl:  40px;    /* score card (rounded-[2.5rem]) */
+  --radius-pill: 999px;   /* chips, progress bar, keyboard hint pill */
+
+  /* ====== SPACING (4px base) ====== */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  20px;
+  --s-6:  24px;
+  --s-8:  32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+
+  /* ====== COMPONENT DIMENSIONS ====== */
+  --btn-height-lg:   64px;   /* h-16 — primary play / results CTA */
+  --btn-height-md:   40px;   /* h-10 — nav bar buttons, hint */
+  --btn-height-sm:   36px;   /* difficulty "back" text button */
+  --icon-box:        48px;   /* w-12 h-12 — install prompt icon box */
+  --letter-box-w:    36px;   /* w-9 mobile */
+  --letter-box-h:    44px;   /* h-11 mobile */
+  --letter-box-w-lg: 44px;   /* md:w-11 */
+  --letter-box-h-lg: 56px;   /* md:h-14 */
+  --progress-h:       6px;   /* h-1.5 progress bar */
+  --flashcard-h:     96px;   /* h-24 phrase flashcard */
+
+  /* ====== SHADOWS ======
+     Soft, low-offset; no glows, no coloured shadows. */
+  --shadow-sm:  0 1px 2px var(--black-05);
+  --shadow-md:  0 4px 6px -1px var(--black-10), 0 2px 4px -2px var(--black-10);
+  --shadow-lg:  0 10px 15px -3px var(--black-10), 0 4px 6px -4px var(--black-10);
+  --shadow-xl:  0 20px 25px -5px var(--black-10), 0 8px 10px -6px var(--black-10);
+  --shadow-2xl: 0 25px 50px -12px var(--black-25);
+
+  /* ====== BLUR / GLASS ======
+     Used on navbar and keyboard-hint pill. */
+  --glass-bg:   var(--white-80);
+  --glass-blur: blur(12px);
+
+  /* ====== TYPE SCALE ====== */
+  /* Micro — all-caps labels, status chips */
+  --fs-micro:  8px;   --lh-micro:  12px;   /* "Link Word" card label */
+  --fs-nano:  10px;   --lh-nano:   14px;   /* "EASY / MEDIUM / HARD" caps */
+  --fs-hint:  11px;   --lh-hint:   16px;   /* keyboard hint pill */
+
+  /* Body */
+  --fs-xs:    12px;   --lh-xs:     16px;   /* explanations, history date */
+  --fs-sm:    14px;   --lh-sm:     20px;   /* difficulty description */
+  --fs-base:  16px;   --lh-base:   24px;   /* primary body */
+  --fs-lg:    18px;   --lh-lg:     28px;
+
+  /* UI / Display */
+  --fs-xl:    20px;   --lh-xl:     28px;   /* flashcard word1 */
+  --fs-2xl:   24px;   --lh-2xl:    32px;   /* nav heading, letter chars */
+  --fs-3xl:   30px;   --lh-3xl:    36px;   /* difficulty screen h2 */
+  --fs-5xl:   48px;   --lh-5xl:    52px;   /* home h1 "Word Link" */
+  --fs-6xl:   60px;   --lh-6xl:    60px;   /* final score display */
+  --fs-7xl:   72px;   --lh-7xl:    72px;   /* logo icon */
+
+  /* ====== FONT WEIGHTS ====== */
+  --fw-light:    300;
+  --fw-regular:  400;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+  --fw-black:    900;   /* dominant heading weight in this UI */
+
+  /* ====== LETTER SPACING ====== */
+  --tracking-tight:   -0.025em;   /* font-black headings, tracking-tight */
+  --tracking-normal:   0em;
+  --tracking-wide:     0.05em;    /* tracking-tighter labels */
+  --tracking-widest:   0.1em;     /* uppercase micro labels, tracking-widest */
+
+  /* ====== TRANSITIONS ====== */
+  --ease-out:     cubic-bezier(0.22, 1, 0.36, 1);            /* general */
+  --ease-game:    cubic-bezier(0.175, 0.885, 0.32, 1.275);   /* stacked card stack */
+  --ease-shake:   cubic-bezier(0.36, 0.07, 0.19, 0.97);      /* wrong-answer shake */
+  --dur-fast:     200ms;
+  --dur-base:     300ms;
+  --dur-slow:     500ms;
+  --dur-feedback: 700ms;   /* correct letter: scale-out + slide up */
+
+}
+
+/* ============================================================
+   BASE ELEMENT STYLES
+   ============================================================ */
+html, body {
+  font-family:     var(--font-body);
+  color:           var(--text-default);
+  background:      var(--bg-sunken);
+  font-size:       var(--fs-base);
+  line-height:     var(--lh-base);
+  font-weight:     var(--fw-regular);
+  -webkit-font-smoothing: antialiased;
+  text-rendering:  optimizeLegibility;
+  overscroll-behavior-y: none;
+  touch-action:    manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ============================================================
+   GAME ANIMATIONS
+   ============================================================ */
+@keyframes wl-shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+.wl-shake {
+  animation: wl-shake var(--dur-slow) var(--ease-shake) both;
+}
+
+@keyframes wl-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+.wl-pulse {
+  animation: wl-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ============================================================
+   iOS SAFE AREA UTILITIES
+   ============================================================ */
+:root {
+  --sat: env(safe-area-inset-top);
+  --sab: env(safe-area-inset-bottom);
+}
+.wl-pt-safe { padding-top:    calc(env(safe-area-inset-top) + var(--s-2)); }
+.wl-pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+.wl-min-h-screen { min-height: 100vh; min-height: 100dvh; }
+.wl-h-screen     { height: 100vh;     height: 100dvh; }
+
+/* ============================================================
+   SCROLLBAR SUPPRESSION
+   ============================================================ */
+.wl-no-scrollbar::-webkit-scrollbar { display: none; }
+.wl-no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

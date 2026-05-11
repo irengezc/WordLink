@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Link — Design System</title>
+  <link rel="stylesheet" href="tokens.css">
+  <style>
+    /* ── Layout ─────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      background: #f0f0ee;
+      padding: var(--s-8) var(--s-6);
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    /* ── Preview blocks ──────────────────────────────────────── */
+    .ds-page-title {
+      font-family: var(--font-display);
+      font-weight: var(--fw-black);
+      font-size: var(--fs-5xl);
+      line-height: var(--lh-5xl);
+      letter-spacing: var(--tracking-tight);
+      color: var(--brand-600);
+      margin-bottom: var(--s-1);
+    }
+    .ds-page-sub {
+      font-size: var(--fs-sm);
+      color: var(--text-muted);
+      font-weight: var(--fw-regular);
+      margin-bottom: var(--s-16);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+    }
+
+    .ds-section {
+      margin-bottom: var(--s-16);
+    }
+    .ds-section-label {
+      font-size: var(--fs-nano);
+      font-weight: var(--fw-black);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: var(--s-4);
+      padding-bottom: var(--s-2);
+      border-bottom: 1px solid var(--border-default);
+    }
+
+    .ds-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s-3);
+      align-items: flex-start;
+    }
+    .ds-col {
+      display: flex;
+      flex-direction: column;
+      gap: var(--s-3);
+    }
+
+    /* ── Color swatches ─────────────────────────────────────── */
+    .swatch-group {
+      display: flex;
+      flex-direction: column;
+      gap: var(--s-1);
+    }
+    .swatch-group-label {
+      font-size: var(--fs-nano);
+      font-weight: var(--fw-black);
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-widest);
+      color: var(--text-muted);
+      margin-bottom: var(--s-1);
+    }
+    .swatch {
+      display: flex;
+      align-items: center;
+      gap: var(--s-3);
+    }
+    .swatch-chip {
+      width: 48px;
+      height: 28px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(0,0,0,0.08);
+      flex-shrink: 0;
+    }
+    .swatch-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .swatch-name {
+      font-size: var(--fs-xs);
+      font-weight: var(--fw-bold);
+      color: var(--text-default);
+      line-height: 1.2;
+    }
+    .swatch-hex {
+      font-size: var(--fs-nano);
+      color: var(--text-muted);
+      font-weight: var(--fw-regular);
+    }
+
+    /* ── Type specimens ─────────────────────────────────────── */
+    .type-specimen {
+      background: var(--bg-base);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-default);
+      padding: var(--s-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--s-4);
+    }
+    .type-row {
+      display: flex;
+      align-items: baseline;
+      gap: var(--s-4);
+      padding-bottom: var(--s-3);
+      border-bottom: 1px solid var(--border-default);
+    }
+    .type-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .type-meta {
+      width: 120px;
+      flex-shrink: 0;
+      font-size: var(--fs-nano);
+      color: var(--text-muted);
+      font-weight: var(--fw-regular);
+      line-height: 1.4;
+    }
+    .type-meta strong {
+      display: block;
+      font-weight: var(--fw-black);
+      color: var(--text-secondary);
+      font-size: var(--fs-xs);
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-widest);
+      margin-bottom: 2px;
+    }
+    .type-sample { flex: 1; }
+
+    /* ── Radii swatches ─────────────────────────────────────── */
+    .radius-card {
+      background: var(--bg-base);
+      border: 1px solid var(--border-default);
+      width: 80px;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+    .radius-label {
+      font-size: var(--fs-nano);
+      font-weight: var(--fw-black);
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-wide);
+    }
+    .radius-value {
+      font-size: var(--fs-nano);
+      color: var(--text-disabled);
+    }
+
+    /* ── Shadow cards ────────────────────────────────────────── */
+    .shadow-card {
+      background: var(--bg-base);
+      border-radius: var(--radius-lg);
+      width: 100px;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+    .shadow-name {
+      font-size: var(--fs-nano);
+      font-weight: var(--fw-black);
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-wide);
+    }
+
+    /* ── Buttons ─────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-body);
+      font-weight: var(--fw-black);
+      font-size: var(--fs-base);
+      letter-spacing: var(--tracking-normal);
+      border: none;
+      cursor: pointer;
+      transition: all var(--dur-fast) var(--ease-out);
+      text-decoration: none;
+      gap: var(--s-2);
+    }
+    .btn:active { transform: scale(0.95); }
+
+    .btn-primary {
+      height: var(--btn-height-lg);
+      padding: 0 var(--s-8);
+      background: var(--bg-brand);
+      color: var(--text-on-brand);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-xl);
+      min-width: 200px;
+    }
+    .btn-primary:hover { background: var(--brand-700); }
+
+    .btn-secondary {
+      height: var(--btn-height-lg);
+      padding: 0 var(--s-8);
+      background: var(--bg-base);
+      color: var(--text-brand);
+      border: 2px solid var(--border-brand-subtle);
+      border-radius: var(--radius-md);
+      min-width: 200px;
+    }
+    .btn-secondary:hover { border-color: var(--border-brand); }
+
+    .btn-nav {
+      width: var(--btn-height-md);
+      height: var(--btn-height-md);
+      background: var(--bg-muted);
+      color: var(--text-muted);
+      border-radius: var(--radius-pill);
+      padding: 0;
+    }
+    .btn-nav:hover { background: var(--border-default); }
+
+    .btn-hint {
+      height: var(--btn-height-md);
+      padding: 0 var(--s-4);
+      background: var(--bg-warning);
+      color: var(--text-warning);
+      border: 1px solid var(--border-warning);
+      border-radius: var(--radius-md);
+      font-size: var(--fs-hint);
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-widest);
+    }
+    .btn-hint:hover { background: var(--warning-100); }
+
+    .btn-ghost {
+      height: var(--btn-height-sm);
+      padding: 0 var(--s-4);
+      background: transparent;
+      color: var(--text-muted);
+      font-weight: var(--fw-bold);
+    }
+    .btn-ghost:hover { color: var(--text-secondary); }
+
+    /* ── Letter boxes ────────────────────────────────────────── */
+    .letter-box {
+      width: var(--letter-box-w);
+      height: var(--letter-box-h);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-sm);
+      border-bottom: 4px solid;
+      font-family: var(--font-display);
+      font-weight: var(--fw-black);
+      font-size: var(--fs-2xl);
+      transition: all var(--dur-fast) var(--ease-out);
+      position: relative;
+    }
+    .letter-box-empty {
+      background: var(--bg-muted);
+      border-color: var(--border-secondary);
+      color: transparent;
+    }
+    .letter-box-revealed {
+      background: var(--bg-brand-subtle);
+      border-color: var(--border-brand);
+      color: var(--brand-700);
+    }
+    .letter-box-filled {
+      background: var(--bg-base);
+      border-color: var(--border-focus);
+      color: var(--slate-700);
+    }
+    .letter-box-correct {
+      background: var(--bg-positive);
+      border-color: var(--border-positive);
+      color: var(--positive-600);
+    }
+    .letter-box-wrong {
+      background: var(--bg-danger);
+      border-color: var(--border-danger);
+      color: var(--danger-500);
+    }
+
+    /* ── Word display card ───────────────────────────────────── */
+    .word-card {
+      background: var(--bg-base);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-default);
+      padding: var(--s-4);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .word-card-label {
+      font-size: var(--fs-micro);
+      font-weight: var(--fw-black);
+      color: var(--text-disabled);
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-widest);
+      margin-bottom: var(--s-1);
+    }
+    .word-card-text {
+      font-size: var(--fs-2xl);
+      font-weight: var(--fw-black);
+      color: var(--text-secondary);
+      letter-spacing: var(--tracking-tight);
+    }
+
+    .target-card {
+      background: var(--bg-base);
+      border-radius: 24px;
+      border: 2px solid var(--border-focus);
+      padding: var(--s-8);
+      box-shadow: var(--shadow-xl);
+      ring: 4px solid rgba(99,102,241,0.20);
+    }
+    .target-card-neutral  { border-color: var(--border-default); box-shadow: var(--shadow-xl); }
+    .target-card-correct  { border-color: var(--border-positive); background: var(--bg-positive); }
+    .target-card-wrong    { border-color: var(--border-danger);   background: var(--bg-danger);   }
+    .target-card-focused  { border-color: var(--border-focus); box-shadow: var(--shadow-xl), 0 0 0 4px rgba(199,210,254,0.5); }
+
+    .status-pill {
+      display: inline-block;
+      font-size: var(--fs-nano);
+      font-weight: var(--fw-black);
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-widest);
+      padding: var(--s-1) var(--s-4);
+      border-radius: var(--radius-pill);
+    }
+    .status-neutral  { color: var(--brand-300); background: var(--bg-muted); }
+    .status-correct  { color: var(--text-positive); background: var(--positive-100); }
+    .status-wrong    { color: var(--text-danger);   background: var(--danger-100); }
+
+    /* ── Flashcard ───────────────────────────────────────────── */
+    .flashcard-front {
+      background: var(--bg-base);
+      border: 2px solid var(--border-brand-subtle);
+      border-radius: var(--radius-md);
+      height: var(--flashcard-h);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--s-4);
+      box-shadow: var(--shadow-sm);
+      gap: var(--s-2);
+      position: relative;
+    }
+    .flashcard-back {
+      background: var(--bg-brand);
+      border: 2px solid var(--brand-700);
+      border-radius: var(--radius-md);
+      height: var(--flashcard-h);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--s-4);
+      box-shadow: var(--shadow-sm);
+    }
+    .flashcard-tap-hint {
+      position: absolute;
+      top: var(--s-2);
+      right: var(--s-3);
+      font-size: var(--fs-nano);
+      color: var(--text-disabled);
+      text-transform: uppercase;
+      font-weight: var(--fw-bold);
+      letter-spacing: var(--tracking-wide);
+    }
+    .flashcard-link-dot {
+      width: var(--s-4);
+      height: var(--s-4);
+      border-radius: var(--radius-pill);
+      background: var(--brand-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8px;
+      color: var(--brand-400);
+    }
+
+    /* ── Progress bar ────────────────────────────────────────── */
+    .progress-track {
+      height: var(--progress-h);
+      background: var(--bg-muted);
+      border-radius: var(--radius-pill);
+      overflow: hidden;
+      border: 1px solid var(--border-default);
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--brand-500);
+      border-radius: var(--radius-pill);
+      transition: width var(--dur-feedback) ease-out;
+    }
+
+    /* ── History card ────────────────────────────────────────── */
+    .history-card {
+      background: var(--bg-muted);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-default);
+      padding: var(--s-5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .difficulty-badge {
+      display: inline-block;
+      padding: 2px var(--s-2);
+      background: var(--bg-brand);
+      color: var(--text-on-brand);
+      font-size: var(--fs-micro);
+      font-weight: var(--fw-black);
+      border-radius: var(--radius-xs, 4px);
+      text-transform: uppercase;
+    }
+
+    /* ── Difficulty card ─────────────────────────────────────── */
+    .difficulty-card {
+      background: var(--bg-base);
+      border: 2px solid var(--border-default);
+      border-radius: var(--radius-lg);
+      padding: var(--s-6);
+      text-align: left;
+      cursor: pointer;
+      transition: border-color var(--dur-fast) var(--ease-out);
+      width: 220px;
+    }
+    .difficulty-card:hover { border-color: var(--border-brand); }
+    .difficulty-card-level {
+      font-size: var(--fs-nano);
+      font-weight: var(--fw-black);
+      color: var(--brand-400);
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-widest);
+      margin-bottom: var(--s-1);
+    }
+    .difficulty-card-desc {
+      font-size: var(--fs-sm);
+      color: var(--text-secondary);
+      font-weight: var(--fw-semibold);
+    }
+
+    /* ── Loading spinner ─────────────────────────────────────── */
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .spinner-track {
+      width: 80px;
+      height: 80px;
+      border-radius: var(--radius-pill);
+      border: 6px solid var(--brand-100);
+      position: relative;
+    }
+    .spinner-fill {
+      position: absolute;
+      inset: -6px;
+      border-radius: var(--radius-pill);
+      border: 6px solid transparent;
+      border-top-color: var(--brand-600);
+      animation: spin 0.8s linear infinite;
+    }
+
+    /* ── Logo box ────────────────────────────────────────────── */
+    .logo-box {
+      width: 88px;
+      height: 88px;
+      background: var(--bg-brand);
+      border-radius: var(--radius-xl);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-2xl);
+      transform: rotate(3deg);
+      font-size: 40px;
+    }
+
+    /* ── Keyboard hint ───────────────────────────────────────── */
+    .keyboard-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s-2);
+      background: var(--bg-overlay);
+      backdrop-filter: var(--glass-blur);
+      padding: var(--s-2) var(--s-6);
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-brand-subtle);
+      box-shadow: var(--shadow-lg);
+      font-size: var(--fs-hint);
+      font-weight: var(--fw-black);
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-widest);
+    }
+
+    /* ── Score display ───────────────────────────────────────── */
+    .score-card {
+      background: var(--bg-base);
+      border-radius: var(--radius-2xl);
+      padding: var(--s-8);
+      border-bottom: 12px solid var(--border-positive-result);
+      box-shadow: var(--shadow-xl);
+      text-align: center;
+    }
+    .score-number {
+      font-size: var(--fs-6xl);
+      line-height: var(--lh-6xl);
+      font-weight: var(--fw-black);
+      color: var(--text-brand);
+      font-variant-numeric: tabular-nums;
+    }
+    .score-label {
+      font-size: var(--fs-nano);
+      font-weight: var(--fw-bold);
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-top: var(--s-3);
+    }
+
+    /* ── Inline phrase row (history detail) ──────────────────── */
+    .phrase-row {
+      background: var(--bg-base);
+      border: 1px solid var(--border-default);
+      border-radius: var(--radius-md);
+      padding: var(--s-4);
+      box-shadow: var(--shadow-sm);
+    }
+    .phrase-row-words {
+      display: flex;
+      align-items: center;
+      gap: var(--s-2);
+      margin-bottom: var(--s-2);
+    }
+    .phrase-row-expl {
+      font-size: var(--fs-xs);
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* ── Divider ─────────────────────────────────────────────── */
+    .ds-divider {
+      border: none;
+      border-top: 1px solid var(--border-default);
+      margin: 0;
+    }
+
+    /* ── Navbar ──────────────────────────────────────────────── */
+    .navbar {
+      background: var(--bg-overlay);
+      backdrop-filter: var(--glass-blur);
+      border-bottom: 1px solid var(--border-default);
+      padding: var(--s-4);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="ds-page-title">Word Link</p>
+  <p class="ds-page-sub">Design System — v1.0</p>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       COLOUR
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Colour</p>
+    <div class="ds-row" style="align-items:flex-start; gap: var(--s-8);">
+
+      <div class="swatch-group">
+        <p class="swatch-group-label">Brand — Indigo</p>
+        <div class="swatch"><div class="swatch-chip" style="background:#eef2ff"></div><div class="swatch-info"><span class="swatch-name">brand-50</span><span class="swatch-hex">#eef2ff</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#e0e7ff"></div><div class="swatch-info"><span class="swatch-name">brand-100</span><span class="swatch-hex">#e0e7ff</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#c7d2fe"></div><div class="swatch-info"><span class="swatch-name">brand-200</span><span class="swatch-hex">#c7d2fe</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#a5b4fc"></div><div class="swatch-info"><span class="swatch-name">brand-300</span><span class="swatch-hex">#a5b4fc</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#818cf8"></div><div class="swatch-info"><span class="swatch-name">brand-400</span><span class="swatch-hex">#818cf8</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#6366f1"></div><div class="swatch-info"><span class="swatch-name">brand-500</span><span class="swatch-hex">#6366f1</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#4f46e5; border:none;"></div><div class="swatch-info"><span class="swatch-name" style="color:var(--brand-600)">brand-600 ★ primary</span><span class="swatch-hex">#4f46e5</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#4338ca"></div><div class="swatch-info"><span class="swatch-name">brand-700</span><span class="swatch-hex">#4338ca</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#312e81"></div><div class="swatch-info"><span class="swatch-name">brand-900</span><span class="swatch-hex">#312e81</span></div></div>
+      </div>
+
+      <div class="swatch-group">
+        <p class="swatch-group-label">Neutral — Slate</p>
+        <div class="swatch"><div class="swatch-chip" style="background:#f8fafc"></div><div class="swatch-info"><span class="swatch-name">slate-50</span><span class="swatch-hex">#f8fafc — page bg</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#f1f5f9"></div><div class="swatch-info"><span class="swatch-name">slate-100</span><span class="swatch-hex">#f1f5f9 — borders</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#e2e8f0"></div><div class="swatch-info"><span class="swatch-name">slate-200</span><span class="swatch-hex">#e2e8f0</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#cbd5e1"></div><div class="swatch-info"><span class="swatch-name">slate-300</span><span class="swatch-hex">#cbd5e1 — disabled</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#94a3b8"></div><div class="swatch-info"><span class="swatch-name">slate-400</span><span class="swatch-hex">#94a3b8 — labels</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#64748b"></div><div class="swatch-info"><span class="swatch-name">slate-500</span><span class="swatch-hex">#64748b — body</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#334155"></div><div class="swatch-info"><span class="swatch-name">slate-700</span><span class="swatch-hex">#334155</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#1e293b"></div><div class="swatch-info"><span class="swatch-name">slate-800</span><span class="swatch-hex">#1e293b</span></div></div>
+        <div class="swatch"><div class="swatch-chip" style="background:#0f172a"></div><div class="swatch-info"><span class="swatch-name">slate-900</span><span class="swatch-hex">#0f172a</span></div></div>
+      </div>
+
+      <div class="ds-col" style="gap: var(--s-6);">
+        <div class="swatch-group">
+          <p class="swatch-group-label">Positive — Emerald</p>
+          <div class="swatch"><div class="swatch-chip" style="background:#ecfdf5"></div><div class="swatch-info"><span class="swatch-name">positive-50</span><span class="swatch-hex">correct bg</span></div></div>
+          <div class="swatch"><div class="swatch-chip" style="background:#d1fae5"></div><div class="swatch-info"><span class="swatch-name">positive-100</span><span class="swatch-hex">badge bg</span></div></div>
+          <div class="swatch"><div class="swatch-chip" style="background:#34d399"></div><div class="swatch-info"><span class="swatch-name">positive-400</span><span class="swatch-hex">#34d399 — border</span></div></div>
+          <div class="swatch"><div class="swatch-chip" style="background:#059669"></div><div class="swatch-info"><span class="swatch-name">positive-600</span><span class="swatch-hex">badge text</span></div></div>
+        </div>
+        <div class="swatch-group">
+          <p class="swatch-group-label">Danger — Rose</p>
+          <div class="swatch"><div class="swatch-chip" style="background:#fff1f2"></div><div class="swatch-info"><span class="swatch-name">danger-50</span><span class="swatch-hex">wrong bg</span></div></div>
+          <div class="swatch"><div class="swatch-chip" style="background:#fb7185"></div><div class="swatch-info"><span class="swatch-name">danger-400</span><span class="swatch-hex">#fb7185 — border</span></div></div>
+          <div class="swatch"><div class="swatch-chip" style="background:#f43f5e"></div><div class="swatch-info"><span class="swatch-name">danger-500</span><span class="swatch-hex">text, clear btn</span></div></div>
+        </div>
+        <div class="swatch-group">
+          <p class="swatch-group-label">Warning — Amber</p>
+          <div class="swatch"><div class="swatch-chip" style="background:#fffbeb"></div><div class="swatch-info"><span class="swatch-name">warning-50</span><span class="swatch-hex">hint bg</span></div></div>
+          <div class="swatch"><div class="swatch-chip" style="background:#fbbf24"></div><div class="swatch-info"><span class="swatch-name">warning-400</span><span class="swatch-hex">#fbbf24 — star</span></div></div>
+          <div class="swatch"><div class="swatch-chip" style="background:#d97706"></div><div class="swatch-info"><span class="swatch-name">warning-600</span><span class="swatch-hex">hint text</span></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       TYPOGRAPHY
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Typography — Outfit</p>
+    <div class="type-specimen">
+
+      <div class="type-row">
+        <div class="type-meta"><strong>display-5xl</strong>48 / 52 · black</div>
+        <div class="type-sample" style="font-size:var(--fs-5xl);line-height:var(--lh-5xl);font-weight:var(--fw-black);letter-spacing:var(--tracking-tight);color:var(--brand-900)">Word Link</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><strong>heading-3xl</strong>30 / 36 · black</div>
+        <div class="type-sample" style="font-size:var(--fs-3xl);line-height:var(--lh-3xl);font-weight:var(--fw-black);letter-spacing:var(--tracking-tight);color:var(--brand-900)">Select Level</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><strong>heading-2xl</strong>24 / 32 · black</div>
+        <div class="type-sample" style="font-size:var(--fs-2xl);line-height:var(--lh-2xl);font-weight:var(--fw-black);letter-spacing:var(--tracking-tight);color:var(--slate-800)">History</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><strong>score-6xl</strong>60 / 60 · black</div>
+        <div class="type-sample" style="font-size:var(--fs-6xl);line-height:var(--lh-6xl);font-weight:var(--fw-black);color:var(--brand-600);font-variant-numeric:tabular-nums">285</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><strong>word-xl</strong>20 / 28 · bold</div>
+        <div class="type-sample" style="font-size:var(--fs-xl);line-height:var(--lh-xl);font-weight:var(--fw-bold);color:var(--text-secondary)">SUNRISE</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><strong>body-base</strong>16 / 24 · regular</div>
+        <div class="type-sample" style="font-size:var(--fs-base);color:var(--text-secondary)">Chain phrases, grow your vocabulary.</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><strong>body-sm</strong>14 / 20 · semibold</div>
+        <div class="type-sample" style="font-size:var(--fs-sm);font-weight:var(--fw-semibold);color:var(--text-secondary)">Common two-word phrases.</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><strong>expl-xs</strong>12 / 16 · regular italic</div>
+        <div class="type-sample" style="font-size:var(--fs-xs);font-style:italic;color:var(--text-muted)">"Sun rises in the morning, giving morning light."</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><strong>label-nano</strong>10 / 14 · black caps</div>
+        <div class="type-sample" style="font-size:var(--fs-nano);font-weight:var(--fw-black);text-transform:uppercase;letter-spacing:var(--tracking-widest);color:var(--brand-400)">MEDIUM</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><strong>label-micro</strong>8 / 12 · black caps</div>
+        <div class="type-sample" style="font-size:var(--fs-micro);font-weight:var(--fw-black);text-transform:uppercase;letter-spacing:var(--tracking-widest);color:var(--text-disabled)">Link Word</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       RADII
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Corner Radii</p>
+    <div class="ds-row">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:var(--s-2)">
+        <div class="radius-card" style="border-radius:var(--radius-sm)"><span class="radius-label">sm</span><span class="radius-value">12px</span></div>
+        <span style="font-size:var(--fs-nano);color:var(--text-muted)">Letter boxes, mini cards</span>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:var(--s-2)">
+        <div class="radius-card" style="border-radius:var(--radius-md)"><span class="radius-label">md</span><span class="radius-value">16px</span></div>
+        <span style="font-size:var(--fs-nano);color:var(--text-muted)">Buttons, flashcards</span>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:var(--s-2)">
+        <div class="radius-card" style="border-radius:var(--radius-lg)"><span class="radius-label">lg</span><span class="radius-value">24px</span></div>
+        <span style="font-size:var(--fs-nano);color:var(--text-muted)">Difficulty, history cards</span>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:var(--s-2)">
+        <div class="radius-card" style="border-radius:var(--radius-xl)"><span class="radius-label">xl</span><span class="radius-value">32px</span></div>
+        <span style="font-size:var(--fs-nano);color:var(--text-muted)">Logo box, install prompt</span>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:var(--s-2)">
+        <div class="radius-card" style="border-radius:var(--radius-2xl)"><span class="radius-label">2xl</span><span class="radius-value">40px</span></div>
+        <span style="font-size:var(--fs-nano);color:var(--text-muted)">Score card</span>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:var(--s-2)">
+        <div class="radius-card" style="border-radius:var(--radius-pill);width:120px"><span class="radius-label">pill</span><span class="radius-value">999px</span></div>
+        <span style="font-size:var(--fs-nano);color:var(--text-muted)">Chips, hints, progress</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SHADOWS
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Shadows</p>
+    <div class="ds-row">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:var(--s-2)">
+        <div class="shadow-card" style="box-shadow:var(--shadow-sm)"><span class="shadow-name">sm</span></div>
+        <span style="font-size:var(--fs-nano);color:var(--text-muted)">Cards at rest</span>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:var(--s-2)">
+        <div class="shadow-card" style="box-shadow:var(--shadow-md)"><span class="shadow-name">md</span></div>
+        <span style="font-size:var(--fs-nano);color:var(--text-muted)">Elevated panels</span>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:var(--s-2)">
+        <div class="shadow-card" style="box-shadow:var(--shadow-lg)"><span class="shadow-name">lg</span></div>
+        <span style="font-size:var(--fs-nano);color:var(--text-muted)">Keyboard hint</span>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:var(--s-2)">
+        <div class="shadow-card" style="box-shadow:var(--shadow-xl)"><span class="shadow-name">xl</span></div>
+        <span style="font-size:var(--fs-nano);color:var(--text-muted)">Buttons, target card</span>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:var(--s-2)">
+        <div class="shadow-card" style="box-shadow:var(--shadow-2xl)"><span class="shadow-name">2xl</span></div>
+        <span style="font-size:var(--fs-nano);color:var(--text-muted)">Logo box, score card</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       BUTTONS
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Buttons</p>
+    <div class="ds-row" style="align-items:center; flex-wrap:wrap">
+      <button class="btn btn-primary">Play Now</button>
+      <button class="btn btn-secondary">View History</button>
+      <button class="btn btn-hint">Hint</button>
+      <button class="btn btn-nav">✕</button>
+      <button class="btn btn-ghost">Back to Menu</button>
+    </div>
+    <div style="margin-top:var(--s-3); display:flex; gap:var(--s-3); align-items:center; font-size:var(--fs-xs); color:var(--text-muted)">
+      <span>Primary = solid brand, 8px radius, h-16</span>
+      <span>·</span>
+      <span>Secondary = white + brand-100 border, h-16</span>
+      <span>·</span>
+      <span>Hint = amber-50 bg, h-10</span>
+      <span>·</span>
+      <span>Nav = slate-50 circle, h-10</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       LETTER BOXES
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Letter Boxes</p>
+    <div class="ds-col">
+
+      <div style="display:flex;flex-direction:column;gap:var(--s-2)">
+        <span style="font-size:var(--fs-nano);color:var(--text-muted);text-transform:uppercase;letter-spacing:var(--tracking-widest);font-weight:var(--fw-bold)">Neutral (no input)</span>
+        <div style="display:flex;gap:var(--s-2)">
+          <div class="letter-box letter-box-revealed">S</div>
+          <div class="letter-box letter-box-empty"></div>
+          <div class="letter-box letter-box-empty"></div>
+          <div class="letter-box letter-box-empty"></div>
+          <div class="letter-box letter-box-empty"></div>
+          <div class="letter-box letter-box-empty"></div>
+          <div class="letter-box letter-box-empty"></div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:var(--s-2)">
+        <span style="font-size:var(--fs-nano);color:var(--text-muted);text-transform:uppercase;letter-spacing:var(--tracking-widest);font-weight:var(--fw-bold)">Typing in progress</span>
+        <div style="display:flex;gap:var(--s-2)">
+          <div class="letter-box letter-box-revealed">S</div>
+          <div class="letter-box letter-box-filled">U</div>
+          <div class="letter-box letter-box-filled">N</div>
+          <div class="letter-box letter-box-empty"></div>
+          <div class="letter-box letter-box-empty"></div>
+          <div class="letter-box letter-box-empty"></div>
+          <div class="letter-box letter-box-empty"></div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:var(--s-2)">
+        <span style="font-size:var(--fs-nano);color:var(--text-positive);text-transform:uppercase;letter-spacing:var(--tracking-widest);font-weight:var(--fw-bold)">Correct</span>
+        <div style="display:flex;gap:var(--s-2)">
+          <div class="letter-box letter-box-correct">S</div>
+          <div class="letter-box letter-box-correct">U</div>
+          <div class="letter-box letter-box-correct">N</div>
+          <div class="letter-box letter-box-correct">R</div>
+          <div class="letter-box letter-box-correct">I</div>
+          <div class="letter-box letter-box-correct">S</div>
+          <div class="letter-box letter-box-correct">E</div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:var(--s-2)">
+        <span style="font-size:var(--fs-nano);color:var(--text-danger);text-transform:uppercase;letter-spacing:var(--tracking-widest);font-weight:var(--fw-bold)">Wrong (+ shake animation)</span>
+        <div style="display:flex;gap:var(--s-2)">
+          <div class="letter-box letter-box-wrong">S</div>
+          <div class="letter-box letter-box-wrong">U</div>
+          <div class="letter-box letter-box-wrong">N</div>
+          <div class="letter-box letter-box-wrong">D</div>
+          <div class="letter-box letter-box-wrong">A</div>
+          <div class="letter-box letter-box-wrong">Y</div>
+          <div class="letter-box letter-box-wrong">S</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       WORD DISPLAY (full component)
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Word Display Card</p>
+    <div style="max-width:380px">
+
+      <div class="word-card" style="margin-bottom:var(--s-3)">
+        <p class="word-card-label">Link Word</p>
+        <p class="word-card-text">MORNING</p>
+      </div>
+
+      <div class="target-card target-card-focused">
+        <div style="display:flex;justify-content:center;gap:var(--s-2);padding:var(--s-1) 0">
+          <div class="letter-box letter-box-revealed">S</div>
+          <div class="letter-box letter-box-filled">U</div>
+          <div class="letter-box letter-box-filled">N</div>
+          <div class="letter-box letter-box-empty"></div>
+          <div class="letter-box letter-box-empty"></div>
+          <div class="letter-box letter-box-empty"></div>
+          <div class="letter-box letter-box-empty"></div>
+        </div>
+        <div style="display:flex;justify-content:center;margin-top:var(--s-4)">
+          <span class="status-pill status-neutral">7 letters</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="display:flex;gap:var(--s-4);margin-top:var(--s-4);max-width:800px;flex-wrap:wrap">
+      <div style="flex:1;min-width:180px">
+        <p style="font-size:var(--fs-nano);color:var(--text-muted);text-transform:uppercase;letter-spacing:var(--tracking-widest);font-weight:var(--fw-bold);margin-bottom:var(--s-2)">Correct state</p>
+        <div class="target-card target-card-correct" style="padding:var(--s-4)">
+          <div style="display:flex;justify-content:center;gap:var(--s-2)">
+            <div class="letter-box letter-box-correct" style="width:32px;height:40px;font-size:var(--fs-xl)">S</div>
+            <div class="letter-box letter-box-correct" style="width:32px;height:40px;font-size:var(--fs-xl)">U</div>
+            <div class="letter-box letter-box-correct" style="width:32px;height:40px;font-size:var(--fs-xl)">N</div>
+            <div class="letter-box letter-box-correct" style="width:32px;height:40px;font-size:var(--fs-xl)">R</div>
+            <div class="letter-box letter-box-correct" style="width:32px;height:40px;font-size:var(--fs-xl)">I</div>
+            <div class="letter-box letter-box-correct" style="width:32px;height:40px;font-size:var(--fs-xl)">S</div>
+            <div class="letter-box letter-box-correct" style="width:32px;height:40px;font-size:var(--fs-xl)">E</div>
+          </div>
+          <div style="display:flex;justify-content:center;margin-top:var(--s-3)">
+            <span class="status-pill status-correct">Correct!</span>
+          </div>
+        </div>
+      </div>
+      <div style="flex:1;min-width:180px">
+        <p style="font-size:var(--fs-nano);color:var(--text-muted);text-transform:uppercase;letter-spacing:var(--tracking-widest);font-weight:var(--fw-bold);margin-bottom:var(--s-2)">Wrong state</p>
+        <div class="target-card target-card-wrong" style="padding:var(--s-4)">
+          <div style="display:flex;justify-content:center;gap:var(--s-2)">
+            <div class="letter-box letter-box-wrong" style="width:32px;height:40px;font-size:var(--fs-xl)">S</div>
+            <div class="letter-box letter-box-wrong" style="width:32px;height:40px;font-size:var(--fs-xl)">U</div>
+            <div class="letter-box letter-box-wrong" style="width:32px;height:40px;font-size:var(--fs-xl)">N</div>
+            <div class="letter-box letter-box-wrong" style="width:32px;height:40px;font-size:var(--fs-xl)">S</div>
+            <div class="letter-box letter-box-wrong" style="width:32px;height:40px;font-size:var(--fs-xl)">E</div>
+            <div class="letter-box letter-box-wrong" style="width:32px;height:40px;font-size:var(--fs-xl)">T</div>
+          </div>
+          <div style="display:flex;justify-content:center;margin-top:var(--s-3)">
+            <span class="status-pill status-wrong">Incorrect!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PHRASE FLASHCARD
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Phrase Flashcard</p>
+    <div style="max-width:380px;display:flex;flex-direction:column;gap:var(--s-3)">
+
+      <div>
+        <p style="font-size:var(--fs-nano);color:var(--text-muted);text-transform:uppercase;letter-spacing:var(--tracking-widest);font-weight:var(--fw-bold);margin-bottom:var(--s-2)">Front — phrase pair</p>
+        <div class="flashcard-front">
+          <span style="font-size:var(--fs-xl);font-weight:var(--fw-bold);color:var(--text-secondary)">MORNING</span>
+          <div class="flashcard-link-dot">⬡</div>
+          <span style="font-size:var(--fs-xl);font-weight:var(--fw-black);color:var(--text-brand)">SUNRISE</span>
+          <span class="flashcard-tap-hint">Tap to flip</span>
+        </div>
+      </div>
+
+      <div>
+        <p style="font-size:var(--fs-nano);color:var(--text-muted);text-transform:uppercase;letter-spacing:var(--tracking-widest);font-weight:var(--fw-bold);margin-bottom:var(--s-2)">Back — explanation</p>
+        <div class="flashcard-back">
+          <p style="font-size:var(--fs-sm);font-weight:500;text-align:center;font-style:italic;color:var(--white-500);line-height:var(--lh-base)">"The sunrise at morning paints the sky with the first light of day."</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PROGRESS BAR + SCORE ROW (Navbar)
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Navbar — Playing Screen</p>
+    <div style="max-width:420px;background:var(--bg-base);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border-default)">
+      <div class="navbar">
+        <button class="btn btn-nav" style="font-size:var(--fs-sm)">✕</button>
+        <div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:var(--s-1)">
+          <div style="display:flex;align-items:center;gap:var(--s-1)">
+            <span style="color:var(--warning-400);font-size:var(--fs-nano)">★</span>
+            <span style="font-weight:var(--fw-black);color:var(--brand-900);font-size:var(--fs-sm);font-variant-numeric:tabular-nums">175</span>
+          </div>
+          <div class="progress-track" style="width:140px">
+            <div class="progress-fill" style="width:37%"></div>
+          </div>
+        </div>
+        <button class="btn btn-hint">Hint</button>
+      </div>
+    </div>
+    <p style="font-size:var(--fs-xs);color:var(--text-muted);margin-top:var(--s-2)">Progress bar at 37% (3 of 8 words). Score deducts on hint use.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       KEYBOARD HINT PILL
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Keyboard Hint Pill</p>
+    <div style="background:var(--bg-muted);padding:var(--s-8);border-radius:var(--radius-lg);display:flex;justify-content:center">
+      <div class="keyboard-hint">
+        ⌨ Starts with "SU"
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       DIFFICULTY CARDS
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Difficulty Cards</p>
+    <div class="ds-row">
+      <div class="difficulty-card">
+        <p class="difficulty-card-level">Easy</p>
+        <p class="difficulty-card-desc">Common two-word phrases.</p>
+      </div>
+      <div class="difficulty-card" style="border-color:var(--border-brand)">
+        <p class="difficulty-card-level">Medium</p>
+        <p class="difficulty-card-desc">Standard expressions.</p>
+      </div>
+      <div class="difficulty-card">
+        <p class="difficulty-card-level">Hard</p>
+        <p class="difficulty-card-desc">Idioms and abstract chains.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       HISTORY CARD + DETAIL ROW
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">History</p>
+    <div style="max-width:420px;display:flex;flex-direction:column;gap:var(--s-3)">
+
+      <div class="history-card">
+        <div>
+          <p style="font-size:var(--fs-nano);font-weight:var(--fw-bold);color:var(--text-muted);text-transform:uppercase;letter-spacing:var(--tracking-widest);margin-bottom:var(--s-1)">12/05/2025 · 09:41</p>
+          <div style="display:flex;align-items:center;gap:var(--s-2)">
+            <span class="difficulty-badge">MEDIUM</span>
+            <span style="font-weight:var(--fw-black);color:var(--slate-700)">Round 8</span>
+          </div>
+        </div>
+        <div style="text-align:right">
+          <p style="font-size:var(--fs-nano);font-weight:var(--fw-bold);color:var(--text-muted);text-transform:uppercase;letter-spacing:var(--tracking-widest)">Score</p>
+          <p style="font-weight:var(--fw-black);color:var(--text-brand);font-size:var(--fs-2xl);font-variant-numeric:tabular-nums">285</p>
+        </div>
+      </div>
+
+      <div class="phrase-row">
+        <div class="phrase-row-words">
+          <span style="font-weight:var(--fw-bold);color:var(--text-muted);font-size:var(--fs-xl)">MORNING</span>
+          <span style="font-size:var(--fs-nano);color:var(--brand-300)">→</span>
+          <span style="font-weight:var(--fw-black);color:var(--text-brand);font-size:var(--fs-xl)">SUNRISE</span>
+        </div>
+        <p class="phrase-row-expl">"The first light of the morning sky begins at sunrise."</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SCORE CARD (Results Screen)
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Score Card — Results</p>
+    <div style="max-width:320px">
+      <div class="score-card">
+        <div class="score-number">285</div>
+        <div class="score-label">Final Score</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       LOGO BOX + LOADING SPINNER
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Logo Box + Loading</p>
+    <div class="ds-row" style="align-items:center">
+      <div class="logo-box">🔗</div>
+      <div style="position:relative;width:80px;height:80px">
+        <div class="spinner-track"></div>
+        <div class="spinner-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       MOTION REFERENCE
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Motion</p>
+    <div style="background:var(--bg-base);border-radius:var(--radius-lg);border:1px solid var(--border-default);padding:var(--s-6)">
+      <table style="width:100%;border-collapse:collapse;font-size:var(--fs-sm)">
+        <thead>
+          <tr style="border-bottom:1px solid var(--border-default)">
+            <th style="text-align:left;padding:var(--s-2) var(--s-3);font-size:var(--fs-nano);text-transform:uppercase;letter-spacing:var(--tracking-widest);color:var(--text-muted);font-weight:var(--fw-black)">Token</th>
+            <th style="text-align:left;padding:var(--s-2) var(--s-3);font-size:var(--fs-nano);text-transform:uppercase;letter-spacing:var(--tracking-widest);color:var(--text-muted);font-weight:var(--fw-black)">Value</th>
+            <th style="text-align:left;padding:var(--s-2) var(--s-3);font-size:var(--fs-nano);text-transform:uppercase;letter-spacing:var(--tracking-widest);color:var(--text-muted);font-weight:var(--fw-black)">Used for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border-default)">
+            <td style="padding:var(--s-2) var(--s-3);font-weight:var(--fw-bold)">--ease-out</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">cubic-bezier(0.22, 1, 0.36, 1)</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">General UI transitions</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border-default)">
+            <td style="padding:var(--s-2) var(--s-3);font-weight:var(--fw-bold)">--ease-game</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">cubic-bezier(0.175, 0.885, 0.32, 1.275)</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">Stacked flashcard deck</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border-default)">
+            <td style="padding:var(--s-2) var(--s-3);font-weight:var(--fw-bold)">--ease-shake</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">cubic-bezier(0.36, 0.07, 0.19, 0.97)</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">Wrong-answer shake</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border-default)">
+            <td style="padding:var(--s-2) var(--s-3);font-weight:var(--fw-bold)">--dur-fast</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">200ms</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">Button states, letter box fill</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border-default)">
+            <td style="padding:var(--s-2) var(--s-3);font-weight:var(--fw-bold)">--dur-base</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">300ms</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">Screen enters, card flips</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border-default)">
+            <td style="padding:var(--s-2) var(--s-3);font-weight:var(--fw-bold)">--dur-slow</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">500ms</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">Active word slide-in</td>
+          </tr>
+          <tr>
+            <td style="padding:var(--s-2) var(--s-3);font-weight:var(--fw-bold)">--dur-feedback</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">700ms</td>
+            <td style="padding:var(--s-2) var(--s-3);color:var(--text-muted)">Correct card scale-out + slide</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SPACING
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="ds-section">
+    <p class="ds-section-label">Spacing — 4px base</p>
+    <div style="display:flex;flex-direction:column;gap:var(--s-2)">
+      <div style="display:flex;gap:var(--s-4);align-items:center;flex-wrap:wrap">
+        <div style="display:flex;align-items:center;gap:var(--s-2)"><div style="background:var(--brand-200);height:16px;width:4px;border-radius:2px"></div><span style="font-size:var(--fs-nano);color:var(--text-muted)">--s-1 · 4px</span></div>
+        <div style="display:flex;align-items:center;gap:var(--s-2)"><div style="background:var(--brand-200);height:16px;width:8px;border-radius:2px"></div><span style="font-size:var(--fs-nano);color:var(--text-muted)">--s-2 · 8px</span></div>
+        <div style="display:flex;align-items:center;gap:var(--s-2)"><div style="background:var(--brand-200);height:16px;width:12px;border-radius:2px"></div><span style="font-size:var(--fs-nano);color:var(--text-muted)">--s-3 · 12px</span></div>
+        <div style="display:flex;align-items:center;gap:var(--s-2)"><div style="background:var(--brand-200);height:16px;width:16px;border-radius:2px"></div><span style="font-size:var(--fs-nano);color:var(--text-muted)">--s-4 · 16px</span></div>
+        <div style="display:flex;align-items:center;gap:var(--s-2)"><div style="background:var(--brand-200);height:16px;width:20px;border-radius:2px"></div><span style="font-size:var(--fs-nano);color:var(--text-muted)">--s-5 · 20px</span></div>
+        <div style="display:flex;align-items:center;gap:var(--s-2)"><div style="background:var(--brand-200);height:16px;width:24px;border-radius:2px"></div><span style="font-size:var(--fs-nano);color:var(--text-muted)">--s-6 · 24px</span></div>
+        <div style="display:flex;align-items:center;gap:var(--s-2)"><div style="background:var(--brand-300);height:16px;width:32px;border-radius:2px"></div><span style="font-size:var(--fs-nano);color:var(--text-muted)">--s-8 · 32px</span></div>
+        <div style="display:flex;align-items:center;gap:var(--s-2)"><div style="background:var(--brand-400);height:16px;width:48px;border-radius:2px"></div><span style="font-size:var(--fs-nano);color:var(--text-muted)">--s-12 · 48px</span></div>
+        <div style="display:flex;align-items:center;gap:var(--s-2)"><div style="background:var(--brand-500);height:16px;width:64px;border-radius:2px"></div><span style="font-size:var(--fs-nano);color:var(--text-muted)">--s-16 · 64px</span></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
