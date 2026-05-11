@@ -16,46 +16,48 @@ struct ContentView: View {
     }
 
     var body: some View {
-        NavigationStack {
         ZStack {
             // Full-bleed background so no black bars show through on iOS 26
             backgroundColor
                 .ignoresSafeArea(.all)
 
-            switch vm.gameStatus {
-            case .start:
+            // Independent `if` statements keep each view as a flat sibling in the
+            // ZStack. A `switch` compiles to deeply-nested _ConditionalContent<A,
+            // _ConditionalContent<B, ...>> — one wrapper per case — and on iOS 26
+            // each wrapper reduces the proposed layout height, pushing content down.
+            if vm.gameStatus == .start {
                 HomeView()
                     .transition(.asymmetric(
                         insertion: .opacity,
                         removal: .move(edge: .leading).combined(with: .opacity)
                     ))
-
-            case .difficultySelect:
+            }
+            if vm.gameStatus == .difficultySelect {
                 DifficultySelectView()
                     .transition(.asymmetric(
                         insertion: .move(edge: .trailing).combined(with: .opacity),
                         removal: .move(edge: .leading).combined(with: .opacity)
                     ))
-
-            case .loading:
+            }
+            if vm.gameStatus == .loading {
                 LoadingView()
                     .transition(.opacity)
-
-            case .playing:
+            }
+            if vm.gameStatus == .playing {
                 GameView()
                     .transition(.asymmetric(
                         insertion: .move(edge: .trailing).combined(with: .opacity),
                         removal: .opacity
                     ))
-
-            case .results:
+            }
+            if vm.gameStatus == .results {
                 ResultsView()
                     .transition(.asymmetric(
                         insertion: .move(edge: .bottom).combined(with: .opacity),
                         removal: .opacity
                     ))
-
-            case .history:
+            }
+            if vm.gameStatus == .history {
                 HistoryView()
                     .transition(.asymmetric(
                         insertion: .move(edge: .trailing).combined(with: .opacity),
@@ -64,7 +66,5 @@ struct ContentView: View {
             }
         }
         .animation(.spring(response: 0.4, dampingFraction: 0.8), value: vm.gameStatus)
-        .toolbar(.hidden, for: .navigationBar)
-        } // NavigationStack
     }
 }

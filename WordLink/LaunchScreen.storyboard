@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,16 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Xs-T4-MTA">
-                                <rect key="frame" x="146.5" y="376" width="100" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Xs-T4-MTA">
+                                <rect key="frame" x="116" y="346" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Kd0-xQ-rGM"/>
-                                    <constraint firstAttribute="height" constant="100" id="Nol-Zn-hQ7"/>
+                                    <constraint firstAttribute="width" constant="160" id="Kd0-xQ-rGM"/>
+                                    <constraint firstAttribute="height" constant="160" id="Nol-Zn-hQ7"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" red="0.15" green="0.08" blue="0.38" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.14999999999999999" green="0.080000000000000002" blue="0.38" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9Xs-T4-MTA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Qfy-fU-nJN"/>
                             <constraint firstItem="9Xs-T4-MTA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="wvX-6B-3yc"/>
@@ -36,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchLogo" width="240" height="240"/>
+        <image name="LaunchLogo" width="1024" height="1024"/>
     </resources>
 </document>

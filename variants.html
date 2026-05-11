@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WordLink — Visual Variants</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px;
+  }
+
+  .variants-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .variant-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .variant-label {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 10px;
+  }
+
+  .phone-frame {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    aspect-ratio: 9/19;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+
+  /* ============================================
+     VARIANT 1 — SWISS PRIMARY
+     ============================================ */
+  .swiss .phone-frame {
+    border: 3px solid #000;
+  }
+
+  .swiss-home {
+    background: #fff;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding: 0;
+  }
+
+  .swiss-home .top-block {
+    background: #E30613;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .swiss-home .top-block h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+
+  .swiss-home .bottom-section {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .swiss-diff-card {
+    padding: 20px;
+    border: 4px solid #000;
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .swiss-diff-card.easy { background: #FFE500; }
+  .swiss-diff-card.medium { background: #0057B8; color: #fff; }
+  .swiss-diff-card.hard { background: #E30613; color: #fff; }
+
+  .swiss-diff-card .desc {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: none;
+    opacity: 0.7;
+  }
+
+  /* Swiss Game Page */
+  .swiss-game {
+    background: #fff;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+  }
+
+  .swiss-game .score-bar {
+    background: #000;
+    color: #fff;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .swiss-game .progress-row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0;
+    border-bottom: 4px solid #000;
+  }
+
+  .swiss-game .progress-row .step {
+    height: 8px;
+    background: #eee;
+  }
+  .swiss-game .progress-row .step.done { background: #0057B8; }
+  .swiss-game .progress-row .step.active { background: #E30613; }
+
+  .swiss-game .word-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .swiss-game .prev-word {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .swiss-game .current-word {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: -1px;
+    border-bottom: 6px solid #E30613;
+    padding-bottom: 4px;
+  }
+
+  .swiss-game .letter-grid {
+    display: flex;
+    gap: 6px;
+    margin-top: 16px;
+  }
+
+  .swiss-game .letter-grid .tile {
+    width: 36px;
+    height: 44px;
+    border: 3px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .swiss-game .letter-grid .tile.revealed { background: #0057B8; color: #fff; }
+  .swiss-game .letter-grid .tile.typed { background: #FFE500; }
+  .swiss-game .letter-grid .tile.empty { background: #f5f5f5; }
+
+  .swiss-game .chain-ticker {
+    background: #000;
+    padding: 14px 20px;
+    display: flex;
+    gap: 8px;
+    overflow: hidden;
+  }
+
+  .swiss-game .chain-ticker .tag {
+    background: #FFE500;
+    color: #000;
+    padding: 4px 10px;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* ============================================
+     VARIANT 2 — OP-ART / KINETIC
+     ============================================ */
+  .opart .phone-frame {
+    border: 2px solid #333;
+  }
+
+  .opart-home {
+    background: #0a0e1a;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .opart-home::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 8px,
+      rgba(205, 255, 79, 0.03) 8px,
+      rgba(205, 255, 79, 0.03) 9px
+    );
+    pointer-events: none;
+  }
+
+  .opart-home .title-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    z-index: 1;
+  }
+
+  .opart-home .title-area h1 {
+    font-family: system-ui, sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    color: #CDFF4F;
+    letter-spacing: -2px;
+  }
+
+  .opart-home .title-area p {
+    font-family: system-ui, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(205, 255, 79, 0.5);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  .opart-home .cards-area {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+  }
+
+  .opart-diff-card {
+    padding: 18px 20px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .opart-diff-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .opart-diff-card.easy {
+    background: #1a2040;
+  }
+  .opart-diff-card.easy::before {
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 4px,
+      rgba(205, 255, 79, 0.1) 4px,
+      rgba(205, 255, 79, 0.1) 5px
+    );
+  }
+
+  .opart-diff-card.medium {
+    background: #1a2040;
+  }
+  .opart-diff-card.medium::before {
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      rgba(205, 255, 79, 0.15) 3px,
+      rgba(205, 255, 79, 0.15) 4px
+    );
+  }
+
+  .opart-diff-card.hard {
+    background: #1a2040;
+  }
+  .opart-diff-card.hard::before {
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 79, 79, 0.2) 2px,
+      rgba(255, 79, 79, 0.2) 3px
+    );
+  }
+
+  .opart-diff-card .label {
+    font-family: system-ui, sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #CDFF4F;
+    z-index: 1;
+    position: relative;
+  }
+
+  .opart-diff-card.hard .label { color: #FF6B6B; }
+
+  .opart-diff-card .desc {
+    font-family: system-ui, sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+    z-index: 1;
+    position: relative;
+  }
+
+  /* Op-Art Game Page */
+  .opart-game {
+    background: #0a0e1a;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .opart-game .score-bar {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(205, 255, 79, 0.2);
+  }
+
+  .opart-game .score-bar .score {
+    font-weight: 800;
+    font-size: 18px;
+    color: #CDFF4F;
+  }
+
+  .opart-game .score-bar .hint-btn {
+    background: rgba(205, 255, 79, 0.1);
+    border: 1px solid rgba(205, 255, 79, 0.3);
+    border-radius: 20px;
+    padding: 6px 14px;
+    color: #CDFF4F;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .opart-game .progress-stripe {
+    height: 6px;
+    background: #1a2040;
+    position: relative;
+  }
+
+  .opart-game .progress-stripe .fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 37.5%;
+    background: repeating-linear-gradient(
+      90deg,
+      #CDFF4F,
+      #CDFF4F 6px,
+      #a8d43f 6px,
+      #a8d43f 8px
+    );
+  }
+
+  .opart-game .word-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .opart-game .prev-word {
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(205, 255, 79, 0.3);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .opart-game .current-word {
+    font-weight: 900;
+    font-size: 42px;
+    color: #fff;
+    letter-spacing: -1px;
+  }
+
+  .opart-game .letter-grid {
+    display: flex;
+    gap: 6px;
+    margin-top: 14px;
+  }
+
+  .opart-game .letter-grid .tile {
+    width: 34px;
+    height: 42px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .opart-game .letter-grid .tile.revealed {
+    background: #CDFF4F;
+    color: #0a0e1a;
+  }
+  .opart-game .letter-grid .tile.typed {
+    background: rgba(205, 255, 79, 0.2);
+    color: #CDFF4F;
+    border: 1px solid rgba(205, 255, 79, 0.4);
+  }
+  .opart-game .letter-grid .tile.empty {
+    background: #1a2040;
+    border: 1px solid #2a3060;
+  }
+
+  .opart-game .chain-bands {
+    padding: 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .opart-game .chain-bands .band {
+    padding: 8px 14px;
+    background: #1a2040;
+    border-left: 3px solid #CDFF4F;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .opart-game .chain-bands .band::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      rgba(205, 255, 79, 0.03) 3px,
+      rgba(205, 255, 79, 0.03) 4px
+    );
+    pointer-events: none;
+  }
+
+  /* ============================================
+     VARIANT 3 — EDITORIAL TAG
+     ============================================ */
+  .editorial .phone-frame {
+    border: 2px solid #ddd;
+  }
+
+  .editorial-home {
+    background: #F5F2ED;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .editorial-home .title-block {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .editorial-home .title-block h1 {
+    font-family: system-ui, sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+    color: #1a1a1a;
+    letter-spacing: -3px;
+    line-height: 0.9;
+  }
+
+  .editorial-home .title-block .sub {
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+
+  .editorial-home .connector-arrow {
+    text-align: center;
+    font-size: 24px;
+    color: #ccc;
+  }
+
+  .editorial-home .tag-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .editorial-tag-card {
+    border-radius: 12px;
+    padding: 22px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .editorial-tag-card .hole {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid rgba(0,0,0,0.2);
+  }
+
+  .editorial-tag-card.easy {
+    background: #FFE066;
+    color: #1a1a1a;
+  }
+
+  .editorial-tag-card.medium {
+    background: #4A90D9;
+    color: #fff;
+  }
+
+  .editorial-tag-card.hard {
+    background: #E85D5D;
+    color: #fff;
+  }
+
+  .editorial-tag-card .label {
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: -0.5px;
+  }
+
+  .editorial-tag-card .desc {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  .editorial-tag-card .icon-line {
+    position: absolute;
+    bottom: 14px;
+    right: 16px;
+    font-size: 20px;
+    opacity: 0.3;
+  }
+
+  /* Editorial Game Page */
+  .editorial-game {
+    background: #F5F2ED;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .editorial-game .top-bar {
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0dcd6;
+  }
+
+  .editorial-game .top-bar .score {
+    font-weight: 800;
+    font-size: 16px;
+    color: #1a1a1a;
+  }
+
+  .editorial-game .top-bar .tags-row {
+    display: flex;
+    gap: 4px;
+  }
+
+  .editorial-game .top-bar .tags-row .mini-tag {
+    width: 22px;
+    height: 28px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .editorial-game .top-bar .mini-tag.done { background: #4A90D9; }
+  .editorial-game .top-bar .mini-tag.active { background: #E85D5D; border: 2px solid #1a1a1a; }
+  .editorial-game .top-bar .mini-tag.pending { background: #ddd; }
+
+  .editorial-game .poster-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 30px;
+    position: relative;
+  }
+
+  .editorial-game .poster-area .connector {
+    font-size: 28px;
+    color: #ccc;
+    margin: 4px 0;
+  }
+
+  .editorial-game .poster-area .prev-word {
+    font-weight: 300;
+    font-size: 18px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  .editorial-game .poster-area .current-word {
+    font-weight: 900;
+    font-size: 56px;
+    color: #1a1a1a;
+    letter-spacing: -3px;
+    line-height: 1;
+  }
+
+  .editorial-game .poster-area .arrow-decor {
+    position: absolute;
+    font-size: 60px;
+    color: rgba(0,0,0,0.04);
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .editorial-game .letter-area {
+    padding: 0 30px 20px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+  }
+
+  .editorial-game .letter-area .tile {
+    width: 36px;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .editorial-game .letter-area .tile.revealed {
+    background: #4A90D9;
+    color: #fff;
+  }
+  .editorial-game .letter-area .tile.typed {
+    background: #fff;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+  }
+  .editorial-game .letter-area .tile.empty {
+    background: #e8e4de;
+    color: transparent;
+  }
+
+  .editorial-game .bottom-action {
+    padding: 16px 20px;
+    border-top: 1px solid #e0dcd6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .editorial-game .bottom-action .hint-btn {
+    background: #FFE066;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #1a1a1a;
+  }
+
+  .editorial-game .bottom-action .chain-label {
+    font-size: 12px;
+    color: #999;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<div class="variants-grid">
+
+  <!-- ====== VARIANT 1: SWISS PRIMARY ====== -->
+  <div class="variant-column swiss">
+    <div class="variant-label">Variant 1 — Swiss Primary</div>
+
+    <!-- Home / Difficulty Selection -->
+    <div class="phone-frame">
+      <div class="swiss-home">
+        <div class="top-block">
+          <h1>Word<br>Link</h1>
+        </div>
+        <div class="bottom-section">
+          <div class="swiss-diff-card easy">
+            <div>EASY <div class="desc">Simple compound words</div></div>
+            <span>→</span>
+          </div>
+          <div class="swiss-diff-card medium">
+            <div>MEDIUM <div class="desc">Common phrases</div></div>
+            <span>→</span>
+          </div>
+          <div class="swiss-diff-card hard">
+            <div>HARD <div class="desc">Obscure collocations</div></div>
+            <span>→</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Page -->
+    <div class="phone-frame">
+      <div class="swiss-game">
+        <div class="score-bar">
+          <span>★ 85</span>
+          <span>3 / 8</span>
+        </div>
+        <div class="progress-row">
+          <div class="step done"></div>
+          <div class="step done"></div>
+          <div class="step active"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+        </div>
+        <div class="word-area">
+          <div class="prev-word">Ice</div>
+          <div class="current-word">Cream</div>
+          <div class="letter-grid">
+            <div class="tile revealed">S</div>
+            <div class="tile revealed">O</div>
+            <div class="tile typed">D</div>
+            <div class="tile empty"></div>
+          </div>
+        </div>
+        <div class="chain-ticker">
+          <div class="tag">Ice</div>
+          <div class="tag">Cream</div>
+          <div class="tag">Soda</div>
+          <div class="tag">...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== VARIANT 2: OP-ART / KINETIC ====== -->
+  <div class="variant-column opart">
+    <div class="variant-label">Variant 2 — Op-Art / Kinetic</div>
+
+    <!-- Home / Difficulty Selection -->
+    <div class="phone-frame">
+      <div class="opart-home">
+        <div class="title-area">
+          <h1>WordLink</h1>
+          <p>Chain Game</p>
+        </div>
+        <div class="cards-area">
+          <div class="opart-diff-card easy">
+            <span class="label">EASY</span>
+            <span class="desc">Simple compounds</span>
+          </div>
+          <div class="opart-diff-card medium">
+            <span class="label">MEDIUM</span>
+            <span class="desc">Common phrases</span>
+          </div>
+          <div class="opart-diff-card hard">
+            <span class="label">HARD</span>
+            <span class="desc">Obscure links</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Page -->
+    <div class="phone-frame">
+      <div class="opart-game">
+        <div class="score-bar">
+          <span class="score">★ 85</span>
+          <span class="hint-btn">HINT −15</span>
+        </div>
+        <div class="progress-stripe">
+          <div class="fill"></div>
+        </div>
+        <div class="word-area">
+          <div class="prev-word">Ice</div>
+          <div class="current-word">Cream</div>
+          <div class="letter-grid">
+            <div class="tile revealed">S</div>
+            <div class="tile revealed">O</div>
+            <div class="tile typed">D</div>
+            <div class="tile empty"></div>
+          </div>
+        </div>
+        <div class="chain-bands">
+          <div class="band">Ice → Cream</div>
+          <div class="band">Cream → Soda</div>
+          <div class="band" style="opacity:0.4;">Soda → ???</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== VARIANT 3: EDITORIAL TAG ====== -->
+  <div class="variant-column editorial">
+    <div class="variant-label">Variant 3 — Editorial Tag</div>
+
+    <!-- Home / Difficulty Selection -->
+    <div class="phone-frame">
+      <div class="editorial-home">
+        <div class="title-block">
+          <h1>Word<br>Link</h1>
+          <div class="sub">Chain Game</div>
+        </div>
+        <div class="connector-arrow">↓</div>
+        <div class="tag-cards">
+          <div class="editorial-tag-card easy">
+            <div class="hole"></div>
+            <div class="label">Easy</div>
+            <div class="desc">Simple compound words</div>
+            <div class="icon-line">↗</div>
+          </div>
+          <div class="editorial-tag-card medium">
+            <div class="hole"></div>
+            <div class="label">Medium</div>
+            <div class="desc">Common two-word phrases</div>
+            <div class="icon-line">⟳</div>
+          </div>
+          <div class="editorial-tag-card hard">
+            <div class="hole"></div>
+            <div class="label">Hard</div>
+            <div class="desc">Obscure collocations</div>
+            <div class="icon-line">◎</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Page -->
+    <div class="phone-frame">
+      <div class="editorial-game">
+        <div class="top-bar">
+          <span class="score">★ 85</span>
+          <div class="tags-row">
+            <div class="mini-tag done">1</div>
+            <div class="mini-tag done">2</div>
+            <div class="mini-tag active">3</div>
+            <div class="mini-tag pending">4</div>
+            <div class="mini-tag pending">5</div>
+            <div class="mini-tag pending">6</div>
+            <div class="mini-tag pending">7</div>
+            <div class="mini-tag pending">8</div>
+          </div>
+        </div>
+        <div class="poster-area">
+          <div class="prev-word">Ice</div>
+          <div class="connector">↓</div>
+          <div class="current-word">Cream</div>
+          <div class="arrow-decor">→</div>
+        </div>
+        <div class="letter-area">
+          <div class="tile revealed">S</div>
+          <div class="tile revealed">O</div>
+          <div class="tile typed">D</div>
+          <div class="tile empty"></div>
+        </div>
+        <div class="bottom-action">
+          <span class="hint-btn">Hint −15</span>
+          <span class="chain-label">ICE → CREAM → SODA → ...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

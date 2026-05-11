@@ -223,6 +223,6 @@ final class GameViewModel: ObservableObject {
     // MARK: - Navigation
     func goHome() { gameStatus = .start }
     func goToDifficultySelect() { gameStatus = .difficultySelect }
-    func goToHistory() { selectedHistoryId = nil; gameStatus = .history }
+    func goToHistory() { selectedHistoryId = nil; history = StorageService.shared.loadHistory(); gameStatus = .history }
     func clearHistory() { StorageService.shared.clearHistory(); history = [] }
 }
