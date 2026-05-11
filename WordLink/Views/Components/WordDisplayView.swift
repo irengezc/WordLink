@@ -17,7 +17,7 @@ struct WordDisplayView: View {
             targetWordCard
         }
         .padding(.horizontal)
-        .onChange(of: feedback) { _, newValue in
+        .onChange(of: feedback) { newValue in
             if newValue == .wrong { shake() }
         }
     }

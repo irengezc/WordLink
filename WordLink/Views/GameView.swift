@@ -53,12 +53,12 @@ struct GameView: View {
                     .padding(.horizontal, 20)
                     .padding(.top, 16)
                 }
-                .onChange(of: vm.currentIndex) { _, _ in
+                .onChange(of: vm.currentIndex) { _ in
                     withAnimation {
                         proxy.scrollTo("active", anchor: .center)
                     }
                 }
-                .onChange(of: vm.completedPhrases.count) { _, count in
+                .onChange(of: vm.completedPhrases.count) { count in
                     withAnimation {
                         if count > 0 {
                             proxy.scrollTo("phrase_\(count - 1)", anchor: .bottom)
