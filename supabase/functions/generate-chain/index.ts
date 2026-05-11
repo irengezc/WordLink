@@ -17,7 +17,7 @@ Deno.serve(async (req) => {
     return new Response(JSON.stringify({ error: "Invalid difficulty" }), { status: 400, headers: corsHeaders });
   }
 
-  const apiKey = Deno.env.get("OPENAI_API_KEY");
+  const apiKey = Deno.env.get("DEEPSEEK_API_KEY");
   if (!apiKey) {
     return new Response(JSON.stringify({ error: "Service unavailable" }), { status: 503, headers: corsHeaders });
   }
@@ -39,25 +39,25 @@ For each of the 8 consecutive pairs, provide a "pairs" entry with the exact word
 Respond with JSON only:
 {"chain": ["WORD1","WORD2","WORD3","WORD4","WORD5","WORD6","WORD7","WORD8","WORD9"], "pairs": [{"w1":"WORD1","w2":"WORD2","explanation":"WORD1 WORD2: one sentence definition."},{"w1":"WORD2","w2":"WORD3","explanation":"WORD2 WORD3: one sentence definition."},{"w1":"WORD3","w2":"WORD4","explanation":"WORD3 WORD4: one sentence definition."},{"w1":"WORD4","w2":"WORD5","explanation":"WORD4 WORD5: one sentence definition."},{"w1":"WORD5","w2":"WORD6","explanation":"WORD5 WORD6: one sentence definition."},{"w1":"WORD6","w2":"WORD7","explanation":"WORD6 WORD7: one sentence definition."},{"w1":"WORD7","w2":"WORD8","explanation":"WORD7 WORD8: one sentence definition."},{"w1":"WORD8","w2":"WORD9","explanation":"WORD8 WORD9: one sentence definition."}]}`;
 
-  const openAIResponse = await fetch("https://api.openai.com/v1/chat/completions", {
+  const deepseekResponse = await fetch("https://api.deepseek.com/v1/chat/completions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       "Authorization": `Bearer ${apiKey}`,
     },
     body: JSON.stringify({
-      model: "gpt-4o-mini",
+      model: "deepseek-chat",
       messages: [{ role: "user", content: prompt }],
       response_format: { type: "json_object" },
     }),
   });
 
-  if (!openAIResponse.ok) {
+  if (!deepseekResponse.ok) {
     return new Response(JSON.stringify({ error: "Generation failed" }), { status: 502, headers: corsHeaders });
   }
 
-  const openAIData = await openAIResponse.json();
-  const content = openAIData?.choices?.[0]?.message?.content;
+  const deepseekData = await deepseekResponse.json();
+  const content = deepseekData?.choices?.[0]?.message?.content;
   if (!content) {
     return new Response(JSON.stringify({ error: "Empty response" }), { status: 502, headers: corsHeaders });
   }
